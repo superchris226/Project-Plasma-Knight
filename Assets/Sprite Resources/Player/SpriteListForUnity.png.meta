@@ -1,0 +1,2446 @@
+fileFormatVersion: 2
+guid: f0cb6f85faba69340af21a284867d429
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -560997223071061630
+    second: SpriteListForUnity_0
+  - first:
+      213: 5445075774080828893
+    second: SpriteListForUnity_1
+  - first:
+      213: -5823965113320399872
+    second: SpriteListForUnity_2
+  - first:
+      213: 2745820623927588441
+    second: SpriteListForUnity_3
+  - first:
+      213: -901660688404622922
+    second: SpriteListForUnity_4
+  - first:
+      213: -8441124195297471923
+    second: SpriteListForUnity_5
+  - first:
+      213: 8755147369718134014
+    second: SpriteListForUnity_6
+  - first:
+      213: 333088414694692404
+    second: SpriteListForUnity_7
+  - first:
+      213: 1353168621650990067
+    second: SpriteListForUnity_8
+  - first:
+      213: -2865692347466884448
+    second: SpriteListForUnity_9
+  - first:
+      213: 7186067248837412273
+    second: SpriteListForUnity_10
+  - first:
+      213: 1366760081511579264
+    second: SpriteListForUnity_11
+  - first:
+      213: -9096814429755260018
+    second: SpriteListForUnity_12
+  - first:
+      213: -4876706876721178140
+    second: SpriteListForUnity_13
+  - first:
+      213: -8280088578962021872
+    second: SpriteListForUnity_14
+  - first:
+      213: 2221191024536272470
+    second: SpriteListForUnity_15
+  - first:
+      213: -1049500695965835636
+    second: SpriteListForUnity_16
+  - first:
+      213: 4556232914810398587
+    second: SpriteListForUnity_17
+  - first:
+      213: 6271459598325758268
+    second: SpriteListForUnity_18
+  - first:
+      213: 5502626389081067528
+    second: SpriteListForUnity_19
+  - first:
+      213: -1893091245713502988
+    second: SpriteListForUnity_20
+  - first:
+      213: -2311537085085239850
+    second: SpriteListForUnity_21
+  - first:
+      213: -3033346602844068438
+    second: SpriteListForUnity_22
+  - first:
+      213: -2683739677223405973
+    second: SpriteListForUnity_23
+  - first:
+      213: -5473687046403852751
+    second: SpriteListForUnity_24
+  - first:
+      213: -6537416457782101229
+    second: SpriteListForUnity_25
+  - first:
+      213: -5315756365710387246
+    second: SpriteListForUnity_26
+  - first:
+      213: -798360800073855529
+    second: SpriteListForUnity_27
+  - first:
+      213: -5146710012016161862
+    second: SpriteListForUnity_28
+  - first:
+      213: -1557442142945589460
+    second: SpriteListForUnity_29
+  - first:
+      213: -6952229884169908496
+    second: SpriteListForUnity_30
+  - first:
+      213: 867939102592389210
+    second: SpriteListForUnity_31
+  - first:
+      213: -1738426369940984408
+    second: SpriteListForUnity_32
+  - first:
+      213: -7147409489789080593
+    second: SpriteListForUnity_33
+  - first:
+      213: 8732791456218913281
+    second: SpriteListForUnity_34
+  - first:
+      213: 6638863243873537877
+    second: SpriteListForUnity_35
+  - first:
+      213: 1170866155305303128
+    second: SpriteListForUnity_36
+  - first:
+      213: 2642493662388580521
+    second: SpriteListForUnity_37
+  - first:
+      213: 4482318176945190851
+    second: SpriteListForUnity_38
+  - first:
+      213: 8933950308955266920
+    second: SpriteListForUnity_39
+  - first:
+      213: -3630882564820298825
+    second: SpriteListForUnity_40
+  - first:
+      213: 5193325249617596448
+    second: SpriteListForUnity_41
+  - first:
+      213: 4499166028309824219
+    second: SpriteListForUnity_42
+  - first:
+      213: -2108926339709832652
+    second: SpriteListForUnity_43
+  - first:
+      213: 6426414101116750417
+    second: SpriteListForUnity_44
+  - first:
+      213: -1923447482373426954
+    second: SpriteListForUnity_45
+  - first:
+      213: 1174469922721026218
+    second: SpriteListForUnity_46
+  - first:
+      213: -6729955456257783141
+    second: SpriteListForUnity_47
+  - first:
+      213: 5335664606189214104
+    second: SpriteListForUnity_48
+  - first:
+      213: -98726941013524615
+    second: SpriteListForUnity_49
+  - first:
+      213: 2485218611928334825
+    second: SpriteListForUnity_50
+  - first:
+      213: -5714774847120498911
+    second: SpriteListForUnity_51
+  - first:
+      213: 3009288226367181572
+    second: SpriteListForUnity_52
+  - first:
+      213: -3921297232951183874
+    second: SpriteListForUnity_53
+  - first:
+      213: 1623680947886454529
+    second: SpriteListForUnity_54
+  - first:
+      213: 967367747097939289
+    second: SpriteListForUnity_55
+  - first:
+      213: -1594976872509336246
+    second: SpriteListForUnity_56
+  - first:
+      213: -2194955700133305692
+    second: SpriteListForUnity_57
+  - first:
+      213: -5429588587983735899
+    second: SpriteListForUnity_58
+  - first:
+      213: 2969232192596050930
+    second: SpriteListForUnity_59
+  - first:
+      213: 3948999848812374397
+    second: SpriteListForUnity_60
+  - first:
+      213: -3233505281669755103
+    second: SpriteListForUnity_61
+  - first:
+      213: 8225184663811428144
+    second: SpriteListForUnity_62
+  - first:
+      213: 2621579823146274401
+    second: SpriteListForUnity_63
+  - first:
+      213: 5498951059014334966
+    second: SpriteListForUnity_64
+  - first:
+      213: 6362007039487929126
+    second: SpriteListForUnity_65
+  - first:
+      213: -4182510412380116343
+    second: SpriteListForUnity_66
+  - first:
+      213: -2558606680178225559
+    second: SpriteListForUnity_67
+  - first:
+      213: 2553413606878593860
+    second: SpriteListForUnity_68
+  - first:
+      213: 1100687543258098413
+    second: SpriteListForUnity_69
+  - first:
+      213: 1882096567846507650
+    second: SpriteListForUnity_70
+  - first:
+      213: 8951518853979645264
+    second: SpriteListForUnity_71
+  - first:
+      213: -1575424543038754874
+    second: SpriteListForUnity_72
+  - first:
+      213: 3625577544281500507
+    second: SpriteListForUnity_73
+  - first:
+      213: -994028504510114125
+    second: SpriteListForUnity_74
+  - first:
+      213: -4225017395221833104
+    second: SpriteListForUnity_75
+  - first:
+      213: -2355305883276028755
+    second: SpriteListForUnity_76
+  - first:
+      213: 456460280906757137
+    second: SpriteListForUnity_77
+  - first:
+      213: 2284285662976720531
+    second: SpriteListForUnity_78
+  - first:
+      213: -4860790717270283550
+    second: SpriteListForUnity_79
+  - first:
+      213: -551409378938117887
+    second: SpriteListForUnity_80
+  - first:
+      213: -1332885204884120948
+    second: SpriteListForUnity_81
+  - first:
+      213: -3889921407271248795
+    second: SpriteListForUnity_82
+  - first:
+      213: -1364368743779591566
+    second: SpriteListForUnity_83
+  - first:
+      213: -5094311918149804767
+    second: SpriteListForUnity_84
+  - first:
+      213: -4240927606334637925
+    second: SpriteListForUnity_85
+  - first:
+      213: -9179062209792090593
+    second: SpriteListForUnity_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 2
+    wrapV: 2
+    wrapW: 2
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteListForUnity_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 958
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2896ed67fffe638f0800000000000000
+      internalID: -560997223071061630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 958
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd54c29319bc09b40800000000000000
+      internalID: 5445075774080828893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 958
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c154c069e1d2fa0800000000000000
+      internalID: -5823965113320399872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 958
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956352a3f4d1b1620800000000000000
+      internalID: 2745820623927588441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 958
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b155bf8168ac73f0800000000000000
+      internalID: -901660688404622922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 899
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42d652744a1bda80800000000000000
+      internalID: -8441124195297471923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 899
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4be306528808970800000000000000
+      internalID: 8755147369718134014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 899
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436dcacf52e5f9400800000000000000
+      internalID: 333088414694692404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 899
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f356b621bb67c210800000000000000
+      internalID: 1353168621650990067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_9
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 899
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa5ea93ef30b38d0800000000000000
+      internalID: -2865692347466884448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 837
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5c503e61a0ab360800000000000000
+      internalID: 7186067248837412273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 837
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e7eaf7d05b7f210800000000000000
+      internalID: 1366760081511579264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_12
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 837
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e834ace197f91c180800000000000000
+      internalID: -9096814429755260018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 837
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9545bfee4725cb0800000000000000
+      internalID: -4876706876721178140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_14
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 837
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0122336ae47371d80800000000000000
+      internalID: -8280088578962021872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 776
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e35cbe77143de10800000000000000
+      internalID: 2221191024536272470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_16
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 776
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e5e617dac6f61f0800000000000000
+      internalID: -1049500695965835636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_17
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 776
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77673132bdfa3f30800000000000000
+      internalID: 4556232914810398587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 714
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39bb6de643b80750800000000000000
+      internalID: 6271459598325758268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_19
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 715
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8001ed4fb814d5c40800000000000000
+      internalID: 5502626389081067528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_20
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 715
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc48d3ca836ab5e0800000000000000
+      internalID: -1893091245713502988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_21
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 715
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d53a56a445cbefd0800000000000000
+      internalID: -2311537085085239850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_22
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 714
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa567d8065367e5d0800000000000000
+      internalID: -3033346602844068438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 715
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b663a7d8bf071cad0800000000000000
+      internalID: -2683739677223405973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_24
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 715
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136f073d1ae8904b0800000000000000
+      internalID: -5473687046403852751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_25
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 715
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31bfa1d4e5e6645a0800000000000000
+      internalID: -6537416457782101229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_26
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 648
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d79f4ddfb3aa36b0800000000000000
+      internalID: -5315756365710387246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 638
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 9, z: 7, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd400d0517abe4f0800000000000000
+      internalID: -798360800073855529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_28
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 646
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb84d333863398b0800000000000000
+      internalID: -5146710012016161862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 648
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2741876f9ad26ae0800000000000000
+      internalID: -1557442142945589460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_30
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 638
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 9, z: 7, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe823d31c7b48f90800000000000000
+      internalID: -6952229884169908496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_31
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 646
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50d0b8e30a8b0c00800000000000000
+      internalID: 867939102592389210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 584
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8adee775d6edfd7e0800000000000000
+      internalID: -1738426369940984408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_33
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 584
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febadd800fc4fcc90800000000000000
+      internalID: -7147409489789080593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_34
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 584
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a9e75af8b113970800000000000000
+      internalID: 8732791456218913281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_35
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 584
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fca7332faf12c50800000000000000
+      internalID: 6638863243873537877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 520
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cff729090cf3010800000000000000
+      internalID: 1170866155305303128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_37
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 520
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a074e34cf50ca420800000000000000
+      internalID: 2642493662388580521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_38
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 520
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7381332a4643e30800000000000000
+      internalID: 4482318176945190851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_39
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 520
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f154ec874cbfb70800000000000000
+      internalID: 8933950308955266920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_40
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 519
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b31ab66b838c9dc0800000000000000
+      internalID: -3630882564820298825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_41
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 524
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02016829cc5621840800000000000000
+      internalID: 5193325249617596448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_42
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 524
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd289e64aaf307e30800000000000000
+      internalID: 4499166028309824219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4327128eaa69bb2e0800000000000000
+      internalID: -2108926339709832652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_44
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a00ac83953f2950800000000000000
+      internalID: 6426414101116750417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_45
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f03305a4ba8e45e0800000000000000
+      internalID: -1923447482373426954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_46
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0da2f0c2e8c4010800000000000000
+      internalID: 1174469922721026218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_47
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 457
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a8d8b5b256a92a0800000000000000
+      internalID: -6729955456257783141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_48
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 457
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899588490b61c0a40800000000000000
+      internalID: 5335664606189214104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_49
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 457
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fb027ce5041aef0800000000000000
+      internalID: -98726941013524615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_50
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 457
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e18d2909254d7220800000000000000
+      internalID: 2485218611928334825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_51
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 457
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f9b020e8a01b0b0800000000000000
+      internalID: -5714774847120498911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_52
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 457
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403916fa2b323c920800000000000000
+      internalID: 3009288226367181572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_53
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5f83b41f0c499c0800000000000000
+      internalID: -3921297232951183874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_54
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107775f2839788610800000000000000
+      internalID: 1623680947886454529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_55
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d41f437d7cc6d00800000000000000
+      internalID: 967367747097939289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_56
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 457
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a451e192cf08dd9e0800000000000000
+      internalID: -1594976872509336246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 396
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2e5db8b63f981e0800000000000000
+      internalID: -2194955700133305692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_58
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 396
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3f6b842f936a4b0800000000000000
+      internalID: -5429588587983735899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_59
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 396
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3875f82f4d43920800000000000000
+      internalID: 2969232192596050930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_60
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 396
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d796886907aadc630800000000000000
+      internalID: 3948999848812374397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_61
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 396
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f89b204184023d0800000000000000
+      internalID: -3233505281669755103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_62
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 396
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f88727fd9b52270800000000000000
+      internalID: 8225184663811428144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_63
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 396
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e07fc95f8b16420800000000000000
+      internalID: 2621579823146274401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_64
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 396
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9becd7ad2305c40800000000000000
+      internalID: 5498951059014334966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_65
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 396
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b663fe1b36a4850800000000000000
+      internalID: 6362007039487929126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_66
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 396
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ae5b890fcb4f5c0800000000000000
+      internalID: -4182510412380116343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_67
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 396
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e090cc7c00e7cd0800000000000000
+      internalID: -2558606680178225559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_68
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443c5aa952c8f6320800000000000000
+      internalID: 2553413606878593860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_69
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 396
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deaa8982d7d664f00800000000000000
+      internalID: 1100687543258098413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_70
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 396
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284197f4bdc8e1a10800000000000000
+      internalID: 1882096567846507650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_71
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 396
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0552ba378fe2a3c70800000000000000
+      internalID: 8951518853979645264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_72
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf2ebd99b7f22ae0800000000000000
+      internalID: -1575424543038754874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_73
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 344
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b28804193a05230800000000000000
+      internalID: 3625577544281500507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_74
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 344
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6df0c77508432f0800000000000000
+      internalID: -994028504510114125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_75
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 344
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ad4fb6019bd55c0800000000000000
+      internalID: -4225017395221833104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_76
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 344
+        width: 121
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4d1f137c5405fd0800000000000000
+      internalID: -2355305883276028755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_87
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 943
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c37b641c4fdcc748a820116461aff23
+      internalID: -756370941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_88
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 943
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e3f2cc9b3ea6c40ac6d898afdf680c
+      internalID: -1420469266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_89
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 943
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008199ac7519ed246a07471a737fefe1
+      internalID: 231477598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_90
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 945
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29e26fb9f0f0ef4bb9338c79c5d967a
+      internalID: 91707933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_91
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 902
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3818f12c9b8c646b35cf475561096c
+      internalID: -1171149602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_92
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 901
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbadadd1db8695458ded414d7272224
+      internalID: 263528658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_93
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 900
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6ad1f78a6ee16489915da31a7a3695
+      internalID: -894838030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_94
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 895
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2d5f55b8230aa4393038567c78b7cc
+      internalID: 350896825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_77
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 344
+        width: 121
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfc115419a5f464a840cb6a6515aa12
+      internalID: 456460280906757137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_78
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 344
+        width: 117
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6d8a8b0cb0d0948b816c9677daaed0
+      internalID: 2284285662976720531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_79
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 279
+        width: 117
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ba89a305248844f98b65d1d63ffd8a
+      internalID: -4860790717270283550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteListForUnity_80
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 279
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb33bf82158dbe4aa9d33ac2751fb6a
+      internalID: -551409378938117887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5aecbab25778a724eac421cc811b6424
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SpriteListForUnity_0: -560997223071061630
+      SpriteListForUnity_1: 5445075774080828893
+      SpriteListForUnity_10: 7186067248837412273
+      SpriteListForUnity_11: 1366760081511579264
+      SpriteListForUnity_12: -9096814429755260018
+      SpriteListForUnity_13: -4876706876721178140
+      SpriteListForUnity_14: -8280088578962021872
+      SpriteListForUnity_15: 2221191024536272470
+      SpriteListForUnity_16: -1049500695965835636
+      SpriteListForUnity_17: 4556232914810398587
+      SpriteListForUnity_18: 6271459598325758268
+      SpriteListForUnity_19: 5502626389081067528
+      SpriteListForUnity_2: -5823965113320399872
+      SpriteListForUnity_20: -1893091245713502988
+      SpriteListForUnity_21: -2311537085085239850
+      SpriteListForUnity_22: -3033346602844068438
+      SpriteListForUnity_23: -2683739677223405973
+      SpriteListForUnity_24: -5473687046403852751
+      SpriteListForUnity_25: -6537416457782101229
+      SpriteListForUnity_26: -5315756365710387246
+      SpriteListForUnity_27: -798360800073855529
+      SpriteListForUnity_28: -5146710012016161862
+      SpriteListForUnity_29: -1557442142945589460
+      SpriteListForUnity_3: 2745820623927588441
+      SpriteListForUnity_30: -6952229884169908496
+      SpriteListForUnity_31: 867939102592389210
+      SpriteListForUnity_32: -1738426369940984408
+      SpriteListForUnity_33: -7147409489789080593
+      SpriteListForUnity_34: 8732791456218913281
+      SpriteListForUnity_35: 6638863243873537877
+      SpriteListForUnity_36: 1170866155305303128
+      SpriteListForUnity_37: 2642493662388580521
+      SpriteListForUnity_38: 4482318176945190851
+      SpriteListForUnity_39: 8933950308955266920
+      SpriteListForUnity_4: -901660688404622922
+      SpriteListForUnity_40: -3630882564820298825
+      SpriteListForUnity_41: 5193325249617596448
+      SpriteListForUnity_42: 4499166028309824219
+      SpriteListForUnity_43: -2108926339709832652
+      SpriteListForUnity_44: 6426414101116750417
+      SpriteListForUnity_45: -1923447482373426954
+      SpriteListForUnity_46: 1174469922721026218
+      SpriteListForUnity_47: -6729955456257783141
+      SpriteListForUnity_48: 5335664606189214104
+      SpriteListForUnity_49: -98726941013524615
+      SpriteListForUnity_5: -8441124195297471923
+      SpriteListForUnity_50: 2485218611928334825
+      SpriteListForUnity_51: -5714774847120498911
+      SpriteListForUnity_52: 3009288226367181572
+      SpriteListForUnity_53: -3921297232951183874
+      SpriteListForUnity_54: 1623680947886454529
+      SpriteListForUnity_55: 967367747097939289
+      SpriteListForUnity_56: -1594976872509336246
+      SpriteListForUnity_57: -2194955700133305692
+      SpriteListForUnity_58: -5429588587983735899
+      SpriteListForUnity_59: 2969232192596050930
+      SpriteListForUnity_6: 8755147369718134014
+      SpriteListForUnity_60: 3948999848812374397
+      SpriteListForUnity_61: -3233505281669755103
+      SpriteListForUnity_62: 8225184663811428144
+      SpriteListForUnity_63: 2621579823146274401
+      SpriteListForUnity_64: 5498951059014334966
+      SpriteListForUnity_65: 6362007039487929126
+      SpriteListForUnity_66: -4182510412380116343
+      SpriteListForUnity_67: -2558606680178225559
+      SpriteListForUnity_68: 2553413606878593860
+      SpriteListForUnity_69: 1100687543258098413
+      SpriteListForUnity_7: 333088414694692404
+      SpriteListForUnity_70: 1882096567846507650
+      SpriteListForUnity_71: 8951518853979645264
+      SpriteListForUnity_72: -1575424543038754874
+      SpriteListForUnity_73: 3625577544281500507
+      SpriteListForUnity_74: -994028504510114125
+      SpriteListForUnity_75: -4225017395221833104
+      SpriteListForUnity_76: -2355305883276028755
+      SpriteListForUnity_77: 456460280906757137
+      SpriteListForUnity_78: 2284285662976720531
+      SpriteListForUnity_79: -4860790717270283550
+      SpriteListForUnity_8: 1353168621650990067
+      SpriteListForUnity_80: -551409378938117887
+      SpriteListForUnity_81: -1332885204884120948
+      SpriteListForUnity_82: -3889921407271248795
+      SpriteListForUnity_83: -1364368743779591566
+      SpriteListForUnity_84: -5094311918149804767
+      SpriteListForUnity_85: -4240927606334637925
+      SpriteListForUnity_86: -9179062209792090593
+      SpriteListForUnity_87: -756370941
+      SpriteListForUnity_88: -1420469266
+      SpriteListForUnity_89: 231477598
+      SpriteListForUnity_9: -2865692347466884448
+      SpriteListForUnity_90: 91707933
+      SpriteListForUnity_91: -1171149602
+      SpriteListForUnity_92: 263528658
+      SpriteListForUnity_93: -894838030
+      SpriteListForUnity_94: 350896825
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

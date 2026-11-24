@@ -1,0 +1,6130 @@
+fileFormatVersion: 2
+guid: 49b8ce79f4a48264384748645f2050aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6625287675682941836
+    second: ScarfFinalSpritelist2_0
+  - first:
+      213: 118298700316245961
+    second: ScarfFinalSpritelist2_1
+  - first:
+      213: -5262310219306063162
+    second: ScarfFinalSpritelist2_2
+  - first:
+      213: -7502240384976499854
+    second: ScarfFinalSpritelist2_3
+  - first:
+      213: 3093909819316511768
+    second: ScarfFinalSpritelist2_4
+  - first:
+      213: 1457024750560720433
+    second: ScarfFinalSpritelist2_5
+  - first:
+      213: 7886499046947890632
+    second: ScarfFinalSpritelist2_6
+  - first:
+      213: 1194459645109617951
+    second: ScarfFinalSpritelist2_7
+  - first:
+      213: 6785996965248408366
+    second: ScarfFinalSpritelist2_8
+  - first:
+      213: -4483120540042874070
+    second: ScarfFinalSpritelist2_9
+  - first:
+      213: 335169712778775139
+    second: ScarfFinalSpritelist2_10
+  - first:
+      213: -8509658133227908342
+    second: ScarfFinalSpritelist2_11
+  - first:
+      213: -8967576786016960320
+    second: ScarfFinalSpritelist2_12
+  - first:
+      213: 8851244854099977084
+    second: ScarfFinalSpritelist2_13
+  - first:
+      213: -4209814545857390266
+    second: ScarfFinalSpritelist2_14
+  - first:
+      213: 8167565936980076243
+    second: ScarfFinalSpritelist2_15
+  - first:
+      213: 3204975249492684553
+    second: ScarfFinalSpritelist2_16
+  - first:
+      213: -171770978589340583
+    second: ScarfFinalSpritelist2_17
+  - first:
+      213: -8023368956703689454
+    second: ScarfFinalSpritelist2_18
+  - first:
+      213: -138975256924087519
+    second: ScarfFinalSpritelist2_19
+  - first:
+      213: -5396150356650324340
+    second: ScarfFinalSpritelist2_20
+  - first:
+      213: -1523569607296636972
+    second: ScarfFinalSpritelist2_21
+  - first:
+      213: 3253421327563202831
+    second: ScarfFinalSpritelist2_22
+  - first:
+      213: -3323956796298086751
+    second: ScarfFinalSpritelist2_23
+  - first:
+      213: 1344771883948819749
+    second: ScarfFinalSpritelist2_24
+  - first:
+      213: 4305644370195422294
+    second: ScarfFinalSpritelist2_25
+  - first:
+      213: -8384633375766731201
+    second: ScarfFinalSpritelist2_26
+  - first:
+      213: -3850302068472090765
+    second: ScarfFinalSpritelist2_27
+  - first:
+      213: -7896817556740823043
+    second: ScarfFinalSpritelist2_28
+  - first:
+      213: -394953355703607640
+    second: ScarfFinalSpritelist2_29
+  - first:
+      213: 3452083071587691467
+    second: ScarfFinalSpritelist2_30
+  - first:
+      213: -6827459180802176995
+    second: ScarfFinalSpritelist2_31
+  - first:
+      213: 6701106199864734779
+    second: ScarfFinalSpritelist2_32
+  - first:
+      213: 5297764375617524569
+    second: ScarfFinalSpritelist2_33
+  - first:
+      213: -6567433191044064565
+    second: ScarfFinalSpritelist2_34
+  - first:
+      213: -4308599894420633985
+    second: ScarfFinalSpritelist2_35
+  - first:
+      213: -4753566052034721017
+    second: ScarfFinalSpritelist2_36
+  - first:
+      213: 1749498800306905974
+    second: ScarfFinalSpritelist2_37
+  - first:
+      213: 1356055643658107222
+    second: ScarfFinalSpritelist2_38
+  - first:
+      213: -5518110432416838160
+    second: ScarfFinalSpritelist2_39
+  - first:
+      213: -7926124873146408191
+    second: ScarfFinalSpritelist2_40
+  - first:
+      213: -8062833067466222009
+    second: ScarfFinalSpritelist2_41
+  - first:
+      213: 5373947400728576161
+    second: ScarfFinalSpritelist2_42
+  - first:
+      213: 5948267807834704130
+    second: ScarfFinalSpritelist2_43
+  - first:
+      213: 3170886724080589110
+    second: ScarfFinalSpritelist2_44
+  - first:
+      213: -64695773689940285
+    second: ScarfFinalSpritelist2_45
+  - first:
+      213: -7761557649244781824
+    second: ScarfFinalSpritelist2_46
+  - first:
+      213: -2882653853802825262
+    second: ScarfFinalSpritelist2_47
+  - first:
+      213: -6669077785461167615
+    second: ScarfFinalSpritelist2_48
+  - first:
+      213: -3296224626626590909
+    second: ScarfFinalSpritelist2_49
+  - first:
+      213: 6403259466977265971
+    second: ScarfFinalSpritelist2_50
+  - first:
+      213: -4553389238979644957
+    second: ScarfFinalSpritelist2_51
+  - first:
+      213: -7614662275781436856
+    second: ScarfFinalSpritelist2_52
+  - first:
+      213: -6152644790141783783
+    second: ScarfFinalSpritelist2_53
+  - first:
+      213: 2590976064431951335
+    second: ScarfFinalSpritelist2_54
+  - first:
+      213: 8401303210972512779
+    second: ScarfFinalSpritelist2_55
+  - first:
+      213: 3207375926907166057
+    second: ScarfFinalSpritelist2_56
+  - first:
+      213: 8765672092008106491
+    second: ScarfFinalSpritelist2_57
+  - first:
+      213: 6862418741100155581
+    second: ScarfFinalSpritelist2_58
+  - first:
+      213: 2256059810477814449
+    second: ScarfFinalSpritelist2_59
+  - first:
+      213: 6178721599424431356
+    second: ScarfFinalSpritelist2_60
+  - first:
+      213: 5303989622052929716
+    second: ScarfFinalSpritelist2_61
+  - first:
+      213: 8721476557712860445
+    second: ScarfFinalSpritelist2_62
+  - first:
+      213: 2357369033026947633
+    second: ScarfFinalSpritelist2_63
+  - first:
+      213: 4287626545528268581
+    second: ScarfFinalSpritelist2_64
+  - first:
+      213: 1397412965902433823
+    second: ScarfFinalSpritelist2_65
+  - first:
+      213: -4656051824596295411
+    second: ScarfFinalSpritelist2_66
+  - first:
+      213: 6570045655982673032
+    second: ScarfFinalSpritelist2_67
+  - first:
+      213: -2257505615460764527
+    second: ScarfFinalSpritelist2_68
+  - first:
+      213: -5109263152216235532
+    second: ScarfFinalSpritelist2_69
+  - first:
+      213: 382994297067134994
+    second: ScarfFinalSpritelist2_70
+  - first:
+      213: -8183804053751208450
+    second: ScarfFinalSpritelist2_71
+  - first:
+      213: -6061836866144750215
+    second: ScarfFinalSpritelist2_72
+  - first:
+      213: 7706520895376528628
+    second: ScarfFinalSpritelist2_73
+  - first:
+      213: 7533924052642038793
+    second: ScarfFinalSpritelist2_74
+  - first:
+      213: 5571062469767257960
+    second: ScarfFinalSpritelist2_75
+  - first:
+      213: -5127777517477754571
+    second: ScarfFinalSpritelist2_76
+  - first:
+      213: -280353194949580117
+    second: ScarfFinalSpritelist2_77
+  - first:
+      213: -5504936284354245414
+    second: ScarfFinalSpritelist2_78
+  - first:
+      213: 1076928129289647717
+    second: ScarfFinalSpritelist2_79
+  - first:
+      213: -2961616335948527484
+    second: ScarfFinalSpritelist2_80
+  - first:
+      213: -8838129553334719782
+    second: ScarfFinalSpritelist2_81
+  - first:
+      213: 6326728469270071966
+    second: ScarfFinalSpritelist2_82
+  - first:
+      213: -2651644833000039035
+    second: ScarfFinalSpritelist2_83
+  - first:
+      213: 1790474085669343135
+    second: ScarfFinalSpritelist2_84
+  - first:
+      213: -7145846813883887355
+    second: ScarfFinalSpritelist2_85
+  - first:
+      213: -9047426477293266185
+    second: ScarfFinalSpritelist2_86
+  - first:
+      213: 5232527249261195161
+    second: ScarfFinalSpritelist2_87
+  - first:
+      213: -2853051531113344087
+    second: ScarfFinalSpritelist2_88
+  - first:
+      213: 1653408470676053400
+    second: ScarfFinalSpritelist2_89
+  - first:
+      213: 5008178350470923003
+    second: ScarfFinalSpritelist2_90
+  - first:
+      213: -4871652243239325140
+    second: ScarfFinalSpritelist2_91
+  - first:
+      213: -4343759519788807865
+    second: ScarfFinalSpritelist2_92
+  - first:
+      213: -3270966880939070170
+    second: ScarfFinalSpritelist2_93
+  - first:
+      213: 2814652478348320385
+    second: ScarfFinalSpritelist2_94
+  - first:
+      213: 9154247366161364740
+    second: ScarfFinalSpritelist2_95
+  - first:
+      213: 1049391490623548699
+    second: ScarfFinalSpritelist2_96
+  - first:
+      213: 8926110305011722990
+    second: ScarfFinalSpritelist2_97
+  - first:
+      213: -129542357462416467
+    second: ScarfFinalSpritelist2_98
+  - first:
+      213: 6377487021164129700
+    second: ScarfFinalSpritelist2_99
+  - first:
+      213: 988248181929944797
+    second: ScarfFinalSpritelist2_100
+  - first:
+      213: 1048610646395954501
+    second: ScarfFinalSpritelist2_101
+  - first:
+      213: -2659476502721352736
+    second: ScarfFinalSpritelist2_102
+  - first:
+      213: 9190780315860876335
+    second: ScarfFinalSpritelist2_103
+  - first:
+      213: -1605832396895260209
+    second: ScarfFinalSpritelist2_104
+  - first:
+      213: 7711717964620654847
+    second: ScarfFinalSpritelist2_105
+  - first:
+      213: -3582523156789974076
+    second: ScarfFinalSpritelist2_106
+  - first:
+      213: 6027988684927091398
+    second: ScarfFinalSpritelist2_107
+  - first:
+      213: 1925996987197629840
+    second: ScarfFinalSpritelist2_108
+  - first:
+      213: 2903112417853809728
+    second: ScarfFinalSpritelist2_109
+  - first:
+      213: 5603099972134081889
+    second: ScarfFinalSpritelist2_110
+  - first:
+      213: 6800557407037890845
+    second: ScarfFinalSpritelist2_111
+  - first:
+      213: -4301790176311120960
+    second: ScarfFinalSpritelist2_112
+  - first:
+      213: -1873720249187758970
+    second: ScarfFinalSpritelist2_113
+  - first:
+      213: -7286525881386481457
+    second: ScarfFinalSpritelist2_114
+  - first:
+      213: -9091740951397425043
+    second: ScarfFinalSpritelist2_115
+  - first:
+      213: -556485310354268714
+    second: ScarfFinalSpritelist2_116
+  - first:
+      213: 5572352992375428143
+    second: ScarfFinalSpritelist2_117
+  - first:
+      213: -8467222236315743852
+    second: ScarfFinalSpritelist2_118
+  - first:
+      213: 5204816124317345557
+    second: ScarfFinalSpritelist2_119
+  - first:
+      213: -4789540299798835840
+    second: ScarfFinalSpritelist2_120
+  - first:
+      213: 4716437160144111246
+    second: ScarfFinalSpritelist2_121
+  - first:
+      213: -6039619416092392585
+    second: ScarfFinalSpritelist2_122
+  - first:
+      213: 1204646580934969462
+    second: ScarfFinalSpritelist2_123
+  - first:
+      213: -7565489029169695885
+    second: ScarfFinalSpritelist2_124
+  - first:
+      213: 5464443968213017174
+    second: ScarfFinalSpritelist2_125
+  - first:
+      213: 4192953348692551950
+    second: ScarfFinalSpritelist2_126
+  - first:
+      213: -8702417861308298460
+    second: ScarfFinalSpritelist2_127
+  - first:
+      213: 5651557314741955592
+    second: ScarfFinalSpritelist2_128
+  - first:
+      213: 3084082761017830835
+    second: ScarfFinalSpritelist2_129
+  - first:
+      213: 2963220832315727061
+    second: ScarfFinalSpritelist2_130
+  - first:
+      213: 3282055884596289626
+    second: ScarfFinalSpritelist2_131
+  - first:
+      213: -910546784288687676
+    second: ScarfFinalSpritelist2_132
+  - first:
+      213: -1943351456701252378
+    second: ScarfFinalSpritelist2_133
+  - first:
+      213: -4135445493310016519
+    second: ScarfFinalSpritelist2_134
+  - first:
+      213: -2725903593474922012
+    second: ScarfFinalSpritelist2_135
+  - first:
+      213: -7857142473730164675
+    second: ScarfFinalSpritelist2_136
+  - first:
+      213: 273524549819649910
+    second: ScarfFinalSpritelist2_137
+  - first:
+      213: -1230462856842167992
+    second: ScarfFinalSpritelist2_138
+  - first:
+      213: -2029477746722720467
+    second: ScarfFinalSpritelist2_139
+  - first:
+      213: -5799458973880785141
+    second: ScarfFinalSpritelist2_140
+  - first:
+      213: -5754672292256305574
+    second: ScarfFinalSpritelist2_141
+  - first:
+      213: 3419056237816090057
+    second: ScarfFinalSpritelist2_142
+  - first:
+      213: 1129735180828319972
+    second: ScarfFinalSpritelist2_143
+  - first:
+      213: 2181923892494831857
+    second: ScarfFinalSpritelist2_144
+  - first:
+      213: 7460477112308421819
+    second: ScarfFinalSpritelist2_145
+  - first:
+      213: -8342160199364899814
+    second: ScarfFinalSpritelist2_146
+  - first:
+      213: -8855111935556293027
+    second: ScarfFinalSpritelist2_147
+  - first:
+      213: 7915024011780614895
+    second: ScarfFinalSpritelist2_148
+  - first:
+      213: 2065969873586098830
+    second: ScarfFinalSpritelist2_149
+  - first:
+      213: -4999941488409844261
+    second: ScarfFinalSpritelist2_150
+  - first:
+      213: 4262851312291987944
+    second: ScarfFinalSpritelist2_151
+  - first:
+      213: -6787693309764127740
+    second: ScarfFinalSpritelist2_152
+  - first:
+      213: -329609104654088596
+    second: ScarfFinalSpritelist2_153
+  - first:
+      213: -7273818878975889431
+    second: ScarfFinalSpritelist2_154
+  - first:
+      213: -6731547648075733965
+    second: ScarfFinalSpritelist2_155
+  - first:
+      213: -3279199248696372454
+    second: ScarfFinalSpritelist2_156
+  - first:
+      213: 7668788573209610757
+    second: ScarfFinalSpritelist2_157
+  - first:
+      213: 8203398413529352784
+    second: ScarfFinalSpritelist2_158
+  - first:
+      213: 7930596762149619980
+    second: ScarfFinalSpritelist2_159
+  - first:
+      213: -7752356680673999037
+    second: ScarfFinalSpritelist2_160
+  - first:
+      213: 2225020793775235513
+    second: ScarfFinalSpritelist2_161
+  - first:
+      213: -2630083499712172252
+    second: ScarfFinalSpritelist2_162
+  - first:
+      213: 2106434334054089901
+    second: ScarfFinalSpritelist2_163
+  - first:
+      213: -8972782623366930904
+    second: ScarfFinalSpritelist2_164
+  - first:
+      213: -2153125876124940450
+    second: ScarfFinalSpritelist2_165
+  - first:
+      213: 2194895907566893634
+    second: ScarfFinalSpritelist2_166
+  - first:
+      213: 9103512200264695760
+    second: ScarfFinalSpritelist2_167
+  - first:
+      213: -2512474072324253862
+    second: ScarfFinalSpritelist2_168
+  - first:
+      213: -7071215452432998668
+    second: ScarfFinalSpritelist2_169
+  - first:
+      213: -2286686667403131967
+    second: ScarfFinalSpritelist2_170
+  - first:
+      213: 2411279097247832378
+    second: ScarfFinalSpritelist2_171
+  - first:
+      213: -5212773017123187189
+    second: ScarfFinalSpritelist2_172
+  - first:
+      213: 6431771680678355862
+    second: ScarfFinalSpritelist2_173
+  - first:
+      213: -2215041478876219674
+    second: ScarfFinalSpritelist2_174
+  - first:
+      213: -7155337812301708873
+    second: ScarfFinalSpritelist2_175
+  - first:
+      213: 8189611762739887582
+    second: ScarfFinalSpritelist2_176
+  - first:
+      213: 2469363783738385577
+    second: ScarfFinalSpritelist2_177
+  - first:
+      213: -446312991799569843
+    second: ScarfFinalSpritelist2_178
+  - first:
+      213: -3999573514591873201
+    second: ScarfFinalSpritelist2_179
+  - first:
+      213: 6873331052293960126
+    second: ScarfFinalSpritelist2_180
+  - first:
+      213: 1157832487463733277
+    second: ScarfFinalSpritelist2_181
+  - first:
+      213: 8692921497782397455
+    second: ScarfFinalSpritelist2_182
+  - first:
+      213: 6705584266031870155
+    second: ScarfFinalSpritelist2_183
+  - first:
+      213: -7865300237364386218
+    second: ScarfFinalSpritelist2_184
+  - first:
+      213: 8046210625093612056
+    second: ScarfFinalSpritelist2_185
+  - first:
+      213: -3999001023595965541
+    second: ScarfFinalSpritelist2_186
+  - first:
+      213: -9002934406759359737
+    second: ScarfFinalSpritelist2_187
+  - first:
+      213: -686096605342139840
+    second: ScarfFinalSpritelist2_188
+  - first:
+      213: 2549060284798365003
+    second: ScarfFinalSpritelist2_189
+  - first:
+      213: 8724192181762006736
+    second: ScarfFinalSpritelist2_190
+  - first:
+      213: -9180803618589970684
+    second: ScarfFinalSpritelist2_191
+  - first:
+      213: -8628406119496299940
+    second: ScarfFinalSpritelist2_192
+  - first:
+      213: 3099361569068331583
+    second: ScarfFinalSpritelist2_193
+  - first:
+      213: 4184738747532253677
+    second: ScarfFinalSpritelist2_194
+  - first:
+      213: -3626855994862570358
+    second: ScarfFinalSpritelist2_195
+  - first:
+      213: 3515528762048199799
+    second: ScarfFinalSpritelist2_196
+  - first:
+      213: -2522403618957137231
+    second: ScarfFinalSpritelist2_197
+  - first:
+      213: 8770675197453370935
+    second: ScarfFinalSpritelist2_198
+  - first:
+      213: 4269633707610596676
+    second: ScarfFinalSpritelist2_199
+  - first:
+      213: 5497101230125244178
+    second: ScarfFinalSpritelist2_200
+  - first:
+      213: 2475052165228631646
+    second: ScarfFinalSpritelist2_201
+  - first:
+      213: 1414995409239658878
+    second: ScarfFinalSpritelist2_202
+  - first:
+      213: -6737525467454894504
+    second: ScarfFinalSpritelist2_203
+  - first:
+      213: -6827861303571266182
+    second: ScarfFinalSpritelist2_204
+  - first:
+      213: -4053330764670836855
+    second: ScarfFinalSpritelist2_205
+  - first:
+      213: 3782506766715547155
+    second: ScarfFinalSpritelist2_206
+  - first:
+      213: 361150486835656823
+    second: ScarfFinalSpritelist2_207
+  - first:
+      213: -8232674775290918654
+    second: ScarfFinalSpritelist2_208
+  - first:
+      213: -5191114601469260819
+    second: ScarfFinalSpritelist2_209
+  - first:
+      213: -6597770651538466357
+    second: ScarfFinalSpritelist2_210
+  - first:
+      213: 9183339965463393039
+    second: ScarfFinalSpritelist2_211
+  - first:
+      213: 1962276147952207240
+    second: ScarfFinalSpritelist2_212
+  - first:
+      213: 4164865801073736164
+    second: ScarfFinalSpritelist2_213
+  - first:
+      213: -8443140610051658537
+    second: ScarfFinalSpritelist2_214
+  - first:
+      213: -5156532727859125021
+    second: ScarfFinalSpritelist2_215
+  - first:
+      213: -8859623344878565200
+    second: ScarfFinalSpritelist2_216
+  - first:
+      213: 2276033830944262988
+    second: ScarfFinalSpritelist2_217
+  - first:
+      213: 5686004762905856668
+    second: ScarfFinalSpritelist2_218
+  - first:
+      213: -4730980247804266200
+    second: ScarfFinalSpritelist2_219
+  - first:
+      213: -8297573906566393334
+    second: ScarfFinalSpritelist2_220
+  - first:
+      213: 8476115708144752020
+    second: ScarfFinalSpritelist2_221
+  - first:
+      213: 3924346448366534010
+    second: ScarfFinalSpritelist2_222
+  - first:
+      213: 5803297218905209937
+    second: ScarfFinalSpritelist2_223
+  - first:
+      213: 5034427122392532746
+    second: ScarfFinalSpritelist2_224
+  - first:
+      213: 2453492209784243515
+    second: ScarfFinalSpritelist2_225
+  - first:
+      213: -5566849419191166525
+    second: ScarfFinalSpritelist2_226
+  - first:
+      213: -8567432599059585727
+    second: ScarfFinalSpritelist2_227
+  - first:
+      213: -7296854141331474196
+    second: ScarfFinalSpritelist2_228
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1144
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474152416ff3e04a0800000000000000
+      internalID: -6625287675682941836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1143
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf7db98a0844a100800000000000000
+      internalID: 118298700316245961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1166
+        width: 43
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caaa588cb488f6b0800000000000000
+      internalID: -5262310219306063162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1118
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bc2e15e10b2e790800000000000000
+      internalID: -7502240384976499854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_4
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1137
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8142473a696cfea20800000000000000
+      internalID: 3093909819316511768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_5
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1131
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136bf1e7a44683410800000000000000
+      internalID: 1457024750560720433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_6
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1131
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c529c64919727d60800000000000000
+      internalID: 7886499046947890632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_7
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1131
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f154c4df7b2939010800000000000000
+      internalID: 1194459645109617951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_8
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1131
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b92804944bc2e50800000000000000
+      internalID: 6785996965248408366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_9
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1166
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23bc751f91c8c1c0800000000000000
+      internalID: -4483120540042874070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_10
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1145
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a06a5f313c6a400800000000000000
+      internalID: 335169712778775139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_11
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1149
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03dfe0930f97e980800000000000000
+      internalID: -8509658133227908342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_12
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1136
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c08b65ec64cc8380800000000000000
+      internalID: -8967576786016960320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_13
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1136
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7322a48c40f5da70800000000000000
+      internalID: 8851244854099977084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_14
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1136
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649d5ef99fbb395c0800000000000000
+      internalID: -4209814545857390266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_15
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1136
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6274132f5095170800000000000000
+      internalID: 8167565936980076243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_16
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1136
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f2eeb320c5a7c20800000000000000
+      internalID: 3204975249492684553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_17
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1136
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c067e743fbd9df0800000000000000
+      internalID: -171770978589340583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1136
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215b7c9817447a090800000000000000
+      internalID: -8023368956703689454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_19
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1171
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b987a7db2421ef0800000000000000
+      internalID: -138975256924087519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_20
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1136
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e824537d50d15b0800000000000000
+      internalID: -5396150356650324340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_21
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1136
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7a08ea3813bdae0800000000000000
+      internalID: -1523569607296636972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_22
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1147
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01a516c579762d20800000000000000
+      internalID: 3253421327563202831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1056
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a638e3a7eeeed1d0800000000000000
+      internalID: -3323956796298086751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_24
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1083
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525c3be47e699a210800000000000000
+      internalID: 1344771883948819749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_25
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1083
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c98ae0eb8b0cb30800000000000000
+      internalID: 4305644370195422294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_26
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1083
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f362a815e5cc3ab80800000000000000
+      internalID: -8384633375766731201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_27
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1083
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37fe4c22baaf09ac0800000000000000
+      internalID: -3850302068472090765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_28
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1083
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df72562754ed86290800000000000000
+      internalID: -7896817556740823043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_29
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1083
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae107af308d48af0800000000000000
+      internalID: -394953355703607640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_30
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1083
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbaf11834348ef20800000000000000
+      internalID: 3452083071587691467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_31
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1054
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d188ec96c0eff31a0800000000000000
+      internalID: -6827459180802176995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_32
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1090
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34fa15b59c1ffc50800000000000000
+      internalID: 6701106199864734779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_33
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 1071
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953d66081a0758940800000000000000
+      internalID: 5297764375617524569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_34
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1025
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca55b9fe4acbd4a0800000000000000
+      internalID: -6567433191044064565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_35
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1025
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76c5c55937c434c0800000000000000
+      internalID: -4308599894420633985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_36
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1025
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b4d147cd0f70eb0800000000000000
+      internalID: -4753566052034721017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_37
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1034
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673e34fb3e7774810800000000000000
+      internalID: 1749498800306905974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_38
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1039
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659b7e75c6da1d210800000000000000
+      internalID: 1356055643658107222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_39
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1026
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdca644ccbbb63b0800000000000000
+      internalID: -5518110432416838160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_40
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1027
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10368ba1c6fb00290800000000000000
+      internalID: -7926124873146408191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_41
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1031
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746176a3b001b1090800000000000000
+      internalID: -8062833067466222009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_42
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1027
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a08f0640b8149a40800000000000000
+      internalID: 5373947400728576161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_43
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1027
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20901e25e0e7c8250800000000000000
+      internalID: 5948267807834704130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_44
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1027
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63953dbeca0410c20800000000000000
+      internalID: 3170886724080589110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_45
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1025
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6fdbe59872a1ff0800000000000000
+      internalID: -64695773689940285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_46
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1016
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0038c05c078694490800000000000000
+      internalID: -7761557649244781824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_47
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1012
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9fba9c791cef7d0800000000000000
+      internalID: -2882653853802825262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_48
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1012
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a6322a61da273a0800000000000000
+      internalID: -6669077785461167615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_49
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 982
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347070e8a257142d0800000000000000
+      internalID: -3296224626626590909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_50
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 982
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33946dd2f82fcd850800000000000000
+      internalID: 6403259466977265971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_51
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 982
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1388eac9c1fc0c0800000000000000
+      internalID: -4553389238979644957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_52
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 982
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ada7f1109435690800000000000000
+      internalID: -7614662275781436856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_53
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 990
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911f076592a6d9aa0800000000000000
+      internalID: -6152644790141783783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_54
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 927
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed8106c00ff4f320800000000000000
+      internalID: 2590976064431951335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_55
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 957
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b028d5422cc679470800000000000000
+      internalID: 8401303210972512779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_56
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 927
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dd0708963e28c20800000000000000
+      internalID: 3207375926907166057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_57
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 927
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9c2bd335ce5a970800000000000000
+      internalID: 8765672092008106491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_58
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 927
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db212438c753c3f50800000000000000
+      internalID: 6862418741100155581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_59
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 927
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2b09bc1722f4f10800000000000000
+      internalID: 2256059810477814449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_60
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 927
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf40ab3fe8a3fb550800000000000000
+      internalID: 6178721599424431356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_61
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 927
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0c2d2a57e8b9940800000000000000
+      internalID: 5303989622052929716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_62
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 927
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d152f5b88b8e80970800000000000000
+      internalID: 8721476557712860445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_63
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 927
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ac31a45ae07b020800000000000000
+      internalID: 2357369033026947633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_64
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 927
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5276fb750a5b08b30800000000000000
+      internalID: 4287626545528268581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_65
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 927
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1eb32d40bb946310800000000000000
+      internalID: 1397412965902433823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_66
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 927
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01e02bc881626fb0800000000000000
+      internalID: -4656051824596295411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_67
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 927
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c02fae6bd7d2b50800000000000000
+      internalID: 6570045655982673032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_68
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 927
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194f2008a9abba0e0800000000000000
+      internalID: -2257505615460764527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_69
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 958
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1a82cab304819b0800000000000000
+      internalID: -5109263152216235532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_70
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 954
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210efa3b84ba05500800000000000000
+      internalID: 382994297067134994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_71
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 889
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5e1c0a2994d6e80800000000000000
+      internalID: -8183804053751208450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_72
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 882
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975331bbc7700eba0800000000000000
+      internalID: -6061836866144750215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_73
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 882
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f41b076cef03fa60800000000000000
+      internalID: 7706520895376528628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_74
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 882
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904008a6200ed8860800000000000000
+      internalID: 7533924052642038793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_75
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 882
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fdcfbacc3605d40800000000000000
+      internalID: 5571062469767257960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_76
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 914
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5390187148976d8b0800000000000000
+      internalID: -5127777517477754571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_77
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 847
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa626b214cfb1cf0800000000000000
+      internalID: -280353194949580117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 847
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc08e3ad998a93b0800000000000000
+      internalID: -5504936284354245414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_79
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 847
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5667fe28d6402fe00800000000000000
+      internalID: 1076928129289647717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_80
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 847
+        width: 37
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4884bce32a936e6d0800000000000000
+      internalID: -2961616335948527484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_81
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 869
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada2a966ff7a85580800000000000000
+      internalID: -8838129553334719782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_82
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 886
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a8139b50e0dc750800000000000000
+      internalID: 6326728469270071966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_83
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 858
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d588ac217733bd0800000000000000
+      internalID: -2651644833000039035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_84
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 858
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f0ddfc1ba09d810800000000000000
+      internalID: 1790474085669343135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_85
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 881
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501181fde2ad4dc90800000000000000
+      internalID: -7145846813883887355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_86
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 891
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa9871ed85117280800000000000000
+      internalID: -9047426477293266185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_87
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 880
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fe3c16fcbad9840800000000000000
+      internalID: 5232527249261195161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_88
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 875
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3da12afbce768d0800000000000000
+      internalID: -2853051531113344087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_89
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 861
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d94437e3612f610800000000000000
+      internalID: 1653408470676053400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_90
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 864
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf20f9fdcaf908540800000000000000
+      internalID: 5008178350470923003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_91
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 869
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c223c7c881a646cb0800000000000000
+      internalID: -4871652243239325140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_92
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 803
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74944412bbdd7b3c0800000000000000
+      internalID: -4343759519788807865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_93
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 854
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d2f8db3f03b92d0800000000000000
+      internalID: -3270966880939070170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_94
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 821
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18edf123487af0720800000000000000
+      internalID: 2814652478348320385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_95
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 806
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4077a1e6a7b6a0f70800000000000000
+      internalID: 9154247366161364740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_96
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 833
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d2fe43000309e00800000000000000
+      internalID: 1049391490623548699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_97
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 725
+        width: 81
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea6d24a70aefdb70800000000000000
+      internalID: 8926110305011722990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_98
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 725
+        width: 66
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3061889e5c33ef0800000000000000
+      internalID: -129542357462416467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_99
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 810
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ade62808a2618850800000000000000
+      internalID: 6377487021164129700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_100
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 793
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd62cd94c76f6bd00800000000000000
+      internalID: 988248181929944797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_101
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 784
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545af1eb3d96d8e00800000000000000
+      internalID: 1048610646395954501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_102
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 784
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebabc61634a71bd0800000000000000
+      internalID: -2659476502721352736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_103
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 783
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c3a8f90063c8f70800000000000000
+      internalID: 9190780315860876335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_104
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 783
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc17e3e61ffe6b9e0800000000000000
+      internalID: -1605832396895260209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_105
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 783
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8663161a6850b60800000000000000
+      internalID: 7711717964620654847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_106
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 735
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb2cef7b22584ec0800000000000000
+      internalID: -3582523156789974076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_107
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 793
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2472375c7b7a350800000000000000
+      internalID: 6027988684927091398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_108
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 621
+        width: 83
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09523643e048aba10800000000000000
+      internalID: 1925996987197629840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 603
+        width: 117
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044a339dc5de94820800000000000000
+      internalID: 2903112417853809728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_110
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 700
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1659d08fcb532cd40800000000000000
+      internalID: 5603099972134081889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_111
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 700
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1125294eee606e50800000000000000
+      internalID: 6800557407037890845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_112
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 700
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbe5b260a8fc44c0800000000000000
+      internalID: -4301790176311120960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_113
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 631
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c05ba5c553ff5e0800000000000000
+      internalID: -1873720249187758970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_114
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 631
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8c449015f01ea90800000000000000
+      internalID: -7286525881386481457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_115
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 630
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60a51a56c5a3d180800000000000000
+      internalID: -9091740951397425043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_116
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 645
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd5c910f87f648f0800000000000000
+      internalID: -556485310354268714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_117
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 630
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f245f91e589f45d40800000000000000
+      internalID: 5572352992375428143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_118
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 630
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4998c12cc326e7a80800000000000000
+      internalID: -8467222236315743852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_119
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 630
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517292350b83b3840800000000000000
+      internalID: 5204816124317345557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_120
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 645
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d82113972288db0800000000000000
+      internalID: -4789540299798835840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_121
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 559
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8687dfbb96247140800000000000000
+      internalID: 4716437160144111246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_122
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 559
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773c24de326fe2ca0800000000000000
+      internalID: -6039619416092392585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_123
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 559
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6788480dea3c7b010800000000000000
+      internalID: 1204646580934969462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_124
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 580
+        width: 42
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373b938cfcbf10790800000000000000
+      internalID: -7565489029169695885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_125
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 573
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652ec5456da95db40800000000000000
+      internalID: 5464443968213017174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_126
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 561
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09aa9cfadc503a30800000000000000
+      internalID: 4192953348692551950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_127
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 487
+        width: 59
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b44b1001dca3780800000000000000
+      internalID: -8702417861308298460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_128
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 518
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c64fc3f6d5e6e40800000000000000
+      internalID: 5651557314741955592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_129
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 540
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdaf545eecdcca20800000000000000
+      internalID: 3084082761017830835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_130
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 540
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc573da5a97f1920800000000000000
+      internalID: 2963220832315727061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_131
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 531
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50a75e10743c8d20800000000000000
+      internalID: 3282055884596289626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_132
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 544
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9391326861d53f0800000000000000
+      internalID: -910546784288687676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_133
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 516
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec759d7524d705e0800000000000000
+      internalID: -1943351456701252378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_134
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 483
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3344ffb32fb96c0800000000000000
+      internalID: -4135445493310016519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_135
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 483
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e967facf15ab2ad0800000000000000
+      internalID: -2725903593474922012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_136
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 483
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38fdaf8c82d5f290800000000000000
+      internalID: -7857142473730164675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_137
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 520
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f495df021cbc300800000000000000
+      internalID: 273524549819649910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_138
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 512
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8493c9c0d848ceee0800000000000000
+      internalID: -1230462856842167992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_139
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 498
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d253803fdb8d5d3e0800000000000000
+      internalID: -2029477746722720467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_140
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 427
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0762644ace248fa0800000000000000
+      internalID: -5799458973880785141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_141
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 426
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ea74d2a0c4320b0800000000000000
+      internalID: -5754672292256305574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_142
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 422
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd8c1a888de27f20800000000000000
+      internalID: 3419056237816090057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_143
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 385
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0a88f4920adaf00800000000000000
+      internalID: 1129735180828319972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_144
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 385
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0971b4830c74e10800000000000000
+      internalID: 2181923892494831857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_145
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 223
+        width: 130
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb453160860f88760800000000000000
+      internalID: 7460477112308421819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_146
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 399
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c04715f71ba3c80800000000000000
+      internalID: -8342160199364899814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_147
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 385
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e68da6c925c1580800000000000000
+      internalID: -8855111935556293027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_148
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 333
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaeed23760d7dd60800000000000000
+      internalID: 7915024011780614895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_149
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 333
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8212cf67accbac10800000000000000
+      internalID: 2065969873586098830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_150
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 372
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5e79505b3ac9ab0800000000000000
+      internalID: -4999941488409844261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_151
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 370
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1c877dea0b82b30800000000000000
+      internalID: 4262851312291987944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_152
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 374
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404b633c5e44dc1a0800000000000000
+      internalID: -6787693309764127740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_153
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 368
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66cb52044efc6bf0800000000000000
+      internalID: -329609104654088596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_154
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 333
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efac1694443e0b90800000000000000
+      internalID: -7273818878975889431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_155
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 333
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33464df441db492a0800000000000000
+      internalID: -6731547648075733965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_156
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 333
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1399b148a1fd72d0800000000000000
+      internalID: -3279199248696372454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_157
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 366
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50acbbb83920d6a60800000000000000
+      internalID: 7668788573209610757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_158
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 333
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a8b65c46358d170800000000000000
+      internalID: 8203398413529352784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_159
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 333
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c098ac0bcb32f0e60800000000000000
+      internalID: 7930596762149619980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_160
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 336
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347cc443ca81a6490800000000000000
+      internalID: -7752356680673999037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_161
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 333
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1a4de8f9cd0ee10800000000000000
+      internalID: 2225020793775235513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_162
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 348
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f2a06edf0108bd0800000000000000
+      internalID: -2630083499712172252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_163
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 324
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da40bffcdde8b3d10800000000000000
+      internalID: 2106434334054089901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_164
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 319
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e9a6f6eb54a7380800000000000000
+      internalID: -8972782623366930904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_165
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 0
+        width: 425
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e570fd46c6f8e12e0800000000000000
+      internalID: -2153125876124940450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_166
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 277
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24abb79e236d57e10800000000000000
+      internalID: 2194895907566893634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_167
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 281
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df36391d1c265e70800000000000000
+      internalID: 9103512200264695760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_168
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 204
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57dbb39426e12dd0800000000000000
+      internalID: -2512474072324253862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_169
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 150
+        width: 130
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe5a7bc20ffddd90800000000000000
+      internalID: -7071215452432998668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_170
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 131
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c380d4679e0440e0800000000000000
+      internalID: -2286686667403131967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_171
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 131
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3918cd3095967120800000000000000
+      internalID: 2411279097247832378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_172
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 166
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0691a33f8288a7b0800000000000000
+      internalID: -5212773017123187189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_173
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 131
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693204f344e324950800000000000000
+      internalID: 6431771680678355862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_174
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 131
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6b3d0c2879241e0800000000000000
+      internalID: -2215041478876219674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_175
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 161
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b106d99b2223bc90800000000000000
+      internalID: -7155337812301708873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_176
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 144
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddb87ef18857a170800000000000000
+      internalID: 8189611762739887582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_177
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4e0fe2741f44220800000000000000
+      internalID: 2469363783738385577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_178
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 141
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d421529d2b06ec9f0800000000000000
+      internalID: -446312991799569843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_179
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 141
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47d0b14419ae78c0800000000000000
+      internalID: -3999573514591873201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_180
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 141
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1b4a3fc2af26f50800000000000000
+      internalID: 6873331052293960126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_181
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 82
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18ceac4382711010800000000000000
+      internalID: 1157832487463733277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_182
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 82
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a2daf8b0673a870800000000000000
+      internalID: 8692921497782397455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_183
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 82
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0374cbc550f0d50800000000000000
+      internalID: 6705584266031870155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_184
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 82
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656a9143b17d8d290800000000000000
+      internalID: -7865300237364386218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_185
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 82
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812bda0dee1e9af60800000000000000
+      internalID: 8046210625093612056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_186
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 82
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b939324b1c1b088c0800000000000000
+      internalID: -3999001023595965541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_187
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 82
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b57fc4bd62f0380800000000000000
+      internalID: -9002934406759359737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_188
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 82
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04afaf4c5ce7a76f0800000000000000
+      internalID: -686096605342139840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_189
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 82
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d6672d2d4106320800000000000000
+      internalID: 2549060284798365003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_190
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 82
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de1a2a019e821970800000000000000
+      internalID: 8724192181762006736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_191
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 82
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40fe25930cb379080800000000000000
+      internalID: -9180803618589970684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_192
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 109
+        width: 50
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5acd9d795eb14880800000000000000
+      internalID: -8628406119496299940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_193
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 96
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f32b0da0de4230b20800000000000000
+      internalID: 3099361569068331583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_194
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 96
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9197c18bd231a30800000000000000
+      internalID: 4184738747532253677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_195
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 96
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8478b640b1daadc0800000000000000
+      internalID: -3626855994862570358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_196
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 96
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c3d8378caa9c030800000000000000
+      internalID: 3515528762048199799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_197
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 96
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba66e7d54f9efcd0800000000000000
+      internalID: -2522403618957137231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_198
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 96
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73689808f92b7b970800000000000000
+      internalID: 8770675197453370935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_199
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 96
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445e92f4c39c04b30800000000000000
+      internalID: 4269633707610596676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_200
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 96
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f5af3a170a94c40800000000000000
+      internalID: 5497101230125244178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_201
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 96
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e569305b4d6295220800000000000000
+      internalID: 2475052165228631646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_202
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 96
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71d986e3d213a310800000000000000
+      internalID: 1414995409239658878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_203
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 96
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e0437c8408f72a0800000000000000
+      internalID: -6737525467454894504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_204
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 54
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75cff8e1509e31a0800000000000000
+      internalID: -6827861303571266182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_205
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fd1ae152dafb7c0800000000000000
+      internalID: -4053330764670836855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_206
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 84
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e679e1dd92e7430800000000000000
+      internalID: 3782506766715547155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_207
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 84
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7787c4e4470130500800000000000000
+      internalID: 361150486835656823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_208
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 83
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209477319e9afbd80800000000000000
+      internalID: -8232674775290918654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_209
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 44
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debc41f06c475f7b0800000000000000
+      internalID: -5191114601469260819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_210
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 44
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc95d858c820074a0800000000000000
+      internalID: -6597770651538466357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_211
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 44
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03f71d0b07c17f70800000000000000
+      internalID: 9183339965463393039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_212
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 44
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885c9ed82c76b3b10800000000000000
+      internalID: 1962276147952207240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_213
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 27
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e93c2231639cc930800000000000000
+      internalID: 4164865801073736164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_214
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 27
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc223d4950f3da80800000000000000
+      internalID: -8443140610051658537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_215
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 58
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4e743fdc05078b0800000000000000
+      internalID: -5156532727859125021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_216
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 35
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b841c4128b4c0580800000000000000
+      internalID: -8859623344878565200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_217
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 51
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b4436d5b8169f10800000000000000
+      internalID: 2276033830944262988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_218
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 11
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ace24c43fb8ee40800000000000000
+      internalID: 5686004762905856668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_219
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 11
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829bc3ac78e285eb0800000000000000
+      internalID: -4730980247804266200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_220
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 12
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a025f819e7819dc80800000000000000
+      internalID: -8297573906566393334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_221
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 5
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4959313045631a570800000000000000
+      internalID: 8476115708144752020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_222
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 11
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7df37e7d44167630800000000000000
+      internalID: 3924346448366534010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_223
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 11
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c7bdac214798050800000000000000
+      internalID: 5803297218905209937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_224
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 11
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a078cc55bc0edd540800000000000000
+      internalID: 5034427122392532746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_225
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 11
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35c0676a2e8c0220800000000000000
+      internalID: 2453492209784243515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_226
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 11
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9550b92f39eb2b0800000000000000
+      internalID: -5566849419191166525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_227
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 11
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145a3ff717d5a1980800000000000000
+      internalID: -8567432599059585727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_228
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 11
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce87910a1dd5cba90800000000000000
+      internalID: -7296854141331474196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_229
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1065
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45257b1c9da5461448444b0b793c51a2
+      internalID: -551126322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfFinalSpritelist2_230
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1152
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64ee7a1c66d17f43a1edbda731b3c11
+      internalID: 1513897603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b4df69f56eaf3bc41960da962a8543a1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ScarfFinalSpritelist2_0: -6625287675682941836
+      ScarfFinalSpritelist2_1: 118298700316245961
+      ScarfFinalSpritelist2_10: 335169712778775139
+      ScarfFinalSpritelist2_100: 988248181929944797
+      ScarfFinalSpritelist2_101: 1048610646395954501
+      ScarfFinalSpritelist2_102: -2659476502721352736
+      ScarfFinalSpritelist2_103: 9190780315860876335
+      ScarfFinalSpritelist2_104: -1605832396895260209
+      ScarfFinalSpritelist2_105: 7711717964620654847
+      ScarfFinalSpritelist2_106: -3582523156789974076
+      ScarfFinalSpritelist2_107: 6027988684927091398
+      ScarfFinalSpritelist2_108: 1925996987197629840
+      ScarfFinalSpritelist2_109: 2903112417853809728
+      ScarfFinalSpritelist2_11: -8509658133227908342
+      ScarfFinalSpritelist2_110: 5603099972134081889
+      ScarfFinalSpritelist2_111: 6800557407037890845
+      ScarfFinalSpritelist2_112: -4301790176311120960
+      ScarfFinalSpritelist2_113: -1873720249187758970
+      ScarfFinalSpritelist2_114: -7286525881386481457
+      ScarfFinalSpritelist2_115: -9091740951397425043
+      ScarfFinalSpritelist2_116: -556485310354268714
+      ScarfFinalSpritelist2_117: 5572352992375428143
+      ScarfFinalSpritelist2_118: -8467222236315743852
+      ScarfFinalSpritelist2_119: 5204816124317345557
+      ScarfFinalSpritelist2_12: -8967576786016960320
+      ScarfFinalSpritelist2_120: -4789540299798835840
+      ScarfFinalSpritelist2_121: 4716437160144111246
+      ScarfFinalSpritelist2_122: -6039619416092392585
+      ScarfFinalSpritelist2_123: 1204646580934969462
+      ScarfFinalSpritelist2_124: -7565489029169695885
+      ScarfFinalSpritelist2_125: 5464443968213017174
+      ScarfFinalSpritelist2_126: 4192953348692551950
+      ScarfFinalSpritelist2_127: -8702417861308298460
+      ScarfFinalSpritelist2_128: 5651557314741955592
+      ScarfFinalSpritelist2_129: 3084082761017830835
+      ScarfFinalSpritelist2_13: 8851244854099977084
+      ScarfFinalSpritelist2_130: 2963220832315727061
+      ScarfFinalSpritelist2_131: 3282055884596289626
+      ScarfFinalSpritelist2_132: -910546784288687676
+      ScarfFinalSpritelist2_133: -1943351456701252378
+      ScarfFinalSpritelist2_134: -4135445493310016519
+      ScarfFinalSpritelist2_135: -2725903593474922012
+      ScarfFinalSpritelist2_136: -7857142473730164675
+      ScarfFinalSpritelist2_137: 273524549819649910
+      ScarfFinalSpritelist2_138: -1230462856842167992
+      ScarfFinalSpritelist2_139: -2029477746722720467
+      ScarfFinalSpritelist2_14: -4209814545857390266
+      ScarfFinalSpritelist2_140: -5799458973880785141
+      ScarfFinalSpritelist2_141: -5754672292256305574
+      ScarfFinalSpritelist2_142: 3419056237816090057
+      ScarfFinalSpritelist2_143: 1129735180828319972
+      ScarfFinalSpritelist2_144: 2181923892494831857
+      ScarfFinalSpritelist2_145: 7460477112308421819
+      ScarfFinalSpritelist2_146: -8342160199364899814
+      ScarfFinalSpritelist2_147: -8855111935556293027
+      ScarfFinalSpritelist2_148: 7915024011780614895
+      ScarfFinalSpritelist2_149: 2065969873586098830
+      ScarfFinalSpritelist2_15: 8167565936980076243
+      ScarfFinalSpritelist2_150: -4999941488409844261
+      ScarfFinalSpritelist2_151: 4262851312291987944
+      ScarfFinalSpritelist2_152: -6787693309764127740
+      ScarfFinalSpritelist2_153: -329609104654088596
+      ScarfFinalSpritelist2_154: -7273818878975889431
+      ScarfFinalSpritelist2_155: -6731547648075733965
+      ScarfFinalSpritelist2_156: -3279199248696372454
+      ScarfFinalSpritelist2_157: 7668788573209610757
+      ScarfFinalSpritelist2_158: 8203398413529352784
+      ScarfFinalSpritelist2_159: 7930596762149619980
+      ScarfFinalSpritelist2_16: 3204975249492684553
+      ScarfFinalSpritelist2_160: -7752356680673999037
+      ScarfFinalSpritelist2_161: 2225020793775235513
+      ScarfFinalSpritelist2_162: -2630083499712172252
+      ScarfFinalSpritelist2_163: 2106434334054089901
+      ScarfFinalSpritelist2_164: -8972782623366930904
+      ScarfFinalSpritelist2_165: -2153125876124940450
+      ScarfFinalSpritelist2_166: 2194895907566893634
+      ScarfFinalSpritelist2_167: 9103512200264695760
+      ScarfFinalSpritelist2_168: -2512474072324253862
+      ScarfFinalSpritelist2_169: -7071215452432998668
+      ScarfFinalSpritelist2_17: -171770978589340583
+      ScarfFinalSpritelist2_170: -2286686667403131967
+      ScarfFinalSpritelist2_171: 2411279097247832378
+      ScarfFinalSpritelist2_172: -5212773017123187189
+      ScarfFinalSpritelist2_173: 6431771680678355862
+      ScarfFinalSpritelist2_174: -2215041478876219674
+      ScarfFinalSpritelist2_175: -7155337812301708873
+      ScarfFinalSpritelist2_176: 8189611762739887582
+      ScarfFinalSpritelist2_177: 2469363783738385577
+      ScarfFinalSpritelist2_178: -446312991799569843
+      ScarfFinalSpritelist2_179: -3999573514591873201
+      ScarfFinalSpritelist2_18: -8023368956703689454
+      ScarfFinalSpritelist2_180: 6873331052293960126
+      ScarfFinalSpritelist2_181: 1157832487463733277
+      ScarfFinalSpritelist2_182: 8692921497782397455
+      ScarfFinalSpritelist2_183: 6705584266031870155
+      ScarfFinalSpritelist2_184: -7865300237364386218
+      ScarfFinalSpritelist2_185: 8046210625093612056
+      ScarfFinalSpritelist2_186: -3999001023595965541
+      ScarfFinalSpritelist2_187: -9002934406759359737
+      ScarfFinalSpritelist2_188: -686096605342139840
+      ScarfFinalSpritelist2_189: 2549060284798365003
+      ScarfFinalSpritelist2_19: -138975256924087519
+      ScarfFinalSpritelist2_190: 8724192181762006736
+      ScarfFinalSpritelist2_191: -9180803618589970684
+      ScarfFinalSpritelist2_192: -8628406119496299940
+      ScarfFinalSpritelist2_193: 3099361569068331583
+      ScarfFinalSpritelist2_194: 4184738747532253677
+      ScarfFinalSpritelist2_195: -3626855994862570358
+      ScarfFinalSpritelist2_196: 3515528762048199799
+      ScarfFinalSpritelist2_197: -2522403618957137231
+      ScarfFinalSpritelist2_198: 8770675197453370935
+      ScarfFinalSpritelist2_199: 4269633707610596676
+      ScarfFinalSpritelist2_2: -5262310219306063162
+      ScarfFinalSpritelist2_20: -5396150356650324340
+      ScarfFinalSpritelist2_200: 5497101230125244178
+      ScarfFinalSpritelist2_201: 2475052165228631646
+      ScarfFinalSpritelist2_202: 1414995409239658878
+      ScarfFinalSpritelist2_203: -6737525467454894504
+      ScarfFinalSpritelist2_204: -6827861303571266182
+      ScarfFinalSpritelist2_205: -4053330764670836855
+      ScarfFinalSpritelist2_206: 3782506766715547155
+      ScarfFinalSpritelist2_207: 361150486835656823
+      ScarfFinalSpritelist2_208: -8232674775290918654
+      ScarfFinalSpritelist2_209: -5191114601469260819
+      ScarfFinalSpritelist2_21: -1523569607296636972
+      ScarfFinalSpritelist2_210: -6597770651538466357
+      ScarfFinalSpritelist2_211: 9183339965463393039
+      ScarfFinalSpritelist2_212: 1962276147952207240
+      ScarfFinalSpritelist2_213: 4164865801073736164
+      ScarfFinalSpritelist2_214: -8443140610051658537
+      ScarfFinalSpritelist2_215: -5156532727859125021
+      ScarfFinalSpritelist2_216: -8859623344878565200
+      ScarfFinalSpritelist2_217: 2276033830944262988
+      ScarfFinalSpritelist2_218: 5686004762905856668
+      ScarfFinalSpritelist2_219: -4730980247804266200
+      ScarfFinalSpritelist2_22: 3253421327563202831
+      ScarfFinalSpritelist2_220: -8297573906566393334
+      ScarfFinalSpritelist2_221: 8476115708144752020
+      ScarfFinalSpritelist2_222: 3924346448366534010
+      ScarfFinalSpritelist2_223: 5803297218905209937
+      ScarfFinalSpritelist2_224: 5034427122392532746
+      ScarfFinalSpritelist2_225: 2453492209784243515
+      ScarfFinalSpritelist2_226: -5566849419191166525
+      ScarfFinalSpritelist2_227: -8567432599059585727
+      ScarfFinalSpritelist2_228: -7296854141331474196
+      ScarfFinalSpritelist2_229: -551126322
+      ScarfFinalSpritelist2_23: -3323956796298086751
+      ScarfFinalSpritelist2_230: 1513897603
+      ScarfFinalSpritelist2_24: 1344771883948819749
+      ScarfFinalSpritelist2_25: 4305644370195422294
+      ScarfFinalSpritelist2_26: -8384633375766731201
+      ScarfFinalSpritelist2_27: -3850302068472090765
+      ScarfFinalSpritelist2_28: -7896817556740823043
+      ScarfFinalSpritelist2_29: -394953355703607640
+      ScarfFinalSpritelist2_3: -7502240384976499854
+      ScarfFinalSpritelist2_30: 3452083071587691467
+      ScarfFinalSpritelist2_31: -6827459180802176995
+      ScarfFinalSpritelist2_32: 6701106199864734779
+      ScarfFinalSpritelist2_33: 5297764375617524569
+      ScarfFinalSpritelist2_34: -6567433191044064565
+      ScarfFinalSpritelist2_35: -4308599894420633985
+      ScarfFinalSpritelist2_36: -4753566052034721017
+      ScarfFinalSpritelist2_37: 1749498800306905974
+      ScarfFinalSpritelist2_38: 1356055643658107222
+      ScarfFinalSpritelist2_39: -5518110432416838160
+      ScarfFinalSpritelist2_4: 3093909819316511768
+      ScarfFinalSpritelist2_40: -7926124873146408191
+      ScarfFinalSpritelist2_41: -8062833067466222009
+      ScarfFinalSpritelist2_42: 5373947400728576161
+      ScarfFinalSpritelist2_43: 5948267807834704130
+      ScarfFinalSpritelist2_44: 3170886724080589110
+      ScarfFinalSpritelist2_45: -64695773689940285
+      ScarfFinalSpritelist2_46: -7761557649244781824
+      ScarfFinalSpritelist2_47: -2882653853802825262
+      ScarfFinalSpritelist2_48: -6669077785461167615
+      ScarfFinalSpritelist2_49: -3296224626626590909
+      ScarfFinalSpritelist2_5: 1457024750560720433
+      ScarfFinalSpritelist2_50: 6403259466977265971
+      ScarfFinalSpritelist2_51: -4553389238979644957
+      ScarfFinalSpritelist2_52: -7614662275781436856
+      ScarfFinalSpritelist2_53: -6152644790141783783
+      ScarfFinalSpritelist2_54: 2590976064431951335
+      ScarfFinalSpritelist2_55: 8401303210972512779
+      ScarfFinalSpritelist2_56: 3207375926907166057
+      ScarfFinalSpritelist2_57: 8765672092008106491
+      ScarfFinalSpritelist2_58: 6862418741100155581
+      ScarfFinalSpritelist2_59: 2256059810477814449
+      ScarfFinalSpritelist2_6: 7886499046947890632
+      ScarfFinalSpritelist2_60: 6178721599424431356
+      ScarfFinalSpritelist2_61: 5303989622052929716
+      ScarfFinalSpritelist2_62: 8721476557712860445
+      ScarfFinalSpritelist2_63: 2357369033026947633
+      ScarfFinalSpritelist2_64: 4287626545528268581
+      ScarfFinalSpritelist2_65: 1397412965902433823
+      ScarfFinalSpritelist2_66: -4656051824596295411
+      ScarfFinalSpritelist2_67: 6570045655982673032
+      ScarfFinalSpritelist2_68: -2257505615460764527
+      ScarfFinalSpritelist2_69: -5109263152216235532
+      ScarfFinalSpritelist2_7: 1194459645109617951
+      ScarfFinalSpritelist2_70: 382994297067134994
+      ScarfFinalSpritelist2_71: -8183804053751208450
+      ScarfFinalSpritelist2_72: -6061836866144750215
+      ScarfFinalSpritelist2_73: 7706520895376528628
+      ScarfFinalSpritelist2_74: 7533924052642038793
+      ScarfFinalSpritelist2_75: 5571062469767257960
+      ScarfFinalSpritelist2_76: -5127777517477754571
+      ScarfFinalSpritelist2_77: -280353194949580117
+      ScarfFinalSpritelist2_78: -5504936284354245414
+      ScarfFinalSpritelist2_79: 1076928129289647717
+      ScarfFinalSpritelist2_8: 6785996965248408366
+      ScarfFinalSpritelist2_80: -2961616335948527484
+      ScarfFinalSpritelist2_81: -8838129553334719782
+      ScarfFinalSpritelist2_82: 6326728469270071966
+      ScarfFinalSpritelist2_83: -2651644833000039035
+      ScarfFinalSpritelist2_84: 1790474085669343135
+      ScarfFinalSpritelist2_85: -7145846813883887355
+      ScarfFinalSpritelist2_86: -9047426477293266185
+      ScarfFinalSpritelist2_87: 5232527249261195161
+      ScarfFinalSpritelist2_88: -2853051531113344087
+      ScarfFinalSpritelist2_89: 1653408470676053400
+      ScarfFinalSpritelist2_9: -4483120540042874070
+      ScarfFinalSpritelist2_90: 5008178350470923003
+      ScarfFinalSpritelist2_91: -4871652243239325140
+      ScarfFinalSpritelist2_92: -4343759519788807865
+      ScarfFinalSpritelist2_93: -3270966880939070170
+      ScarfFinalSpritelist2_94: 2814652478348320385
+      ScarfFinalSpritelist2_95: 9154247366161364740
+      ScarfFinalSpritelist2_96: 1049391490623548699
+      ScarfFinalSpritelist2_97: 8926110305011722990
+      ScarfFinalSpritelist2_98: -129542357462416467
+      ScarfFinalSpritelist2_99: 6377487021164129700
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

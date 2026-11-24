@@ -1,0 +1,4 @@
+repository "Plasma Knight/PlasmaKnight(Курсовая)@7972522436645@cloud"
+  path "/"
+    br "/main"
+    co "/main"
