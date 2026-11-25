@@ -59,7 +59,9 @@ public class DamageDealer : MonoBehaviour
         // Неуязвимость (после получения урона / респавн)
         if (player.IsInvulnerable) return;
 
-        // Пока игрок атакует — он НЕ получает урон от касания
+        // Пока игрок атакует — он НЕ получает урон от касания.
+        // ВАЖНО: это должно проверяться и в OnTriggerStay2D, иначе при
+        // удержании врага игрок будет получать урон, даже если бьёт.
         if (player.IsAttacking) return;
 
         if (perTargetCooldown > 0f)

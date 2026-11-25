@@ -17,10 +17,12 @@ public class PauseMenu : MonoBehaviour
             else
                 PauseGame();
         }
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (isPaused)
         {
-            // Теперь SceneManager распознается
-            SceneManager.LoadScene("MainMenu"); 
+            if (Keyboard.current.escapeKey.wasPressedThisFrame)
+            {
+                SceneManager.LoadScene("MainMenu"); 
+            }
         }
     }
 

@@ -40,6 +40,21 @@ public class AttackHitbox : MonoBehaviour
         _hitThisSwing.Clear();
         _isActive = true;
         if (_col != null) _col.enabled = true;
+
+        // Сразу проверяем, не стоим ли мы уже в враге (Enter не сработает)
+        if (_col != null)
+        {
+            var results = new Collider2D[16];
+            var filter = new ContactFilter2D();
+            filter.SetLayerMask(enemyLayers);
+            filter.useTriggers = true;
+            int count = Physics2D.OverlapCollider(_col, filter, results);
+            for (int i = 0; i < count; i++)
+            {
+                if (results[i] != null)
+                    TryHit(results[i]);
+            }
+        }
     }
 
     public void Deactivate()
@@ -48,9 +63,12 @@ public class AttackHitbox : MonoBehaviour
         if (_col != null) _col.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) => TryHit(other);
+    private void OnTriggerStay2D(Collider2D other)  => TryHit(other);
+
+    private void TryHit(Collider2D other)
     {
-        if (!_isActive) return;
+        if (!_isActive || other == null) return;
         if (((1 << other.gameObject.layer) & enemyLayers) == 0) return;
 
         var enemy = other.GetComponent<EnemyHealth>();
@@ -68,7 +86,6 @@ public class AttackHitbox : MonoBehaviour
         bool killed = enemy.health <= finalDamage;
         enemy.TakeDamage(finalDamage, attackerPos);
 
-        // Начисляем опыт только если враг умер от этого удара
         if (killed && _level != null && enemy.IsDead)
             _level.AddExperience(_level.xpPerEnemy);
     }
