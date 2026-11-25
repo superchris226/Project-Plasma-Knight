@@ -1,4 +1,5 @@
 // AttackHitbox.cs
+// By me
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -11,12 +12,16 @@ public class AttackHitbox : MonoBehaviour
     [Tooltip("Слои, которые считаются врагами")]
     public LayerMask enemyLayers = ~0;
 
-    [Tooltip("Бить каждую цель только один раз за одну активацию")]
+    [Tooltip("Бить каждую цель только один раз за активацию")]
     public bool hitEachTargetOnce = true;
+
+    [Tooltip("Брать урон из PlayerLevel (иначе — фиксированный damage)")]
+    public bool usePlayerLevelDamage = true;
 
     private readonly HashSet<EnemyHealth> _hitThisSwing = new();
     private Collider2D _col;
     private bool _isActive;
+    private PlayerLevel _level;
 
     private void Awake()
     {
@@ -24,6 +29,10 @@ public class AttackHitbox : MonoBehaviour
         _col.isTrigger = true;
         _col.enabled = false;
         _isActive = false;
+
+        _level = GetComponentInParent<PlayerLevel>();
+        if (_level != null && usePlayerLevelDamage)
+            damage = _level.CurrentDamage;
     }
 
     public void Activate()
@@ -42,7 +51,6 @@ public class AttackHitbox : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!_isActive) return;
-
         if (((1 << other.gameObject.layer) & enemyLayers) == 0) return;
 
         var enemy = other.GetComponent<EnemyHealth>();
@@ -56,7 +64,13 @@ public class AttackHitbox : MonoBehaviour
             ? (Vector2)player.transform.position
             : (Vector2)transform.position;
 
-        enemy.TakeDamage(damage, attackerPos);
+        int finalDamage = (usePlayerLevelDamage && _level != null) ? _level.CurrentDamage : damage;
+        bool killed = enemy.health <= finalDamage;
+        enemy.TakeDamage(finalDamage, attackerPos);
+
+        // Начисляем опыт только если враг умер от этого удара
+        if (killed && _level != null && enemy.IsDead)
+            _level.AddExperience(_level.xpPerEnemy);
     }
 
     private void OnDisable()

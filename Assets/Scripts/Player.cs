@@ -52,15 +52,10 @@ public class Player : MonoBehaviour
     public float invulnerabilityBlinkInterval = 0.08f;
 
     [Header("Low Health Blink")]
-    [Tooltip("Через сколько 'ударов' до смерти начинает мигать красным (2 = за 2 удара)")]
     public int hitsToDieForLowHealth = 2;
-    [Tooltip("Предполагаемый урон одного удара (для расчёта порога). Если <= 0 — используется lowHealthThreshold")]
     public int assumedHitDamage = 10;
-    [Tooltip("Абсолютный порог HP (используется, если assumedHitDamage <= 0)")]
     public int lowHealthThreshold = 20;
-    [Tooltip("Цвет подсветки при низком HP")]
     public Color lowHealthColor = new Color(1f, 0.25f, 0.25f, 1f);
-    [Tooltip("Интервал мигания при низком HP, сек")]
     public float lowHealthBlinkInterval = 0.15f;
 
     [Header("Visual")]
@@ -93,9 +88,7 @@ public class Player : MonoBehaviour
     private Color baseSpriteColor = Color.white;
 
     [Header("HP Bar Animation")]
-    [Tooltip("Скорость 'догона' полоски HP (единиц fillAmount в секунду)")]
     public float healthBarLerpSpeed = 1.5f;
-    [Tooltip("Задержка перед началом анимации после урона, сек")]
     public float healthBarDelay = 0.15f;
 
     [Header("HP Bar Ghost")]
@@ -536,6 +529,51 @@ public class Player : MonoBehaviour
     {
         if (amount <= 0 || isDead) return;
         health = Mathf.Min(maxHealth, health + amount);
+    }
+
+    // ==========================================
+    // ДОБАВЛЕНО ДЛЯ РЕСПАВНА
+    // ==========================================
+    public void ResetAfterDeath()
+    {
+        isDead = false;
+        DeathAnimation = false;
+
+        health = maxHealth;
+        displayedHealth = 1f;
+        displayedGhostHealth = 1f;
+        if (HealthImage != null) HealthImage.fillAmount = 1f;
+        if (HealthImageGhost != null) HealthImageGhost.fillAmount = 1f;
+
+        moveInput = 0f;
+        jumpBufferCounter = 0f;
+        doubleJumpPressed = false;
+        canCutJump = false;
+        hasJumped = false;
+        isDoubleJumping = false;
+        doubleJumpAnimTimer = 0f;
+        
+        painTimer = 0f;
+        invulnerabilityTimer = 1.5f; // Неуязвимость после респавна
+        blinkTimer = 0f;
+        attackTimer = 0f;
+        attackInputPressed = false;
+
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.gravityScale = 3f; // Установи свой стандартный gravityScale, если он другой!
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+            spriteRenderer.color = baseSpriteColor;
+        }
+        
+        Debug.Log("[Player] Возрожден.");
     }
 
     private void OnDrawGizmosSelected()

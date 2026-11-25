@@ -3,17 +3,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public enum DamageMode
-{
-    AwayFromSource,
-    BackwardsFromFacing
-}
-
-public enum DamageSourceType
-{
-    Enemy,
-    Pain
-}
+public enum DamageMode { AwayFromSource, BackwardsFromFacing }
+public enum DamageSourceType { Enemy, Pain }
 
 [RequireComponent(typeof(Collider2D))]
 public class DamageDealer : MonoBehaviour
@@ -30,7 +21,7 @@ public class DamageDealer : MonoBehaviour
     [Header("Target filtering")]
     public LayerMask targetLayers = ~0;
 
-    [Tooltip("Если true — наносить урон только один раз и уничтожиться")]
+    [Tooltip("Если true — наносить урон один раз и уничтожиться")]
     public bool destroyAfterHit = false;
 
     [Tooltip("Кулдаун на каждого игрока отдельно, сек. 0 = каждый кадр")]
@@ -44,22 +35,16 @@ public class DamageDealer : MonoBehaviour
     private void Awake()
     {
         var col = GetComponent<Collider2D>();
-
-        // Автопроверка: DamageDealer должен быть на ТРИГГЕРЕ.
-        // Если это не так — предупреждаем, чтобы враг не проваливался.
-        if (col != null && !col.isTrigger)
+        if (col != null)
         {
-            Debug.LogWarning(
-                $"[DamageDealer] {name}: коллайдер НЕ триггер. " +
-                "Если это единственный коллайдер на враге — он провалится сквозь пол! " +
-                "Вынеси зону урона в дочерний объект с IsTrigger = true.", this);
+            col.isTrigger = true; // зона урона обязана быть триггером
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) => TryHit(other);
     private void OnTriggerStay2D(Collider2D other)  => TryHit(other);
-    private void OnCollisionEnter2D(Collision2D collision) => TryHit(collision.collider);
-    private void OnCollisionStay2D(Collision2D collision)  => TryHit(collision.collider);
+    private void OnCollisionEnter2D(Collision2D c)  => TryHit(c.collider);
+    private void OnCollisionStay2D(Collision2D c)   => TryHit(c.collider);
 
     private void TryHit(Collider2D other)
     {
@@ -68,10 +53,14 @@ public class DamageDealer : MonoBehaviour
         if (targetLayers.value != 0 &&
             ((targetLayers.value & (1 << other.gameObject.layer)) == 0)) return;
 
-        var player = other.GetComponent<Player>()
-                  ?? other.GetComponentInParent<Player>();
+        var player = other.GetComponent<Player>() ?? other.GetComponentInParent<Player>();
         if (player == null) return;
+
+        // Неуязвимость (после получения урона / респавн)
         if (player.IsInvulnerable) return;
+
+        // Пока игрок атакует — он НЕ получает урон от касания
+        if (player.IsAttacking) return;
 
         if (perTargetCooldown > 0f)
         {
@@ -83,8 +72,7 @@ public class DamageDealer : MonoBehaviour
         bool useAttackerDir = mode == DamageMode.AwayFromSource;
         player.TakeDamage(damage, transform.position, useAttackerDir);
 
-        if (destroyAfterHit)
-            Destroy(gameObject);
+        if (destroyAfterHit) Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()

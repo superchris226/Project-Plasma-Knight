@@ -1,3 +1,5 @@
+// EnemyAI.cs
+// By me
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -7,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     public float chaseSpeed = 5f;
 
     [Header("Обнаружение")]
-    public float detectionRadius = 2f;
+    public float detectionRadius = 5f;
     public Transform player;
 
     [Header("Патруль")]
@@ -20,6 +22,8 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Физика")]
     public float groundGravity = 3f;
+    public float groundCheckDistance = 0.6f;
+    public float groundCheckOffsetY = -0.5f;
 
     private Vector2 startPosition;
     private int patrolDirection = 1;
@@ -27,62 +31,65 @@ public class EnemyAI : MonoBehaviour
     private bool isFlying = false;
     private bool isGrounded = false;
 
-    [Header("Physics")]
-    public float groundCheckDistance = 0.6f;
-    public float groundCheckOffsetY = -0.5f;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
         if (rb == null)
         {
-            Debug.LogError("На враге нет Rigidbody2D!");
+            Debug.LogError($"[EnemyAI] {name}: нет Rigidbody2D!", this);
+            enabled = false;
             return;
         }
 
         rb.freezeRotation = true;
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.simulated = true;
 
-        if (gameObject.CompareTag("Flying"))
+        isFlying = gameObject.CompareTag("Flying");
+        rb.gravityScale = isFlying ? 0f : groundGravity;
+
+        var mainCol = GetComponent<Collider2D>();
+        if (mainCol != null && mainCol.isTrigger)
         {
-            isFlying = true;
-            rb.gravityScale = 0f;
+            Debug.LogWarning($"[EnemyAI] {name}: основной Collider2D стоит IsTrigger=true. Выключи!", this);
         }
-        else
+
+        foreach (var dd in GetComponentsInChildren<DamageDealer>())
         {
-            isFlying = false;
-            rb.gravityScale = groundGravity;
+            var c = dd.GetComponent<Collider2D>();
+            if (c != null) c.isTrigger = true;
         }
-        var cols = GetComponentsInChildren<Collider2D>();
-        foreach (var c in cols)
+
+        if (player == null)
         {
-            Debug.Log($"[Enemy] {name}: Collider {c.GetType().Name} " +
-                    $"enabled={c.enabled} isTrigger={c.isTrigger} " +
-                    $"layer={LayerMask.LayerToName(gameObject.layer)}", this);
+            var p = FindAnyObjectByType<Player>();
+            if (p != null) player = p.transform;
         }
-        Debug.Log($"[Enemy] {name}: RB bodyType={rb.bodyType} gravity={rb.gravityScale} simulated={rb.simulated}", this);
+
         startPosition = transform.position;
     }
 
     void FixedUpdate()
     {
-        if (player == null || rb == null) return;
+        if (rb == null) return;
 
-        if (!isFlying)
+        if (player == null)
         {
-            CheckGrounded();
+            var p = FindAnyObjectByType<Player>();
+            if (p != null) player = p.transform;
         }
 
-        float distance = Vector2.Distance(transform.position, player.position);
+        if (!isFlying) CheckGrounded();
 
-        if (distance <= detectionRadius)
-        {
+        bool playerValid = player != null;
+        float distance = playerValid
+            ? Vector2.Distance(transform.position, player.position)
+            : float.MaxValue;
+
+        if (playerValid && distance <= detectionRadius)
             Chase();
-        }
         else
-        {
             Patrol();
-        }
 
         FlipSprite();
     }
@@ -94,15 +101,11 @@ public class EnemyAI : MonoBehaviour
         else if (transform.position.x < startPosition.x - patrolDistance)
             patrolDirection = 1;
 
-        if (!isFlying && IsWallAhead(patrolDirection) && isGrounded)
-        {
+        if (!isFlying && isGrounded && IsWallAhead(patrolDirection))
             Jump();
-        }
 
         float targetYVelocity = isFlying ? 0f : GetVelocity().y;
-        Vector2 velocity = new Vector2(patrolDirection * patrolSpeed, targetYVelocity);
-
-        SetVelocity(velocity);
+        SetVelocity(new Vector2(patrolDirection * patrolSpeed, targetYVelocity));
     }
 
     void Chase()
@@ -112,19 +115,12 @@ public class EnemyAI : MonoBehaviour
         if (!isFlying)
         {
             direction.y = 0f;
-
-            if (IsWallAhead(direction.x) && isGrounded)
-            {
+            if (isGrounded && IsWallAhead(direction.x))
                 Jump();
-            }
         }
 
         Vector2 velocity = direction * chaseSpeed;
-
-        if (!isFlying)
-        {
-            velocity.y = GetVelocity().y;
-        }
+        if (!isFlying) velocity.y = GetVelocity().y;
 
         SetVelocity(velocity);
     }
@@ -133,7 +129,9 @@ public class EnemyAI : MonoBehaviour
     {
         if (Mathf.Abs(directionX) < 0.1f) return false;
         Vector2 origin = (Vector2)transform.position + Vector2.up * groundCheckOffsetY;
-        RaycastHit2D hit = Physics2D.Raycast(origin, new Vector2(Mathf.Sign(directionX), 0f), wallCheckDistance, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(
+            origin, new Vector2(Mathf.Sign(directionX), 0f),
+            wallCheckDistance, groundLayer);
         return hit.collider != null;
     }
 
@@ -171,11 +169,10 @@ public class EnemyAI : MonoBehaviour
 
     void FlipSprite()
     {
-        float currentVelocityX = GetVelocity().x;
-
-        if (currentVelocityX > 0.01f)
+        float vx = GetVelocity().x;
+        if (vx > 0.01f)
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        else if (currentVelocityX < -0.01f)
+        else if (vx < -0.01f)
             transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
 
@@ -193,7 +190,7 @@ public class EnemyAI : MonoBehaviour
             Gizmos.color = Color.blue;
             Gizmos.DrawRay(transform.position, new Vector2(patrolDirection * wallCheckDistance, 0));
             Gizmos.color = Color.green;
-            Gizmos.DrawRay(transform.position, Vector2.down * 0.6f);
+            Gizmos.DrawRay(transform.position, Vector2.down * groundCheckDistance);
         }
     }
 }
