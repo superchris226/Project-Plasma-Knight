@@ -87,6 +87,25 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color baseSpriteColor = Color.white;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioSource footstepSource;
+    [SerializeField] private AudioSource lowHealthSource; // Источник для пищания при низком ХП
+
+    [Header("SFX Clips")]
+    public AudioClip attackSfx;
+    public AudioClip doubleJumpSfx;
+    public AudioClip jumpSfx;
+    public AudioClip footstepSfx;
+    public AudioClip hurtSfx;       // Звук получения урона
+    public AudioClip lowHealthSfx;  // Звук низкого здоровья (будет зациклен)
+
+    [Header("Footstep Timing")]
+    public float walkStepInterval = 0.35f;
+    public float runStepInterval = 0.22f;
+    public float walkThresholdForSteps = 0.5f;
+    private float footstepTimer;
+
     [Header("HP Bar Animation")]
     public float healthBarLerpSpeed = 1.5f;
     public float healthBarDelay = 0.15f;
@@ -122,11 +141,40 @@ public class Player : MonoBehaviour
     public bool IsAttacking => attackTimer > 0f;
     public AttackHitbox attackHitbox;
 
+    public void PlaySFX(AudioClip clip, AudioSource source = null)
+    {
+        if (clip == null) return;
+        var src = source != null ? source : sfxSource;
+        if (src == null) return;
+        src.PlayOneShot(clip);
+    }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        
         health = Mathf.Clamp(health, 0, maxHealth);
         displayedHealth = maxHealth > 0 ? (float)health / maxHealth : 0f;
+        
+        if (sfxSource == null) sfxSource = GetComponentInChildren<AudioSource>();
+        if (sfxSource == null)
+        {
+            sfxSource = gameObject.AddComponent<AudioSource>();
+            sfxSource.playOnAwake = false;
+        }
+        if (footstepSource == null)
+        {
+            footstepSource = gameObject.AddComponent<AudioSource>();
+            footstepSource.playOnAwake = false;
+            footstepSource.loop = false;
+        }
+        if (lowHealthSource == null)
+        {
+            lowHealthSource = gameObject.AddComponent<AudioSource>();
+            lowHealthSource.playOnAwake = false;
+            lowHealthSource.loop = false; // Управляем вручную через Update
+        }
+        
         if (spriteTransform == null)
         {
             var sr = GetComponentInChildren<SpriteRenderer>();
@@ -155,7 +203,9 @@ public class Player : MonoBehaviour
                 HealthImage.fillAmount = displayedHealth;
                 return;
             }
-        } else {
+        }
+        else
+        {
             healthBarDelayTimer = healthBarDelay;
         }
 
@@ -177,13 +227,68 @@ public class Player : MonoBehaviour
                     HealthImageGhost.fillAmount = displayedGhostHealth;
                     return;
                 }
-            } else {
+            }
+            else
+            {
                 displayedGhostHealth = displayedHealth;
                 ghostDelayTimer = ghostDelay;
             }
 
             displayedGhostHealth = Mathf.MoveTowards(displayedGhostHealth, displayedHealth, ghostLerpSpeed * Time.deltaTime);
             HealthImageGhost.fillAmount = displayedGhostHealth;
+        }
+    }
+
+    public void PlayFootstepEvent()
+    {
+        if (footstepSfx != null && footstepSource != null && isGrounded && !isDead)
+            footstepSource.PlayOneShot(footstepSfx);
+    }
+
+    private void UpdateFootsteps()
+    {
+        if (footstepSfx == null || footstepSource == null) return;
+        if (!isGrounded || isDead || painTimer > 0f)
+        {
+            footstepTimer = 0f;
+            return;
+        }
+
+        float speed = Mathf.Abs(rb.linearVelocity.x);
+        if (speed < walkThresholdForSteps)
+        {
+            footstepTimer = 0f;
+            return;
+        }
+        
+        float t = Mathf.InverseLerp(walkThresholdForSteps, maxSpeed, speed);
+        float interval = Mathf.Lerp(walkStepInterval, runStepInterval, t);
+
+        footstepTimer -= Time.deltaTime;
+        if (footstepTimer <= 0f)
+        {
+            footstepTimer = interval;
+            footstepSource.PlayOneShot(footstepSfx);
+        }
+    }
+
+    private void UpdateLowHealthSound()
+    {
+        if (lowHealthSfx == null || lowHealthSource == null) return;
+
+        // Если мертвы, или здоровье восстановилось — выключаем звук
+        if (isDead || !IsLowHealth())
+        {
+            if (lowHealthSource.isPlaying)
+                lowHealthSource.Stop();
+            return;
+        }
+
+        // Если здоровье низкое, а звук не играет — включаем
+        if (!lowHealthSource.isPlaying)
+        {
+            lowHealthSource.clip = lowHealthSfx;
+            lowHealthSource.Play();
         }
     }
 
@@ -194,6 +299,8 @@ public class Player : MonoBehaviour
         UpdateInvulnerabilityBlink();
         UpdateHealthBar();
         UpdateGhostHealthBar();
+        UpdateFootsteps();
+        UpdateLowHealthSound(); // Вызов проверки звука низкого ХП
     }
 
     private void FixedUpdate()
@@ -372,7 +479,10 @@ public class Player : MonoBehaviour
 
         if (attackHitbox != null)
             attackHitbox.Activate();
+        
+        PlaySFX(attackSfx);
     }
+
     private void HandleJump()
     {
         if (IsAttacking && !attackCancelableByJump) return;
@@ -387,6 +497,7 @@ public class Player : MonoBehaviour
                 isDoubleJumping = false;
                 jumpBufferCounter = 0f;
                 doubleJumpPressed = false;
+                PlaySFX(jumpSfx);
             }
             else if (hasJumped && !isDoubleJumping && doubleJumpPressed)
             {
@@ -395,6 +506,7 @@ public class Player : MonoBehaviour
                 isDoubleJumping = true;
                 canCutJump = true;
                 doubleJumpPressed = false;
+                PlaySFX(doubleJumpSfx);
             }
         }
     }
@@ -485,6 +597,9 @@ public class Player : MonoBehaviour
             spriteRenderer.color = baseSpriteColor;
         }
 
+        if (lowHealthSource != null)
+            lowHealthSource.Stop();
+
         Debug.Log("[Player] Умер. Движение заблокировано, физика остановлена.");
     }
 
@@ -523,6 +638,8 @@ public class Player : MonoBehaviour
 
         attackTimer = 0f;
         attackInputPressed = false;
+
+        PlaySFX(hurtSfx); // Проигрываем звук урона
     }
 
     public void Heal(int amount)
@@ -558,6 +675,10 @@ public class Player : MonoBehaviour
         blinkTimer = 0f;
         attackTimer = 0f;
         attackInputPressed = false;
+        footstepTimer = 0f;
+
+        if (lowHealthSource != null)
+            lowHealthSource.Stop();
 
         if (rb != null)
         {

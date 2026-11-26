@@ -1,0 +1,2081 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    {
+      "name": "Рівень 01",
+      "difficulty": 1,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-1-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-1-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-1",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-1",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        }
+      ],
+      "enemies": []
+    },
+    {
+      "name": "Рівень 02",
+      "difficulty": 2,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-2-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-2-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-2",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-2",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-2",
+          "type": "Melee",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 24
+        }
+      ]
+    },
+    {
+      "name": "Рівень 03",
+      "difficulty": 3,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-3-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-3-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-3",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-3",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-3",
+          "type": "Ranged",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 26
+        }
+      ]
+    },
+    {
+      "name": "Рівень 04",
+      "difficulty": 4,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-4-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-4-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-4",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-4",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        },
+        {
+          "id": "coin-4",
+          "type": "Coin",
+          "position": {
+            "x": 5,
+            "y": 2
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-4",
+          "type": "Melee",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 28
+        }
+      ]
+    },
+    {
+      "name": "Рівень 05",
+      "difficulty": 5,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-5-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-5-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-5",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-5",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        },
+        {
+          "id": "coin-5",
+          "type": "Coin",
+          "position": {
+            "x": 5,
+            "y": 2
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-5",
+          "type": "Ranged",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 30
+        }
+      ]
+    },
+    {
+      "name": "Рівень 06",
+      "difficulty": 1,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-6-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-6-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-6",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-6",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        },
+        {
+          "id": "coin-6",
+          "type": "Coin",
+          "position": {
+            "x": 5,
+            "y": 2
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-6",
+          "type": "Melee",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 32
+        }
+      ]
+    },
+    {
+      "name": "Рівень 07",
+      "difficulty": 2,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-7-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-7-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-7",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-7",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        },
+        {
+          "id": "coin-7",
+          "type": "Coin",
+          "position": {
+            "x": 5,
+            "y": 2
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-7",
+          "type": "Ranged",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 34
+        }
+      ]
+    },
+    {
+      "name": "Рівень 08",
+      "difficulty": 3,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-8-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-8-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-8",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-8",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        },
+        {
+          "id": "coin-8",
+          "type": "Coin",
+          "position": {
+            "x": 5,
+            "y": 2
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-8",
+          "type": "Melee",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 36
+        }
+      ]
+    },
+    {
+      "name": "Рівень 09",
+      "difficulty": 4,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-9-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-9-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-9",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-9",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        },
+        {
+          "id": "coin-9",
+          "type": "Coin",
+          "position": {
+            "x": 5,
+            "y": 2
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-9",
+          "type": "Ranged",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 38
+        }
+      ]
+    },
+    {
+      "name": "Рівень 10",
+      "difficulty": 5,
+      "gridWidth": 20,
+      "gridHeight": 12,
+      "start": {
+        "x": 1,
+        "y": 1
+      },
+      "finish": {
+        "x": 18,
+        "y": 1
+      },
+      "objects": [
+        {
+          "id": "platform-10-0",
+          "type": "Platform",
+          "position": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-1",
+          "type": "Platform",
+          "position": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-2",
+          "type": "Platform",
+          "position": {
+            "x": 2,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-3",
+          "type": "Platform",
+          "position": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-4",
+          "type": "Platform",
+          "position": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-5",
+          "type": "Platform",
+          "position": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-6",
+          "type": "Platform",
+          "position": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-7",
+          "type": "Platform",
+          "position": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-8",
+          "type": "Platform",
+          "position": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-9",
+          "type": "Platform",
+          "position": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-10",
+          "type": "Platform",
+          "position": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-11",
+          "type": "Platform",
+          "position": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-12",
+          "type": "Platform",
+          "position": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-13",
+          "type": "Platform",
+          "position": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-14",
+          "type": "Platform",
+          "position": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-15",
+          "type": "Platform",
+          "position": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-16",
+          "type": "Platform",
+          "position": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-17",
+          "type": "Platform",
+          "position": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-18",
+          "type": "Platform",
+          "position": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "platform-10-19",
+          "type": "Platform",
+          "position": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        {
+          "id": "start-10",
+          "type": "Start",
+          "position": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "id": "finish-10",
+          "type": "Finish",
+          "position": {
+            "x": 18,
+            "y": 1
+          }
+        },
+        {
+          "id": "coin-10",
+          "type": "Coin",
+          "position": {
+            "x": 5,
+            "y": 2
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy-10",
+          "type": "Melee",
+          "position": {
+            "x": 8,
+            "y": 1
+          },
+          "health": 40
+        }
+      ]
+    }
+  ]
+}

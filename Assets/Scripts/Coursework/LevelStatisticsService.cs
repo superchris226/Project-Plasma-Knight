@@ -34,7 +34,7 @@ namespace Coursework2D
                 var serializer = new XmlSerializer(typeof(LevelStatisticsDocument));
                 using (var stream = new FileStream(path, FileMode.Create, FileAccess.Write)) serializer.Serialize(stream, document);
             }
-            catch (Exception ex) { FileLogger.Write("Ошибка экспорта статистики XML.", ex); throw; }
+            catch (Exception ex) { FileLogger.Write("Помилка експорту статистики XML.", ex); throw; }
         }
 
         public static LevelStatisticsDocument Import(string path = null)
@@ -46,7 +46,7 @@ namespace Coursework2D
                 using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
                     return (LevelStatisticsDocument)serializer.Deserialize(stream);
             }
-            catch (Exception ex) { FileLogger.Write("Ошибка импорта статистики XML.", ex); throw; }
+            catch (Exception ex) { FileLogger.Write("Помилка імпорту статистики XML.", ex); throw; }
         }
     }
 }

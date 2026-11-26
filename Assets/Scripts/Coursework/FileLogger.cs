@@ -11,7 +11,7 @@ namespace Coursework2D
         public static void Write(string message, Exception exception = null)
         {
             string line = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {message}" + (exception == null ? "" : " | " + exception);
-            lock (Sync) { try { File.AppendAllText(LogPath, line + Environment.NewLine); } catch (Exception e) { Debug.LogError("Не удалось записать журнал: " + e.Message); } }
+            lock (Sync) { try { File.AppendAllText(LogPath, line + Environment.NewLine); } catch (Exception e) { Debug.LogError("Не вдалося записати журнал: " + e.Message); } }
             Debug.Log(line);
         }
     }

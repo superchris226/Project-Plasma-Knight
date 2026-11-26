@@ -1,3 +1,5 @@
+//використання Chat GPT
+
 namespace Coursework2D
 {
     public sealed class MeleeEnemy : Combatant

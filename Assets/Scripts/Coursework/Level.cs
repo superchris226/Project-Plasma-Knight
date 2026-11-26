@@ -6,7 +6,7 @@ namespace Coursework2D
     [Serializable]
     public class Level
     {
-        public string name = "Новый уровень";
+        public string name = "Новий рівень";
         public int difficulty = 1; // 1..5
         public int gridWidth = 20;
         public int gridHeight = 12;

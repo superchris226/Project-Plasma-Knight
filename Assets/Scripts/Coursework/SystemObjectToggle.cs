@@ -5,15 +5,15 @@ namespace Coursework2D
 {
     public class SystemObjectToggle : MonoBehaviour
     {
-        [Header("Объект, который нужно включать/выключать")]
-        [Tooltip("Сюда нужно перетащить CourseworkSystems")]
+        [Header("Об'єкт, який потрібно вмикати/вимикати")]
+        [Tooltip("Сюди потрібно перетягнути CourseworkSystems")]
         public GameObject targetObject;
 
-        [Header("Состояние при старте сцены")]
-        [Tooltip("false — скрыт при запуске, включается по нажатию 'ё'")]
+        [Header("Стан при старті сцени")]
+        [Tooltip("false — прихований при запуску, вмикається за натисканням 'ё'")]
         public bool startActive = false;
 
-        [Header("Опционально: ставить игру на паузу при открытии")]
+        [Header("Опційно: ставити гру на паузу при відкритті")]
         public bool pauseGameWhenOpen = false;
 
         private bool isInitialized = false;
@@ -22,12 +22,12 @@ namespace Coursework2D
         {
             if (targetObject == null)
             {
-                Debug.LogError("[SystemObjectToggle] Не назначен targetObject! Скрипт отключен.", this);
+                Debug.LogError("[SystemObjectToggle] Не призначено targetObject! Скрипт вимкнено.", this);
                 enabled = false;
                 return;
             }
 
-            // Принудительно устанавливаем состояние при старте
+            // Примусово встановлюємо стан при старті
             targetObject.SetActive(startActive);
             ApplyPauseState(startActive);
             isInitialized = true;
@@ -35,7 +35,7 @@ namespace Coursework2D
 
         private void Update()
         {
-            // Защита: если объект почему-то не был инициализирован, не выполняем логику
+            // Захист: якщо об'єкт чомусь не був ініціалізований, не виконуємо логіку
             if (!isInitialized) return;
 
             if (WasToggleKeyPressed())
@@ -50,10 +50,10 @@ namespace Coursework2D
 
             bool nextState = !targetObject.activeSelf;
             
-            // Включаем/выключаем объект
+            // Вмикаємо/вимикаємо об'єкт
             targetObject.SetActive(nextState);
             
-            // Применяем паузу, если нужно
+            // Застосовуємо паузу, якщо потрібно
             ApplyPauseState(nextState);
         }
 
@@ -68,12 +68,12 @@ namespace Coursework2D
             var kb = Keyboard.current;
             if (kb != null)
             {
-                // Проверяем клавишу 'ё' / '`' / '~'
+                // Перевіряємо клавішу 'ё' / '`' / '~'
                 if (kb.backquoteKey.wasPressedThisFrame)
                     return true;
             }
             
-            // Фолбэк на старый Input Manager (если включен Both)
+            // Фолбек на старий Input Manager (якщо увімкнено Both)
 #if ENABLE_LEGACY_INPUT_MANAGER
             if (Input.GetKeyDown(KeyCode.BackQuote) || Input.GetKeyDown(KeyCode.Tilde))
                 return true;

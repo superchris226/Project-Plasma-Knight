@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "levels": [
     {
-      "name": "Уровень 01",
+      "name": "Рівень 01",
       "difficulty": 1,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -195,7 +195,7 @@
       "enemies": []
     },
     {
-      "name": "Уровень 02",
+      "name": "Рівень 02",
       "difficulty": 2,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -398,7 +398,7 @@
       ]
     },
     {
-      "name": "Уровень 03",
+      "name": "Рівень 03",
       "difficulty": 3,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -601,7 +601,7 @@
       ]
     },
     {
-      "name": "Уровень 04",
+      "name": "Рівень 04",
       "difficulty": 4,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -812,7 +812,7 @@
       ]
     },
     {
-      "name": "Уровень 05",
+      "name": "Рівень 05",
       "difficulty": 5,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -1023,7 +1023,7 @@
       ]
     },
     {
-      "name": "Уровень 06",
+      "name": "Рівень 06",
       "difficulty": 1,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -1234,7 +1234,7 @@
       ]
     },
     {
-      "name": "Уровень 07",
+      "name": "Рівень 07",
       "difficulty": 2,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -1445,7 +1445,7 @@
       ]
     },
     {
-      "name": "Уровень 08",
+      "name": "Рівень 08",
       "difficulty": 3,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -1656,7 +1656,7 @@
       ]
     },
     {
-      "name": "Уровень 09",
+      "name": "Рівень 09",
       "difficulty": 4,
       "gridWidth": 20,
       "gridHeight": 12,
@@ -1867,7 +1867,7 @@
       ]
     },
     {
-      "name": "Уровень 10",
+      "name": "Рівень 10",
       "difficulty": 5,
       "gridWidth": 20,
       "gridHeight": 12,

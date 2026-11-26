@@ -32,7 +32,7 @@ namespace Coursework2D
         {
             if (IsRunning)
             {
-                FileLogger.Write("Проверка уже выполняется.");
+                FileLogger.Write("Перевірка вже виконується.");
                 return;
             }
 
@@ -83,7 +83,7 @@ namespace Coursework2D
             }).ContinueWith(t =>
             {
                 if (t.IsFaulted)
-                    FileLogger.Write("Ошибка параллельной проверки.", t.Exception);
+                    FileLogger.Write("Помилка паралельної перевірки.", t.Exception);
 
                 results.Enqueue(new LevelCheckResult
                 {
@@ -122,7 +122,7 @@ namespace Coursework2D
         {
             if (snap == null)
             {
-                message = "Уровень не задан.";
+                message = "Рівень не задано.";
                 return false;
             }
 
@@ -149,7 +149,7 @@ namespace Coursework2D
                 var p = q.Dequeue();
                 if (p.x == snap.Finish.x && p.y == snap.Finish.y)
                 {
-                    message = "Путь найден.";
+                    message = "Шлях знайдено.";
                     return true;
                 }
 
@@ -166,7 +166,7 @@ namespace Coursework2D
                 }
             }
 
-            message = "Путь от старта к финишу не найден.";
+            message = "Шлях від старту до фінішу не знайдено.";
             return false;
         }
 
@@ -183,7 +183,7 @@ namespace Coursework2D
             public static LevelSnapshot FromLevel(Level level)
             {
                 if (level == null)
-                    return new LevelSnapshot { Name = "(null)", ValidationError = "Уровень не задан." };
+                    return new LevelSnapshot { Name = "(null)", ValidationError = "Рівень не задано." };
 
                 var errors = LevelValidationService.Validate(level);
                 if (errors.Count > 0)

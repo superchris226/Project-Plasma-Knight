@@ -32,11 +32,11 @@ namespace Coursework2D
                 });
                 sw.Stop(); double tn = Math.Max(0.001, sw.Elapsed.TotalMilliseconds);
                 double speedup = t1 / tn;
-                LastReport = $"Объектов: {count}; последовательно: {t1:F2} мс; параллельно: {tn:F2} мс; S=T1/Tn={speedup:F2}; контрольные суммы совпадают: {sum1 == sumN}";
+                LastReport = $"Об'єктів: {count}; послідовно: {t1:F2} мс; паралельно: {tn:F2} мс; S=T1/Tn={speedup:F2}; контрольні суми збігаються: {sum1 == sumN}";
                 FileLogger.Write(LastReport);
-                UnityEngine.Debug.Log(LastReport); // было: Debug.Log — неоднозначность между UnityEngine.Debug и System.Diagnostics.Debug
+                UnityEngine.Debug.Log(LastReport); // було: Debug.Log — неоднозначність між UnityEngine.Debug і System.Diagnostics.Debug
             }
-            catch (Exception ex) { FileLogger.Write("Ошибка теста производительности.", ex); }
+            catch (Exception ex) { FileLogger.Write("Помилка тесту продуктивності.", ex); }
         }
     }
 }

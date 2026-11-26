@@ -23,14 +23,14 @@ namespace Coursework2D
             {
                 string json = null;
 
-                // Сначала проверяем сохранённые пользователем уровни.
+                // Спочатку перевіряємо збережені користувачем рівні.
                 if (File.Exists(path))
                 {
                     json = File.ReadAllText(path);
                 }
                 else if (useDefaultPath)
                 {
-                    // Если сохранения нет, загружаем начальные уровни.
+                    // Якщо збереження немає, завантажуємо початкові рівні.
                     string starterPath = Path.Combine(
                         Application.streamingAssetsPath,
                         "levels.json"
@@ -47,15 +47,15 @@ namespace Coursework2D
                     data = JsonConvert.DeserializeObject<LevelCollection>(json);
                 }
 
-                // Если файла нет или в нём нет уровней,
-                // создаём стартовую коллекцию.
+                // Якщо файла немає або в ньому немає рівнів,
+                // створюємо стартову колекцію.
                 if (data == null || data.levels == null ||
                     data.levels.Count == 0)
                 {
                     data = CreateStarterCollection();
                 }
 
-                // Проверяем корректность каждого уровня.
+                // Перевіряємо коректність кожного рівня.
                 for (int i = 0; i < data.levels.Count; i++)
                 {
                     var level = data.levels[i];
@@ -68,13 +68,13 @@ namespace Coursework2D
                     if (errors.Count > 0)
                     {
                         throw new InvalidDataException(
-                            $"Уровень '{level?.name}': " +
+                            $"Рівень '{level?.name}': " +
                             string.Join("; ", errors)
                         );
                     }
                 }
 
-                // Сохраняем начальные уровни в пользовательский файл.
+                // Зберігаємо початкові рівні в користувацький файл.
                 if (useDefaultPath &&
                     (!File.Exists(path) || string.IsNullOrWhiteSpace(json)))
                 {
@@ -86,7 +86,7 @@ namespace Coursework2D
             catch (Exception ex)
             {
                 FileLogger.Write(
-                    "Ошибка загрузки уровней: " + path,
+                    "Помилка завантаження рівнів: " + path,
                     ex
                 );
 
@@ -103,12 +103,12 @@ namespace Coursework2D
                 for (int i = 0; i < collection.levels.Count; i++)
                 {
                     var errors = LevelValidationService.Validate(collection.levels[i], collection.levels.Where((_, idx) => idx != i));
-                    if (errors.Count > 0) throw new InvalidDataException($"Уровень '{collection.levels[i]?.name}': {string.Join("; ", errors)}");
+                    if (errors.Count > 0) throw new InvalidDataException($"Рівень '{collection.levels[i]?.name}': {string.Join("; ", errors)}");
                 }
                 Directory.CreateDirectory(Path.GetDirectoryName(path));
                 File.WriteAllText(path, JsonConvert.SerializeObject(collection, Formatting.Indented));
             }
-            catch (Exception ex) { FileLogger.Write("Ошибка сохранения уровней: " + path, ex); throw; }
+            catch (Exception ex) { FileLogger.Write("Помилка збереження рівнів: " + path, ex); throw; }
         }
 
         public async Task<LevelCollection> LoadAsync(string path = null) => await Task.Run(() => Load(path));
@@ -118,7 +118,7 @@ namespace Coursework2D
             var c = new LevelCollection();
             for (int i = 1; i <= 10; i++)
             {
-                var l = new Level { name = $"Уровень {i:00}", difficulty = ((i - 1) % 5) + 1,
+                var l = new Level { name = $"Рівень {i:00}", difficulty = ((i - 1) % 5) + 1,
                     gridWidth = 20, gridHeight = 12, start = new GridPoint(1, 1), finish = new GridPoint(18, 1) };
                 for (int x = 0; x < 20; x++) l.objects.Add(new LevelObject(LevelObjectType.Platform, new Vector2Int(x, 0)));
                 l.objects.Add(new LevelObject(LevelObjectType.Start, new Vector2Int(1, 1)));

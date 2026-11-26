@@ -19,6 +19,12 @@ public class EnemyHealth : MonoBehaviour
     [Tooltip("Мигание при получении урона")]
     public float blinkDuration = 0.2f;
 
+    [Header("Knockback")]
+    [Tooltip("Горизонтальная сила отброса")]
+    public float knockbackForce = 8f;
+    [Tooltip("Вертикальный подскок при отбросе")]
+    public float knockbackUpForce = 4f;
+
     public bool IsDead => health <= 0;
 
     private float _hitCooldownTimer;
@@ -69,15 +75,21 @@ public class EnemyHealth : MonoBehaviour
         if (_spriteRenderer != null)
             _spriteRenderer.color = Color.red;
 
-        // Небольшой отброс (опционально)
+        // Отброс от атакующего
         if (attackerPosition.HasValue)
         {
-            var rb = GetComponent<Rigidbody2D>();
-            if (rb != null)
+            float dir = Mathf.Sign(transform.position.x - attackerPosition.Value.x);
+            if (dir == 0f) dir = 1f;
+
+            Vector2 knockback = new Vector2(dir * knockbackForce, knockbackUpForce);
+
+            var ai = GetComponent<EnemyAI>();
+            if (ai != null)
+                ai.ApplyKnockback(knockback, ai.knockbackDuration);
+            else
             {
-                float dir = Mathf.Sign(transform.position.x - attackerPosition.Value.x);
-                if (dir == 0f) dir = 1f;
-                rb.linearVelocity = new Vector2(dir * 4f, rb.linearVelocity.y);
+                var rb = GetComponent<Rigidbody2D>();
+                if (rb != null) rb.linearVelocity = knockback;
             }
         }
 

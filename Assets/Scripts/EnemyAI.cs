@@ -25,11 +25,19 @@ public class EnemyAI : MonoBehaviour
     public float groundCheckDistance = 0.6f;
     public float groundCheckOffsetY = -0.5f;
 
+    [Header("Knockback")]
+    [Tooltip("Длительность паузы ИИ после отброса")]
+    public float knockbackDuration = 0.25f;
+    [Tooltip("Трение, гасящее горизонтальную скорость отброса")]
+    public float knockbackDrag = 20f;
+
     private Vector2 startPosition;
     private int patrolDirection = 1;
     private Rigidbody2D rb;
     private bool isFlying = false;
     private bool isGrounded = false;
+
+    private float _knockbackTimer;
 
     void Start()
     {
@@ -69,9 +77,31 @@ public class EnemyAI : MonoBehaviour
         startPosition = transform.position;
     }
 
+    /// <summary>Вызывается из EnemyHealth при получении урона.</summary>
+    public void ApplyKnockback(Vector2 velocity, float duration)
+    {
+        if (rb == null) return;
+        if (isFlying) velocity.y = 0f; // летающие не подпрыгивают
+        rb.linearVelocity = velocity;
+        _knockbackTimer = Mathf.Max(_knockbackTimer, duration);
+    }
+
     void FixedUpdate()
     {
         if (rb == null) return;
+
+        // Пока отброшен — ИИ не управляет скоростью, только трение
+        if (_knockbackTimer > 0f)
+        {
+            _knockbackTimer -= Time.fixedDeltaTime;
+
+            var v = GetVelocity();
+            v.x = Mathf.MoveTowards(v.x, 0f, knockbackDrag * Time.fixedDeltaTime);
+            SetVelocity(v);
+
+            FlipSprite();
+            return;
+        }
 
         if (player == null)
         {

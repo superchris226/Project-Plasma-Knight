@@ -2,7 +2,7 @@ using System;
 
 namespace Coursework2D
 {
-    // Доменная модель: намеренно не наследуется от MonoBehaviour.
+    // Доменна модель: навмисно не наслідується від MonoBehaviour.
     public abstract class Combatant : IDamageable
     {
         public string Name { get; protected set; }
@@ -13,7 +13,7 @@ namespace Coursework2D
 
         protected Combatant(string name, int maxHealth, int attackPower)
         {
-            if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Имя не может быть пустым.", nameof(name));
+            if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Ім'я не може бути порожнім.", nameof(name));
             if (maxHealth <= 0) throw new ArgumentOutOfRangeException(nameof(maxHealth));
             if (attackPower < 0) throw new ArgumentOutOfRangeException(nameof(attackPower));
             Name = name; MaxHealth = maxHealth; Health = maxHealth; AttackPower = attackPower;

@@ -83,10 +83,10 @@ public class AttackHitbox : MonoBehaviour
             : (Vector2)transform.position;
 
         int finalDamage = (usePlayerLevelDamage && _level != null) ? _level.CurrentDamage : damage;
-        bool killed = enemy.health <= finalDamage;
-        enemy.TakeDamage(finalDamage, attackerPos);
 
-        if (killed && _level != null && enemy.IsDead)
+        bool applied = enemy.TakeDamage(finalDamage, attackerPos);
+
+        if (applied && enemy.IsDead && _level != null)
             _level.AddExperience(_level.xpPerEnemy);
     }
 
