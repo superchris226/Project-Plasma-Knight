@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -7,11 +8,11 @@ namespace Coursework2D
 {
     public class ConcurrencyBenchmark : MonoBehaviour
     {
-        [Tooltip("Кількість об'єктів")]
-        public int ObjectCount = 20000;
+        [Tooltip("Кількість об'єктів рівня для тесту (10 000+)")]
+        public int ObjectCount = 12000;
 
-        [Tooltip("Кількість ітерацій розрахунку на кожен об'єкт")]
-        public int IterationsPerObject = 64;
+        [Tooltip("Кількість проходів аналізу по набору об'єктів")]
+        public int Passes = 50;
 
         public string LastReport { get; private set; }
         public event Action<string> ReportReady;
@@ -25,27 +26,31 @@ namespace Coursework2D
             try
             {
                 int count = Mathf.Max(10000, ObjectCount);
-                int iters = Mathf.Max(16, IterationsPerObject);
-                var data = new Vector2[count];
-                var rnd = new System.Random(12345);
-                for (int i = 0; i < count; i++)
-                    data[i] = new Vector2((float)(rnd.NextDouble() * 100.0 + 0.1), (float)(rnd.NextDouble() * 100.0 + 0.1));
+                int passes = Mathf.Max(1, Passes);
 
-                _ = ComputeHeavySequential(data, 4);
+                // Формуємо набір об'єктів рівня (координати в межах сітки рівня, типи LevelObjectType)
+                var levelObjects = BuildLevelObjectsDataset(count, gridWidth: 200, gridHeight: 100);
 
+                // Прогрів
+                _ = ProcessLevelObjectsSequential(levelObjects, 2);
+
+                // 1. Однопотоковий режим (T1)
                 var sw = Stopwatch.StartNew();
-                double seq = ComputeHeavySequential(data, iters);
+                int seqValidCount = ProcessLevelObjectsSequential(levelObjects, passes);
                 sw.Stop();
                 double t1 = Math.Max(0.001, sw.Elapsed.TotalMilliseconds);
 
+                // 2. Багатопотоковий режим (Tn)
                 sw.Restart();
-                double par = await Task.Run(() => ComputeHeavyParallel(data, iters));
+                int parValidCount = await Task.Run(() => ProcessLevelObjectsParallel(levelObjects, passes));
                 sw.Stop();
                 double tn = Math.Max(0.001, sw.Elapsed.TotalMilliseconds);
 
                 lastSpeedup = t1 / tn;
-                double relDiff = Math.Abs(seq - par) / Math.Max(1e-6, Math.Abs(seq));
-                LastReport = $"Об'єктів: {count}; ітерацій: {iters}; послідовно: {t1:F2} мс; паралельно: {tn:F2} мс; S={lastSpeedup:F2}x; похибка={relDiff:E2}";
+                LastReport =
+                    $"Об'єктів рівня: {count}; проходів: {passes}; " +
+                    $"T1 (1 потік): {t1:F2} мс; Tn (багатопотоково): {tn:F2} мс; " +
+                    $"S = T1/Tn = {lastSpeedup:F2}; валідних перевірок: {seqValidCount}/{parValidCount}";
 
                 FileLogger.Write(LastReport);
                 ReportReady?.Invoke(LastReport);
@@ -57,40 +62,79 @@ namespace Coursework2D
             }
         }
 
-        private static double EvaluatePoint(float x, float y, int iters)
+        private static List<LevelObject> BuildLevelObjectsDataset(int count, int gridWidth, int gridHeight)
         {
-            double acc = 0.0;
-            double px = x;
-            double py = y;
-            for (int k = 1; k <= iters; k++)
+            var list = new List<LevelObject>(count);
+            var rnd = new System.Random(12345);
+            var types = (LevelObjectType[])Enum.GetValues(typeof(LevelObjectType));
+
+            for (int i = 0; i < count; i++)
             {
-                double invDist = 1.0 / (Math.Sqrt(px * px + py * py) + 0.001);
-                double angle = Math.Sin(px * 0.03 * k) * Math.Cos(py * 0.03 * k);
-                acc += invDist * (1.0 + 0.5 * angle);
-                px = px * 0.999 + Math.Cos(angle) * 0.01;
-                py = py * 0.999 + Math.Sin(angle) * 0.01;
+                var type = types[i % types.Length];
+                int x = rnd.Next(-5, gridWidth + 5);
+                int y = rnd.Next(-5, gridHeight + 5);
+                list.Add(new LevelObject(type, new Vector2Int(x, y)));
             }
-            return acc;
+
+            return list;
         }
 
-        private static double ComputeHeavySequential(Vector2[] pts, int iters)
+        private static int EvaluateLevelObject(LevelObject obj, int gridWidth, int gridHeight)
         {
-            double sum = 0.0;
-            for (int i = 0; i < pts.Length; i++)
+            if (obj == null) return 0;
+
+            bool inside = obj.position.x >= 0 && obj.position.x < gridWidth &&
+                          obj.position.y >= 0 && obj.position.y < gridHeight;
+
+            // Додаткове навантаження на об'єкт рівня (аналіз сусідніх клітинок / ваги об'єкта)
+            double weight = 0;
+            for (int k = 1; k <= 32; k++)
             {
-                sum += EvaluatePoint(pts[i].x, pts[i].y, iters);
+                weight += Math.Sqrt((obj.position.x + k) * (obj.position.x + k) +
+                                    (obj.position.y + k) * (obj.position.y + k));
             }
-            return sum;
+
+            return (inside && weight > 0) ? 1 : 0;
         }
 
-        private static double ComputeHeavyParallel(Vector2[] pts, int iters)
+        private static int ProcessLevelObjectsSequential(List<LevelObject> objects, int passes)
         {
-            object finalLock = new object();
-            double total = 0.0;
-            Parallel.For(0, pts.Length,
-                () => 0.0,
-                (i, state, local) => local + EvaluatePoint(pts[i].x, pts[i].y, iters),
-                local => { lock (finalLock) total += local; });
+            const int w = 200;
+            const int h = 100;
+            int total = 0;
+
+            for (int p = 0; p < passes; p++)
+            {
+                for (int i = 0; i < objects.Count; i++)
+                {
+                    total += EvaluateLevelObject(objects[i], w, h);
+                }
+            }
+
+            return total;
+        }
+
+        private static int ProcessLevelObjectsParallel(List<LevelObject> objects, int passes)
+        {
+            const int w = 200;
+            const int h = 100;
+            object sync = new object();
+            int total = 0;
+
+            for (int p = 0; p < passes; p++)
+            {
+                Parallel.For(0, objects.Count,
+                    () => 0,
+                    (i, state, local) => local + EvaluateLevelObject(objects[i], w, h),
+                    local =>
+                    {
+                        lock (sync)
+                        {
+                            total += local;
+                        }
+                    });
+            }
+
             return total;
         }
     }
