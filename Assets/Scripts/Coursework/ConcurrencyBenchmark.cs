@@ -7,72 +7,89 @@ namespace Coursework2D
 {
     public class ConcurrencyBenchmark : MonoBehaviour
     {
-        public int ObjectCount = 12000;
+        [Tooltip("Кількість об'єктів")]
+        public int ObjectCount = 20000;
+
+        [Tooltip("Кількість ітерацій розрахунку на кожен об'єкт")]
+        public int IterationsPerObject = 64;
+
         public string LastReport { get; private set; }
-        
-        // ДОДАНО: подія для виводу результату в UI
         public event Action<string> ReportReady;
 
         private double lastSpeedup;
 
         public async void RunBenchmark()
         {
+            FileLogger.CaptureMainThreadPath();
+
             try
             {
                 int count = Mathf.Max(10000, ObjectCount);
+                int iters = Mathf.Max(16, IterationsPerObject);
                 var data = new Vector2[count];
                 var rnd = new System.Random(12345);
-                for (int i = 0; i < count; i++) 
-                    data[i] = new Vector2((float)rnd.NextDouble() * 100f, (float)rnd.NextDouble() * 100f);
+                for (int i = 0; i < count; i++)
+                    data[i] = new Vector2((float)(rnd.NextDouble() * 100.0 + 0.1), (float)(rnd.NextDouble() * 100.0 + 0.1));
 
-                // Послідовно
+                _ = ComputeHeavySequential(data, 4);
+
                 var sw = Stopwatch.StartNew();
-                float seq = ComputeAttractionSequential(data);
+                double seq = ComputeHeavySequential(data, iters);
                 sw.Stop();
                 double t1 = Math.Max(0.001, sw.Elapsed.TotalMilliseconds);
 
-                // Паралельно: без lock на кожному елементі (локальні акумулятори)
                 sw.Restart();
-                float par = await Task.Run(() => ComputeAttractionParallel(data));
+                double par = await Task.Run(() => ComputeHeavyParallel(data, iters));
                 sw.Stop();
                 double tn = Math.Max(0.001, sw.Elapsed.TotalMilliseconds);
 
                 lastSpeedup = t1 / tn;
-                LastReport = $"Об'єктів: {count}; послідовно: {t1:F2} мс; паралельно: {tn:F2} мс; S={lastSpeedup:F2}; суми збігаються: {Math.Abs(seq - par) < 1e-2f}";
-                
+                double relDiff = Math.Abs(seq - par) / Math.Max(1e-6, Math.Abs(seq));
+                LastReport = $"Об'єктів: {count}; ітерацій: {iters}; послідовно: {t1:F2} мс; паралельно: {tn:F2} мс; S={lastSpeedup:F2}x; похибка={relDiff:E2}";
+
                 FileLogger.Write(LastReport);
-                ReportReady?.Invoke(LastReport); // Викликаємо подію
+                ReportReady?.Invoke(LastReport);
             }
-            catch (Exception ex) 
-            { 
-                FileLogger.Write("Помилка тесту продуктивності.", ex); 
+            catch (Exception ex)
+            {
+                FileLogger.Write("Помилка тесту продуктивності.", ex);
+                ReportReady?.Invoke("Помилка тесту продуктивності: " + ex.Message);
             }
         }
 
-        private static float ComputeAttractionSequential(Vector2[] pts)
+        private static double EvaluatePoint(float x, float y, int iters)
         {
-            float sum = 0;
+            double acc = 0.0;
+            double px = x;
+            double py = y;
+            for (int k = 1; k <= iters; k++)
+            {
+                double invDist = 1.0 / (Math.Sqrt(px * px + py * py) + 0.001);
+                double angle = Math.Sin(px * 0.03 * k) * Math.Cos(py * 0.03 * k);
+                acc += invDist * (1.0 + 0.5 * angle);
+                px = px * 0.999 + Math.Cos(angle) * 0.01;
+                py = py * 0.999 + Math.Sin(angle) * 0.01;
+            }
+            return acc;
+        }
+
+        private static double ComputeHeavySequential(Vector2[] pts, int iters)
+        {
+            double sum = 0.0;
             for (int i = 0; i < pts.Length; i++)
             {
-                float dx = pts[i].x, dy = pts[i].y;
-                float dist2 = dx * dx + dy * dy;
-                if (dist2 > 0.0001f) sum += 1f / dist2;
+                sum += EvaluatePoint(pts[i].x, pts[i].y, iters);
             }
             return sum;
         }
 
-        private static float ComputeAttractionParallel(Vector2[] pts)
+        private static double ComputeHeavyParallel(Vector2[] pts, int iters)
         {
             object finalLock = new object();
-            float total = 0f;
-            Parallel.For(0, pts.Length, () => 0f,
-                (i, state, local) =>
-                {
-                    float dx = pts[i].x, dy = pts[i].y;
-                    float dist2 = dx * dx + dy * dy;
-                    if (dist2 > 0.0001f) local += 1f / dist2;
-                    return local;
-                },
+            double total = 0.0;
+            Parallel.For(0, pts.Length,
+                () => 0.0,
+                (i, state, local) => local + EvaluatePoint(pts[i].x, pts[i].y, iters),
                 local => { lock (finalLock) total += local; });
             return total;
         }

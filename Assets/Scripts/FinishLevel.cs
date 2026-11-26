@@ -18,6 +18,12 @@ public class FinishLevel : MonoBehaviour
 
     public GameplayStatisticsTracker statistics;
 
+    private void Awake()
+    {
+        if (statistics == null)
+            statistics = FindFirstObjectByType<GameplayStatisticsTracker>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isFinished) return;
@@ -25,10 +31,14 @@ public class FinishLevel : MonoBehaviour
         {
             isFinished = true;
             timer = delay;
-            winUI.SetActive(true);
+            if (winUI != null)
+                winUI.SetActive(true);
+            if (statistics == null)
+                statistics = FindFirstObjectByType<GameplayStatisticsTracker>();
             statistics?.CompleteRun();
         }
     }
+
     private void Update()
     {
         if (!isFinished) return;

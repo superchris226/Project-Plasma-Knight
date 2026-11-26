@@ -4,6 +4,7 @@
 // зі збереженням сумісності з PlayerLevel.
 using UnityEngine;
 using System.Collections.Generic;
+using Coursework2D;
 
 [RequireComponent(typeof(Collider2D))]
 public class AttackHitbox : MonoBehaviour
@@ -24,7 +25,7 @@ public class AttackHitbox : MonoBehaviour
     private Collider2D _col;
     private bool _isActive;
     private PlayerLevel _level;
-    private PlayerCombatAdapter _combat; // Додано поле
+    private PlayerCombatAdapter _combat;
 
     private void Awake()
     {
@@ -34,8 +35,8 @@ public class AttackHitbox : MonoBehaviour
         _isActive = false;
 
         _level = GetComponentInParent<PlayerLevel>();
-        _combat = GetComponentInParent<PlayerCombatAdapter>(); // Ініціалізація
-        
+        _combat = GetComponentInParent<PlayerCombatAdapter>();
+
         if (_level != null && usePlayerLevelDamage)
             damage = _level.CurrentDamage;
     }
@@ -68,7 +69,7 @@ public class AttackHitbox : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) => TryHit(other);
-    private void OnTriggerStay2D(Collider2D other)  => TryHit(other);
+    private void OnTriggerStay2D(Collider2D other) => TryHit(other);
 
     private void TryHit(Collider2D other)
     {

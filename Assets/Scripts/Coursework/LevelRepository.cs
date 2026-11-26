@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,54 +11,48 @@ namespace Coursework2D
     {
         public string DefaultPath => Path.Combine(Application.persistentDataPath, "levels.json");
 
+        public string GetDefaultSavePathMainThread() => Path.Combine(Application.persistentDataPath, "levels.json");
+        public string GetStarterLevelsPathMainThread() => Path.Combine(Application.streamingAssetsPath, "levels.json");
+
         public LevelCollection Load(string path = null)
         {
-            bool useDefaultPath = string.IsNullOrWhiteSpace(path);
+            string defaultSavePath = GetDefaultSavePathMainThread();
+            string starterLevelsPath = GetStarterLevelsPathMainThread();
+            return Load(path, defaultSavePath, starterLevelsPath);
+        }
 
-            if (useDefaultPath)
-                path = DefaultPath;
+        public LevelCollection Load(string path, string defaultSavePath, string starterLevelsPath)
+        {
+            bool useDefaultPath = string.IsNullOrWhiteSpace(path);
+            string targetPath = useDefaultPath ? defaultSavePath : path;
 
             try
             {
                 string json = null;
 
-                // Спочатку перевіряємо збережені користувачем рівні.
-                if (File.Exists(path))
+                if (!string.IsNullOrWhiteSpace(targetPath) && File.Exists(targetPath))
                 {
-                    json = File.ReadAllText(path);
+                    json = File.ReadAllText(targetPath);
                 }
-                else if (useDefaultPath)
+                else if (useDefaultPath && !string.IsNullOrWhiteSpace(starterLevelsPath) && File.Exists(starterLevelsPath))
                 {
-                    // Якщо збереження немає, завантажуємо початкові рівні.
-                    string starterPath = Path.Combine(
-                        Application.streamingAssetsPath,
-                        "levels.json"
-                    );
-
-                    if (File.Exists(starterPath))
-                        json = File.ReadAllText(starterPath);
+                    json = File.ReadAllText(starterLevelsPath);
                 }
 
                 LevelCollection data = null;
-
                 if (!string.IsNullOrWhiteSpace(json))
                 {
                     data = JsonConvert.DeserializeObject<LevelCollection>(json);
                 }
 
-                // Якщо файла немає або в ньому немає рівнів,
-                // створюємо стартову колекцію.
-                if (data == null || data.levels == null ||
-                    data.levels.Count == 0)
+                if (data == null || data.levels == null || data.levels.Count == 0)
                 {
                     data = CreateStarterCollection();
                 }
 
-                // Перевіряємо коректність кожного рівня.
                 for (int i = 0; i < data.levels.Count; i++)
                 {
                     var level = data.levels[i];
-
                     var errors = LevelValidationService.Validate(
                         level,
                         data.levels.Where((_, index) => index != i)
@@ -74,22 +67,17 @@ namespace Coursework2D
                     }
                 }
 
-                // Зберігаємо початкові рівні в користувацький файл.
-                if (useDefaultPath &&
-                    (!File.Exists(path) || string.IsNullOrWhiteSpace(json)))
+                if (useDefaultPath && !string.IsNullOrWhiteSpace(targetPath) &&
+                    (!File.Exists(targetPath) || string.IsNullOrWhiteSpace(json)))
                 {
-                    Save(data, path);
+                    Save(data, targetPath);
                 }
 
                 return data;
             }
             catch (Exception ex)
             {
-                FileLogger.Write(
-                    "Помилка завантаження рівнів: " + path,
-                    ex
-                );
-
+                FileLogger.Write("Помилка завантаження рівнів: " + targetPath, ex);
                 throw;
             }
         }
@@ -105,26 +93,70 @@ namespace Coursework2D
                     var errors = LevelValidationService.Validate(collection.levels[i], collection.levels.Where((_, idx) => idx != i));
                     if (errors.Count > 0) throw new InvalidDataException($"Рівень '{collection.levels[i]?.name}': {string.Join("; ", errors)}");
                 }
-                Directory.CreateDirectory(Path.GetDirectoryName(path));
+                string dir = Path.GetDirectoryName(path);
+                if (!string.IsNullOrEmpty(dir))
+                    Directory.CreateDirectory(dir);
                 File.WriteAllText(path, JsonConvert.SerializeObject(collection, Formatting.Indented));
             }
             catch (Exception ex) { FileLogger.Write("Помилка збереження рівнів: " + path, ex); throw; }
         }
 
-        public async Task<LevelCollection> LoadAsync(string path = null) => await Task.Run(() => Load(path));
+        public async Task<LevelCollection> LoadAsync(string path = null)
+        {
+            FileLogger.CaptureMainThreadPath();
+            string defaultSavePath = GetDefaultSavePathMainThread();
+            string starterLevelsPath = GetStarterLevelsPathMainThread();
+            string targetPath = path;
+
+            return await Task.Run(() => Load(targetPath, defaultSavePath, starterLevelsPath));
+        }
 
         public static LevelCollection CreateStarterCollection()
         {
             var c = new LevelCollection();
             for (int i = 1; i <= 10; i++)
             {
-                var l = new Level { name = $"Рівень {i:00}", difficulty = ((i - 1) % 5) + 1,
-                    gridWidth = 20, gridHeight = 12, start = new GridPoint(1, 1), finish = new GridPoint(18, 1) };
-                for (int x = 0; x < 20; x++) l.objects.Add(new LevelObject(LevelObjectType.Platform, new Vector2Int(x, 0)));
+                var l = new Level
+                {
+                    name = $"Рівень {i:00}",
+                    difficulty = ((i - 1) % 5) + 1,
+                    gridWidth = 20,
+                    gridHeight = 12,
+                    start = new GridPoint(1, 1),
+                    finish = new GridPoint(18, 1)
+                };
+
+                for (int x = 0; x < 20; x++)
+                {
+                    if (i >= 3 && (x == 9 || x == 10))
+                        continue;
+                    l.objects.Add(new LevelObject(LevelObjectType.Platform, new Vector2Int(x, 0)));
+                }
+
+                if (i >= 2)
+                {
+                    l.objects.Add(new LevelObject(LevelObjectType.Platform, new Vector2Int(6, 2)));
+                    l.objects.Add(new LevelObject(LevelObjectType.Platform, new Vector2Int(7, 2)));
+                }
+
+                if (i == 2)
+                {
+                    l.objects.Add(new LevelObject(LevelObjectType.Hazard, new Vector2Int(6, 1)));
+                }
+                else if (i >= 4)
+                {
+                    l.objects.Add(new LevelObject(LevelObjectType.Hazard, new Vector2Int(12, 1)));
+                    l.objects.Add(new LevelObject(LevelObjectType.Platform, new Vector2Int(12, 2)));
+                }
+
                 l.objects.Add(new LevelObject(LevelObjectType.Start, new Vector2Int(1, 1)));
                 l.objects.Add(new LevelObject(LevelObjectType.Finish, new Vector2Int(18, 1)));
-                if (i > 1) l.enemies.Add(new EnemyData { type = i % 2 == 0 ? EnemyType.Melee : EnemyType.Ranged, position = new Vector2Int(8, 1), health = 20 + i * 2 });
-                if (i > 3) l.objects.Add(new LevelObject(LevelObjectType.Coin, new Vector2Int(5, 2)));
+
+                if (i > 1)
+                    l.enemies.Add(new EnemyData { type = i % 2 == 0 ? EnemyType.Melee : EnemyType.Ranged, position = new Vector2Int(8, 1), health = 20 + i * 2 });
+                if (i > 3)
+                    l.objects.Add(new LevelObject(LevelObjectType.Coin, new Vector2Int(5, 2)));
+
                 c.levels.Add(l);
             }
             return c;

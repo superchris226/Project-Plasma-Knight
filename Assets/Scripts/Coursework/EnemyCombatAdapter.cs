@@ -22,15 +22,30 @@ namespace Coursework2D
         {
             health = GetComponent<EnemyHealth>();
             ai = GetComponent<EnemyAI>();
+            RebuildCombatant();
+        }
 
-            int max = Mathf.Max(1, health.maxHealth);
+        public void SetArchetype(EnemyArchetype newArchetype)
+        {
+            archetype = newArchetype;
+            RebuildCombatant();
+        }
+
+        private void RebuildCombatant()
+        {
+            if (health == null)
+                health = GetComponent<EnemyHealth>();
+
+            int max = health != null ? Mathf.Max(1, health.maxHealth) : 30;
             int power = archetype == EnemyArchetype.Melee ? 12 : 9;
             Combatant = archetype == EnemyArchetype.Melee
                 ? new MeleeEnemy(maxHealth: max, attackPower: power)
                 : new RangedEnemy(maxHealth: max, attackPower: power, attackRange: rangedAttackRange);
+
+            if (health != null && health.health < Combatant.Health)
+                Combatant.TakeDamage(Combatant.Health - health.health);
         }
 
-        /// <summary>Атака ворога в напрямку гравця. Повертає шкоду (0 якщо не дістає).</summary>
         public int AttackPlayer(Player player)
         {
             if (player == null || Combatant == null || !Combatant.IsAlive) return 0;
@@ -40,7 +55,6 @@ namespace Coursework2D
             return dmg;
         }
 
-        /// <summary>Синхронізує доменний Combatant з EnemyHealth.</summary>
         public void SyncFromHealth()
         {
             if (health == null || Combatant == null) return;

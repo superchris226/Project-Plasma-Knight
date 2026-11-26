@@ -98264,8 +98264,8 @@ Transform:
   m_GameObject: {fileID: 1055457098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1255, y: 0.0406, z: 0}
-  m_LocalScale: {x: 3.2509248, y: 2.5663455, z: 1}
+  m_LocalPosition: {x: 1.7925, y: 0.0406, z: 0}
+  m_LocalScale: {x: 2.2837892, y: 2.5663455, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1023402723}
@@ -99862,6 +99862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.ConcurrencyBenchmark
   ObjectCount: 12000
+  IterationsPerObject: 64
 --- !u!4 &1145339248
 Transform:
   m_ObjectHideFlags: 0
@@ -105796,6 +105797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.ConcurrencyBenchmark
   ObjectCount: 12000
+  IterationsPerObject: 64
 --- !u!114 &1596371480
 MonoBehaviour:
   m_ObjectHideFlags: 0

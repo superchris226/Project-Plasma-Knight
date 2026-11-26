@@ -2,6 +2,7 @@
 // AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
 // Змінено: у ближньому бою ворог тепер викликає доменний Attack().
 using UnityEngine;
+using Coursework2D;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -39,8 +40,7 @@ public class EnemyAI : MonoBehaviour
     private bool isGrounded = false;
 
     private float _knockbackTimer;
-    
-    // Додано для Combat
+
     private EnemyCombatAdapter _combatAdapter;
     private float _attackCooldown;
 
@@ -48,7 +48,7 @@ public class EnemyAI : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         _combatAdapter = GetComponent<EnemyCombatAdapter>();
-        
+
         if (rb == null)
         {
             Debug.LogError($"[EnemyAI] {name}: нет Rigidbody2D!", this);
@@ -157,7 +157,6 @@ public class EnemyAI : MonoBehaviour
 
         SetVelocity(velocity);
 
-        // Атака через доменну модель
         _attackCooldown -= Time.fixedDeltaTime;
         if (_combatAdapter != null && _attackCooldown <= 0f)
         {
@@ -193,20 +192,20 @@ public class EnemyAI : MonoBehaviour
 
     Vector2 GetVelocity()
     {
-        #if UNITY_6000_0_OR_NEWER
-            return rb.linearVelocity;
-        #else
-            return rb.velocity;
-        #endif
+#if UNITY_6000_0_OR_NEWER
+        return rb.linearVelocity;
+#else
+        return rb.velocity;
+#endif
     }
 
     void SetVelocity(Vector2 vel)
     {
-        #if UNITY_6000_0_OR_NEWER
-            rb.linearVelocity = vel;
-        #else
-            rb.velocity = vel;
-        #endif
+#if UNITY_6000_0_OR_NEWER
+        rb.linearVelocity = vel;
+#else
+        rb.velocity = vel;
+#endif
     }
 
     void FlipSprite()

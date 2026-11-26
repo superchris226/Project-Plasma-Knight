@@ -1,7 +1,9 @@
 // EnemyHealth.cs
 // AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
-// Змінено: TakeDamage тепер повідомляє EnemyCombatAdapter про урон.
+// Змінено: TakeDamage тепер повідомляє EnemyCombatAdapter про урон,
+// а Die() реєструє вбивство ворога в GameplayStatisticsTracker.
 using UnityEngine;
+using Coursework2D;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -34,15 +36,15 @@ public class EnemyHealth : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Color _baseColor = Color.white;
     private bool _dead;
-    
-    private EnemyCombatAdapter _combatAdapter; // Додано поле
+
+    private EnemyCombatAdapter _combatAdapter;
 
     private void Awake()
     {
         health = Mathf.Clamp(health, 0, maxHealth);
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (_spriteRenderer != null) _baseColor = _spriteRenderer.color;
-        _combatAdapter = GetComponent<EnemyCombatAdapter>(); // Ініціалізація
+        _combatAdapter = GetComponent<EnemyCombatAdapter>();
     }
 
     private void Update()
@@ -76,8 +78,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (_spriteRenderer != null)
             _spriteRenderer.color = Color.red;
-            
-        // Синхронізуємо доменну модель
+
         _combatAdapter?.SyncFromHealth();
 
         if (attackerPosition.HasValue)
@@ -105,6 +106,10 @@ public class EnemyHealth : MonoBehaviour
     {
         if (_dead) return;
         _dead = true;
+
+        var tracker = FindFirstObjectByType<GameplayStatisticsTracker>();
+        if (tracker != null)
+            tracker.RegisterEnemyDefeated();
 
         var ai = GetComponent<EnemyAI>();
         if (ai != null) ai.enabled = false;

@@ -30,6 +30,8 @@ namespace Coursework2D
 
         public void CheckMany(IList<Level> levels)
         {
+            FileLogger.CaptureMainThreadPath();
+
             if (IsRunning)
             {
                 FileLogger.Write("Перевірка вже виконується.");
@@ -134,39 +136,88 @@ namespace Coursework2D
 
             int w = snap.Width;
             int h = snap.Height;
+            const int maxJumpHeight = 3;
+            const int maxJumps = 2;
 
-            var visited = new bool[w, h];
-            var q = new Queue<GridPoint>();
+            bool HasSupport(int x, int y)
+            {
+                if (y <= 0) return true;
+                return snap.Platform[x, y - 1];
+            }
 
-            q.Enqueue(snap.Start);
-            visited[snap.Start.x, snap.Start.y] = true;
+            bool IsBlocked(int x, int y)
+            {
+                return x < 0 || y < 0 || x >= w || y >= h || snap.Hazard[x, y];
+            }
 
-            int[] dx = { 1, -1, 0, 0 };
-            int[] dy = { 0, 0, 1, -1 };
+            if (IsBlocked(snap.Start.x, snap.Start.y) || IsBlocked(snap.Finish.x, snap.Finish.y))
+            {
+                message = "Старт або фініш заблоковані перешкодою.";
+                return false;
+            }
+
+            var visited = new bool[w, h, maxJumps + 1, maxJumpHeight + 1];
+            var q = new Queue<(int x, int y, int jumpsUsed, int jumpRem)>();
+
+            visited[snap.Start.x, snap.Start.y, 0, 0] = true;
+            q.Enqueue((snap.Start.x, snap.Start.y, 0, 0));
 
             while (q.Count > 0)
             {
-                var p = q.Dequeue();
-                if (p.x == snap.Finish.x && p.y == snap.Finish.y)
+                var cur = q.Dequeue();
+                if (cur.x == snap.Finish.x && cur.y == snap.Finish.y)
                 {
-                    message = "Шлях знайдено.";
+                    message = "Шлях знайдено з урахуванням гравітації, стрибків і перешкод.";
                     return true;
                 }
 
-                for (int i = 0; i < 4; i++)
+                bool grounded = HasSupport(cur.x, cur.y);
+                int jumpsUsed = grounded ? 0 : cur.jumpsUsed;
+                int jumpRem = grounded ? 0 : cur.jumpRem;
+
+                if (grounded && jumpsUsed < maxJumps)
                 {
-                    int nx = p.x + dx[i];
-                    int ny = p.y + dy[i];
+                    TryEnqueue(cur.x, cur.y + 1, 1, maxJumpHeight - 1);
+                }
+                else if (!grounded && jumpRem > 0)
+                {
+                    TryEnqueue(cur.x, cur.y + 1, jumpsUsed, jumpRem - 1);
+                }
+                else if (!grounded && jumpsUsed < maxJumps)
+                {
+                    TryEnqueue(cur.x, cur.y + 1, jumpsUsed + 1, maxJumpHeight - 1);
+                }
 
-                    if (nx < 0 || ny < 0 || nx >= w || ny >= h) continue;
-                    if (visited[nx, ny] || snap.Blocked[nx, ny]) continue;
+                if (!grounded && jumpRem == 0)
+                {
+                    TryEnqueue(cur.x, cur.y - 1, jumpsUsed, 0);
+                }
 
-                    visited[nx, ny] = true;
-                    q.Enqueue(new GridPoint(nx, ny));
+                for (int dx = -1; dx <= 1; dx += 2)
+                {
+                    int nx = cur.x + dx;
+                    if (IsBlocked(nx, cur.y)) continue;
+
+                    bool nextGrounded = HasSupport(nx, cur.y);
+                    int nextJumps = nextGrounded ? 0 : jumpsUsed;
+                    int nextRem = nextGrounded ? 0 : (grounded ? 0 : Mathf.Max(0, jumpRem - 1));
+                    TryEnqueue(nx, cur.y, nextJumps, nextRem);
+                }
+
+                void TryEnqueue(int nx, int ny, int nj, int nrem)
+                {
+                    if (IsBlocked(nx, ny)) return;
+                    nj = Mathf.Clamp(nj, 0, maxJumps);
+                    nrem = Mathf.Clamp(nrem, 0, maxJumpHeight);
+                    if (!visited[nx, ny, nj, nrem])
+                    {
+                        visited[nx, ny, nj, nrem] = true;
+                        q.Enqueue((nx, ny, nj, nrem));
+                    }
                 }
             }
 
-            message = "Шлях від старту до фінішу не знайдено.";
+            message = "Шлях від старту до фінішу не знайдено з урахуванням гравітації та стрибків.";
             return false;
         }
 
@@ -177,7 +228,8 @@ namespace Coursework2D
             public int Height { get; private set; }
             public GridPoint Start { get; private set; }
             public GridPoint Finish { get; private set; }
-            public bool[,] Blocked { get; private set; }
+            public bool[,] Hazard { get; private set; }
+            public bool[,] Platform { get; private set; }
             public string ValidationError { get; private set; }
 
             public static LevelSnapshot FromLevel(Level level)
@@ -195,13 +247,19 @@ namespace Coursework2D
                     };
                 }
 
-                var blocked = new bool[level.gridWidth, level.gridHeight];
+                var hazard = new bool[level.gridWidth, level.gridHeight];
+                var platform = new bool[level.gridWidth, level.gridHeight];
+
                 if (level.objects != null)
                 {
                     foreach (var o in level.objects)
                     {
-                        if (o != null && o.type == LevelObjectType.Hazard)
-                            blocked[o.position.x, o.position.y] = true;
+                        if (o == null) continue;
+                        if (!LevelValidationService.Inside(level, o.position.x, o.position.y)) continue;
+                        if (o.type == LevelObjectType.Hazard)
+                            hazard[o.position.x, o.position.y] = true;
+                        else if (o.type == LevelObjectType.Platform)
+                            platform[o.position.x, o.position.y] = true;
                     }
                 }
 
@@ -212,7 +270,8 @@ namespace Coursework2D
                     Height = level.gridHeight,
                     Start = new GridPoint(level.start.x, level.start.y),
                     Finish = new GridPoint(level.finish.x, level.finish.y),
-                    Blocked = blocked
+                    Hazard = hazard,
+                    Platform = platform
                 };
             }
         }
