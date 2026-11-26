@@ -8,11 +8,11 @@ namespace Coursework2D
 {
     public class ConcurrencyBenchmark : MonoBehaviour
     {
-        [Tooltip("Кількість об'єктів рівня для тесту (10 000+)")]
-        public int ObjectCount = 12000;
+        [Tooltip("Кількість згенерованих рівнів (рекомендується 200..500)")]
+        public int LevelCount = 300;
 
-        [Tooltip("Кількість проходів аналізу по набору об'єктів")]
-        public int Passes = 50;
+        [Tooltip("Мінімальна сумарна кількість об'єктів у згенерованих рівнях (10 000+)")]
+        public int MinTotalObjects = 12000;
 
         public string LastReport { get; private set; }
         public event Action<string> ReportReady;
@@ -25,32 +25,33 @@ namespace Coursework2D
 
             try
             {
-                int count = Mathf.Max(10000, ObjectCount);
-                int passes = Mathf.Max(1, Passes);
+                int levelsCount = Mathf.Clamp(LevelCount, 200, 500);
+                int targetObjects = Mathf.Max(10000, MinTotalObjects);
 
-                // Формуємо набір об'єктів рівня (координати в межах сітки рівня, типи LevelObjectType)
-                var levelObjects = BuildLevelObjectsDataset(count, gridWidth: 200, gridHeight: 100);
+                List<Level> levels = GenerateLevelsDataset(levelsCount, targetObjects);
+                int actualObjects = CountTotalObjects(levels);
 
-                // Прогрів
-                _ = ProcessLevelObjectsSequential(levelObjects, 2);
+                // Прогрів перед замірами
+                if (levels.Count > 0)
+                    _ = LevelPlayabilityChecker.IsPlayable(levels[0], out _);
 
-                // 1. Однопотоковий режим (T1)
+                // 1. Однопотоковий прохід (T1) через звичайний foreach
                 var sw = Stopwatch.StartNew();
-                int seqValidCount = ProcessLevelObjectsSequential(levelObjects, passes);
+                int seqPlayable = RunSequentialPlayabilityCheck(levels);
                 sw.Stop();
                 double t1 = Math.Max(0.001, sw.Elapsed.TotalMilliseconds);
 
-                // 2. Багатопотоковий режим (Tn)
+                // 2. Багатопотоковий прохід (Tn) через Parallel.ForEach
                 sw.Restart();
-                int parValidCount = await Task.Run(() => ProcessLevelObjectsParallel(levelObjects, passes));
+                int parPlayable = await Task.Run(() => RunParallelPlayabilityCheck(levels));
                 sw.Stop();
                 double tn = Math.Max(0.001, sw.Elapsed.TotalMilliseconds);
 
                 lastSpeedup = t1 / tn;
                 LastReport =
-                    $"Об'єктів рівня: {count}; проходів: {passes}; " +
-                    $"T1 (1 потік): {t1:F2} мс; Tn (багатопотоково): {tn:F2} мс; " +
-                    $"S = T1/Tn = {lastSpeedup:F2}; валідних перевірок: {seqValidCount}/{parValidCount}";
+                    $"Рівнів: {levels.Count}; об'єктів: {actualObjects}; " +
+                    $"T1 (foreach): {t1:F2} мс; Tn (Parallel.ForEach): {tn:F2} мс; " +
+                    $"S = T1/Tn = {lastSpeedup:F2}; прохідних: {seqPlayable}/{parPlayable}";
 
                 FileLogger.Write(LastReport);
                 ReportReady?.Invoke(LastReport);
@@ -62,80 +63,110 @@ namespace Coursework2D
             }
         }
 
-        private static List<LevelObject> BuildLevelObjectsDataset(int count, int gridWidth, int gridHeight)
+        private static List<Level> GenerateLevelsDataset(int levelCount, int minTotalObjects)
         {
-            var list = new List<LevelObject>(count);
+            var levels = new List<Level>(levelCount);
             var rnd = new System.Random(12345);
-            var types = (LevelObjectType[])Enum.GetValues(typeof(LevelObjectType));
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < levelCount; i++)
             {
-                var type = types[i % types.Length];
-                int x = rnd.Next(-5, gridWidth + 5);
-                int y = rnd.Next(-5, gridHeight + 5);
-                list.Add(new LevelObject(type, new Vector2Int(x, y)));
-            }
+                int width = 40;
+                int height = 20;
+                var start = new GridPoint(1, 1);
+                var finish = new GridPoint(width - 2, 1);
 
-            return list;
-        }
-
-        private static int EvaluateLevelObject(LevelObject obj, int gridWidth, int gridHeight)
-        {
-            if (obj == null) return 0;
-
-            bool inside = obj.position.x >= 0 && obj.position.x < gridWidth &&
-                          obj.position.y >= 0 && obj.position.y < gridHeight;
-
-            // Додаткове навантаження на об'єкт рівня (аналіз сусідніх клітинок / ваги об'єкта)
-            double weight = 0;
-            for (int k = 1; k <= 32; k++)
-            {
-                weight += Math.Sqrt((obj.position.x + k) * (obj.position.x + k) +
-                                    (obj.position.y + k) * (obj.position.y + k));
-            }
-
-            return (inside && weight > 0) ? 1 : 0;
-        }
-
-        private static int ProcessLevelObjectsSequential(List<LevelObject> objects, int passes)
-        {
-            const int w = 200;
-            const int h = 100;
-            int total = 0;
-
-            for (int p = 0; p < passes; p++)
-            {
-                for (int i = 0; i < objects.Count; i++)
+                var level = new Level
                 {
-                    total += EvaluateLevelObject(objects[i], w, h);
-                }
+                    name = $"BenchLevel_{i + 1:000}",
+                    difficulty = (i % 5) + 1,
+                    gridWidth = width,
+                    gridHeight = height,
+                    start = start,
+                    finish = finish,
+                    objects = new List<LevelObject>
+                    {
+                        new LevelObject(LevelObjectType.Start, new Vector2Int(start.x, start.y)),
+                        new LevelObject(LevelObjectType.Finish, new Vector2Int(finish.x, finish.y))
+                    }
+                };
+
+                levels.Add(level);
             }
 
-            return total;
+            // Розподіляємо об'єкти по згенерованих рівнях так, щоб сумарно було >= minTotalObjects
+            int remaining = Mathf.Max(minTotalObjects, levelCount * 20);
+            int idx = 0;
+
+            while (remaining > 0)
+            {
+                var lvl = levels[idx % levels.Count];
+                int x = rnd.Next(0, lvl.gridWidth);
+                int y = rnd.Next(0, lvl.gridHeight);
+
+                // Не затираємо клітинки старту та фінішу випадковими перешкодами/платформами
+                if ((x == lvl.start.x && y == lvl.start.y) || (x == lvl.finish.x && y == lvl.finish.y))
+                {
+                    idx++;
+                    continue;
+                }
+
+                LevelObjectType type = (idx % 5) switch
+                {
+                    0 => LevelObjectType.Platform,
+                    1 => LevelObjectType.Coin,
+                    2 => LevelObjectType.Decoration,
+                    3 => LevelObjectType.Hazard,
+                    _ => LevelObjectType.Platform
+                };
+
+                lvl.objects.Add(new LevelObject(type, new Vector2Int(x, y)));
+                remaining--;
+                idx++;
+            }
+
+            return levels;
         }
 
-        private static int ProcessLevelObjectsParallel(List<LevelObject> objects, int passes)
+        private static int CountTotalObjects(List<Level> levels)
         {
-            const int w = 200;
-            const int h = 100;
-            object sync = new object();
-            int total = 0;
-
-            for (int p = 0; p < passes; p++)
+            int sum = 0;
+            for (int i = 0; i < levels.Count; i++)
             {
-                Parallel.For(0, objects.Count,
-                    () => 0,
-                    (i, state, local) => local + EvaluateLevelObject(objects[i], w, h),
-                    local =>
-                    {
-                        lock (sync)
-                        {
-                            total += local;
-                        }
-                    });
+                if (levels[i] != null)
+                    sum += levels[i].objectCount;
             }
+            return sum;
+        }
 
-            return total;
+        private static int RunSequentialPlayabilityCheck(List<Level> levels)
+        {
+            int playableCount = 0;
+            foreach (var level in levels)
+            {
+                if (LevelPlayabilityChecker.IsPlayable(level, out _))
+                    playableCount++;
+            }
+            return playableCount;
+        }
+
+        private static int RunParallelPlayabilityCheck(List<Level> levels)
+        {
+            int playableCount = 0;
+            object sync = new object();
+
+            Parallel.ForEach(levels, level =>
+            {
+                bool ok = LevelPlayabilityChecker.IsPlayable(level, out _);
+                if (ok)
+                {
+                    lock (sync)
+                    {
+                        playableCount++;
+                    }
+                }
+            });
+
+            return playableCount;
         }
     }
 }
