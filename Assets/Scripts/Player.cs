@@ -141,6 +141,16 @@ public class Player : MonoBehaviour
     public bool IsAttacking => attackTimer > 0f;
     public AttackHitbox attackHitbox;
 
+    // AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
+    // Змінено: на старті рівня повідомляємо статистику BeginRun.
+    [SerializeField] private GameplayStatisticsTracker statistics;
+    [SerializeField] private string currentLevelName = "TestZoneLocation";
+
+    private void Start()
+    {
+        statistics?.BeginRun(currentLevelName);
+    }
+
     public void PlaySFX(AudioClip clip, AudioSource source = null)
     {
         if (clip == null) return;

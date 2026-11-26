@@ -14,14 +14,22 @@ namespace Coursework2D
         public event Action<string> Message;
         public event Action DataChanged;
 
-        private void Awake()
+        // AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
+        // Додано: Select(index), SelectedLevel, async Awake з LoadAsync.
+        public void Select(int index)
+        {
+            if (index >= 0 && index < Data.levels.Count) { SelectedIndex = index; DataChanged?.Invoke(); }
+        }
+        public Level SelectedLevel => (SelectedIndex >= 0 && SelectedIndex < Data.levels.Count) ? Data.levels[SelectedIndex] : null;
+
+        private async void Awake()
         {
             repository = new LevelRepository();
-            try { Data = repository.Load(); }
+            try { Data = await repository.LoadAsync(); }
             catch (Exception ex) { Message?.Invoke("Не вдалося завантажити levels.json: " + ex.Message); Data = LevelRepository.CreateStarterCollection(); }
             if (Data.levels.Count > 0) SelectedIndex = 0;
+            DataChanged?.Invoke();
         }
-
         public IReadOnlyList<Level> Search(string query, int difficulty = 0)
         {
             IEnumerable<Level> q = Data.levels;

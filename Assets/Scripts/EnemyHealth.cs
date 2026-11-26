@@ -1,4 +1,6 @@
 // EnemyHealth.cs
+// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
+// Змінено: TakeDamage тепер повідомляє EnemyCombatAdapter про урон.
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -32,12 +34,15 @@ public class EnemyHealth : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Color _baseColor = Color.white;
     private bool _dead;
+    
+    private EnemyCombatAdapter _combatAdapter; // Додано поле
 
     private void Awake()
     {
         health = Mathf.Clamp(health, 0, maxHealth);
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (_spriteRenderer != null) _baseColor = _spriteRenderer.color;
+        _combatAdapter = GetComponent<EnemyCombatAdapter>(); // Ініціалізація
     }
 
     private void Update()
@@ -60,9 +65,6 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Возвращает true, если урон реально прошёл (не был на кулдауне и враг жив).
-    /// </summary>
     public bool TakeDamage(int amount, Vector2? attackerPosition = null)
     {
         if (_dead || amount <= 0) return false;
@@ -74,8 +76,10 @@ public class EnemyHealth : MonoBehaviour
 
         if (_spriteRenderer != null)
             _spriteRenderer.color = Color.red;
+            
+        // Синхронізуємо доменну модель
+        _combatAdapter?.SyncFromHealth();
 
-        // Отброс от атакующего
         if (attackerPosition.HasValue)
         {
             float dir = Mathf.Sign(transform.position.x - attackerPosition.Value.x);
@@ -102,7 +106,6 @@ public class EnemyHealth : MonoBehaviour
         if (_dead) return;
         _dead = true;
 
-        // Отключаем ИИ и коллайдеры
         var ai = GetComponent<EnemyAI>();
         if (ai != null) ai.enabled = false;
 

@@ -1,5 +1,6 @@
 // EnemyAI.cs
-// By me
+// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
+// Змінено: у ближньому бою ворог тепер викликає доменний Attack().
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -38,10 +39,16 @@ public class EnemyAI : MonoBehaviour
     private bool isGrounded = false;
 
     private float _knockbackTimer;
+    
+    // Додано для Combat
+    private EnemyCombatAdapter _combatAdapter;
+    private float _attackCooldown;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        _combatAdapter = GetComponent<EnemyCombatAdapter>();
+        
         if (rb == null)
         {
             Debug.LogError($"[EnemyAI] {name}: нет Rigidbody2D!", this);
@@ -77,11 +84,10 @@ public class EnemyAI : MonoBehaviour
         startPosition = transform.position;
     }
 
-    /// <summary>Вызывается из EnemyHealth при получении урона.</summary>
     public void ApplyKnockback(Vector2 velocity, float duration)
     {
         if (rb == null) return;
-        if (isFlying) velocity.y = 0f; // летающие не подпрыгивают
+        if (isFlying) velocity.y = 0f;
         rb.linearVelocity = velocity;
         _knockbackTimer = Mathf.Max(_knockbackTimer, duration);
     }
@@ -90,15 +96,12 @@ public class EnemyAI : MonoBehaviour
     {
         if (rb == null) return;
 
-        // Пока отброшен — ИИ не управляет скоростью, только трение
         if (_knockbackTimer > 0f)
         {
             _knockbackTimer -= Time.fixedDeltaTime;
-
             var v = GetVelocity();
             v.x = Mathf.MoveTowards(v.x, 0f, knockbackDrag * Time.fixedDeltaTime);
             SetVelocity(v);
-
             FlipSprite();
             return;
         }
@@ -153,6 +156,15 @@ public class EnemyAI : MonoBehaviour
         if (!isFlying) velocity.y = GetVelocity().y;
 
         SetVelocity(velocity);
+
+        // Атака через доменну модель
+        _attackCooldown -= Time.fixedDeltaTime;
+        if (_combatAdapter != null && _attackCooldown <= 0f)
+        {
+            var p = player.GetComponent<Player>();
+            if (p != null && _combatAdapter.AttackPlayer(p) > 0)
+                _attackCooldown = 0.8f;
+        }
     }
 
     bool IsWallAhead(float directionX)

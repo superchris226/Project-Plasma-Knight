@@ -1,5 +1,7 @@
 // AttackHitbox.cs
-// By me
+// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
+// Змінено: урон тепер може братися з PlayerCombatAdapter (доменний PlayerCharacter),
+// зі збереженням сумісності з PlayerLevel.
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -18,10 +20,11 @@ public class AttackHitbox : MonoBehaviour
     [Tooltip("Брать урон из PlayerLevel (иначе — фиксированный damage)")]
     public bool usePlayerLevelDamage = true;
 
-    private readonly HashSet<EnemyHealth> _hitThisSwing = new();
+    private readonly HashSet<EnemyHealth> _hitThisSwing = new HashSet<EnemyHealth>();
     private Collider2D _col;
     private bool _isActive;
     private PlayerLevel _level;
+    private PlayerCombatAdapter _combat; // Додано поле
 
     private void Awake()
     {
@@ -31,6 +34,8 @@ public class AttackHitbox : MonoBehaviour
         _isActive = false;
 
         _level = GetComponentInParent<PlayerLevel>();
+        _combat = GetComponentInParent<PlayerCombatAdapter>(); // Ініціалізація
+        
         if (_level != null && usePlayerLevelDamage)
             damage = _level.CurrentDamage;
     }
@@ -41,7 +46,6 @@ public class AttackHitbox : MonoBehaviour
         _isActive = true;
         if (_col != null) _col.enabled = true;
 
-        // Сразу проверяем, не стоим ли мы уже в враге (Enter не сработает)
         if (_col != null)
         {
             var results = new Collider2D[16];
@@ -82,7 +86,20 @@ public class AttackHitbox : MonoBehaviour
             ? (Vector2)player.transform.position
             : (Vector2)transform.position;
 
-        int finalDamage = (usePlayerLevelDamage && _level != null) ? _level.CurrentDamage : damage;
+        int finalDamage;
+        if (_combat != null)
+        {
+            float dist = Vector2.Distance(attackerPos, enemy.transform.position);
+            finalDamage = _combat.ComputeAttackDamage(Mathf.RoundToInt(dist));
+        }
+        else if (usePlayerLevelDamage && _level != null)
+        {
+            finalDamage = _level.CurrentDamage;
+        }
+        else
+        {
+            finalDamage = damage;
+        }
 
         bool applied = enemy.TakeDamage(finalDamage, attackerPos);
 

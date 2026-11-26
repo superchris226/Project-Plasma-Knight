@@ -16,18 +16,19 @@ public class FinishLevel : MonoBehaviour
     private bool isFinished = false;
     private float timer;
 
+    public GameplayStatisticsTracker statistics;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isFinished) return;
-
         if (collision.gameObject.CompareTag("Player"))
         {
             isFinished = true;
             timer = delay;
             winUI.SetActive(true);
+            statistics?.CompleteRun();
         }
     }
-
     private void Update()
     {
         if (!isFinished) return;

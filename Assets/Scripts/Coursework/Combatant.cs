@@ -2,7 +2,13 @@ using System;
 
 namespace Coursework2D
 {
-    // Доменна модель: навмисно не наслідується від MonoBehaviour.
+    public readonly struct AttackContext
+    {
+        public readonly int Distance;
+        public readonly bool TargetIsAlive;
+        public AttackContext(int distance, bool targetIsAlive) { Distance = distance; TargetIsAlive = targetIsAlive; }
+    }
+
     public abstract class Combatant : IDamageable
     {
         public string Name { get; protected set; }
@@ -19,7 +25,8 @@ namespace Coursework2D
             Name = name; MaxHealth = maxHealth; Health = maxHealth; AttackPower = attackPower;
         }
 
-        public abstract int Attack();
+        public int Attack() => Attack(new AttackContext(int.MaxValue, true));
+        public abstract int Attack(AttackContext context);
 
         public virtual void TakeDamage(int amount)
         {
