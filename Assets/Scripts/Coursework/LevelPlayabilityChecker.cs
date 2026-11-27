@@ -1,4 +1,4 @@
-// ШІ: ChatGPT – Створив LevelObject.
+// ШІ: ChatGPT – Створив LevelPlayabilityChecker.
 // Змінено: фікс кода.
 using System;
 using System.Collections.Concurrent;

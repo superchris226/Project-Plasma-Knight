@@ -1,4 +1,4 @@
-// ШІ: ChatGPT – Створив Level. Створив функцію Select
+// ШІ: ChatGPT – Створив LevelEditorController. Створив функцію Select
 // Змінено: фікс кода.
 using System;
 using System.Collections.Generic;
