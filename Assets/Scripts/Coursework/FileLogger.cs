@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив FileLogger.
+// Змінено: фікс кода.
 using System;
 using System.IO;
 using UnityEngine;

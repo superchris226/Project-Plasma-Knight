@@ -1,6 +1,6 @@
 // EnemyAI.cs
-// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
-// Змінено: у ближньому бою ворог тепер викликає доменний Attack().
+// By me
+// Змінено: Chat GPT змінив у ближньому бою ворог тепер викликає доменний Attack().
 using UnityEngine;
 using Coursework2D;
 

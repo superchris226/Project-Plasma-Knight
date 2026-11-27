@@ -21,13 +21,13 @@ public class DamageDealer : MonoBehaviour
     [Header("Target filtering")]
     public LayerMask targetLayers = ~0;
 
-    [Tooltip("Если true — наносить урон один раз и уничтожиться")]
+    [Tooltip("Якщо true — наносити урон один раз і знищитися")]
     public bool destroyAfterHit = false;
 
-    [Tooltip("Кулдаун на каждого игрока отдельно, сек. 0 = каждый кадр")]
+    [Tooltip("Кулдаун на кожного гравця окремо, сек. 0 = кожен кадр")]
     public float perTargetCooldown = 0.5f;
 
-    [Tooltip("Максимум целей за один кадр (0 = без лимита)")]
+    [Tooltip("Максимум цілей за один кадр (0 = без ліміту)")]
     public int maxTargetsPerFrame = 0;
 
     private readonly Dictionary<Player, float> _nextHitTimes = new();
@@ -37,7 +37,7 @@ public class DamageDealer : MonoBehaviour
         var col = GetComponent<Collider2D>();
         if (col != null)
         {
-            col.isTrigger = true; // зона урона обязана быть триггером
+            col.isTrigger = true; // зона урону зобов'язана бути тригером
         }
     }
 
@@ -56,12 +56,12 @@ public class DamageDealer : MonoBehaviour
         var player = other.GetComponent<Player>() ?? other.GetComponentInParent<Player>();
         if (player == null) return;
 
-        // Неуязвимость (после получения урона / респавн)
+        // Невразливість (після отримання урону / респавн)
         if (player.IsInvulnerable) return;
 
-        // Пока игрок атакует — он НЕ получает урон от касания.
-        // ВАЖНО: это должно проверяться и в OnTriggerStay2D, иначе при
-        // удержании врага игрок будет получать урон, даже если бьёт.
+        // Поки гравець атакує — він НЕ отримує урон від дотику.
+        // ВАЖЛИВО: це має перевірятися і в OnTriggerStay2D, інакше при
+        // утриманні ворога гравець отримуватиме урон, навіть якщо б'є.
         if (player.IsAttacking) return;
 
         if (perTargetCooldown > 0f)

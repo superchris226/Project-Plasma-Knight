@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив ConcurrencyBenchmark.
+// Змінено: фікс кода.
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

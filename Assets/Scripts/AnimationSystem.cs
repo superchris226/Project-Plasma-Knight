@@ -184,8 +184,6 @@ public class AnimationSystem : MonoBehaviour
 
         string target;
         float speed = player.HorizontalSpeed;
-
-        // Death имеет наивысший приоритет
         if (player.DeathAnimation)
         {
             target = "Death";
@@ -202,8 +200,6 @@ public class AnimationSystem : MonoBehaviour
         }
         else if (player.IsAttacking)
         {
-            // Атака имеет приоритет над движением/прыжком,
-            // но ниже смерти и боли.
             target = "Attack";
             AcivateWait = 0;
             idleTimer = 0f;

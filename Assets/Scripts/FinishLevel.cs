@@ -6,11 +6,11 @@ public class FinishLevel : MonoBehaviour
     [Header("UI")]
     public GameObject winUI;
 
-    [Header("Настройки перехода")]
-    [Tooltip("Название сцены, на которую нужно перейти")]
+    [Header("Налаштування переходу")]
+    [Tooltip("Назва сцени, на яку потрібно перейти")]
     public string nextSceneName = "MainMenu";
 
-    [Tooltip("Задержка в секундах перед переходом")]
+    [Tooltip("Затримка в секундах перед переходом")]
     public float delay = 3f;
 
     private bool isFinished = false;

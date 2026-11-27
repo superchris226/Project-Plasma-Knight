@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив CourseworkUIBootstrap.
+// Змінено: фікс кода, зробив цикл, виправив проблему з 10000 об'єктів.
 using System;
 using System.Collections.Generic;
 using System.IO;

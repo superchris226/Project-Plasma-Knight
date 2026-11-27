@@ -5,7 +5,7 @@ using System.Collections;
 public class ScreenFader : MonoBehaviour
 {
     public static ScreenFader Instance;
-    public Image fadeImage; // полноэкранный чёрный Image, alpha=0
+    public Image fadeImage; // повноекранний чорний Image, alpha=0
 
     private void Awake()
     {

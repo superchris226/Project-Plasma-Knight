@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив LevelValidationService.
+// Змінено: фікс кода.
 using System.Collections.Generic;
 using System.Linq;
 

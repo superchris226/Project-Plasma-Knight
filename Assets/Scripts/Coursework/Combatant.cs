@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив Combatant.
+// Змінено: фікс кода.
 using System;
 
 namespace Coursework2D

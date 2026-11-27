@@ -1,6 +1,6 @@
 // EnemyHealth.cs
-// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
-// Змінено: TakeDamage тепер повідомляє EnemyCombatAdapter про урон,
+//By me
+// Змінено: Chat GPT змімив TakeDamage. Тепер повідомляє EnemyCombatAdapter про урон,
 // а Die() реєструє вбивство ворога в GameplayStatisticsTracker.
 using UnityEngine;
 using Coursework2D;
@@ -12,21 +12,21 @@ public class EnemyHealth : MonoBehaviour
     public int health = 30;
 
     [Header("Death")]
-    [Tooltip("Уничтожить объект при смерти")]
+    [Tooltip("Знищити об'єкт при смерті")]
     public bool destroyOnDeath = true;
-    [Tooltip("Задержка перед уничтожением (для проигрывания анимации)")]
+    [Tooltip("Затримка перед знищенням (для програвання анімації)")]
     public float destroyDelay = 0.5f;
 
     [Header("Feedback")]
-    [Tooltip("Короткая неуязвимость после удара, чтобы одна атака не била много раз")]
+    [Tooltip("Коротка невразливість після удару, щоб одна атака не била багато разів")]
     public float hitCooldown = 0.4f;
-    [Tooltip("Мигание при получении урона")]
+    [Tooltip("Миготіння при отриманні урону")]
     public float blinkDuration = 0.2f;
 
     [Header("Knockback")]
-    [Tooltip("Горизонтальная сила отброса")]
+    [Tooltip("Горизонтальна сила відкидання")]
     public float knockbackForce = 8f;
-    [Tooltip("Вертикальный подскок при отбросе")]
+    [Tooltip("Вертикальний підскок при відкиданні")]
     public float knockbackUpForce = 4f;
 
     public bool IsDead => health <= 0;

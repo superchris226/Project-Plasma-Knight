@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив Level. Створив функцію Select
+// Змінено: фікс кода.
 using System;
 using System.Collections.Generic;
 using System.Linq;

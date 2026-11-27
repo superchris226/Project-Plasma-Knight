@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив LevelRepository.
+// Змінено: фікс кода.
 using System;
 using System.IO;
 using System.Linq;

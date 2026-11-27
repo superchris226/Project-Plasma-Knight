@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив LevelObject.
+// Змінено: фікс кода.
 using System;
 using UnityEngine;
 

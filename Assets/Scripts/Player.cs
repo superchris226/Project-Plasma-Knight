@@ -1,5 +1,6 @@
 // Player.cs
 // By SuperChris and Scarf/Me
+// Змінено: Chat GPT змінив на старті рівня повідомляємо статистику BeginRun.
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -31,11 +32,11 @@ public class Player : MonoBehaviour
     public float doubleJumpAnimDuration = 0.4f;
 
     [Header("Attack")]
-    [Tooltip("Длительность состояния атаки (сек). Должна совпадать с длиной клипа Attack.")]
+    [Tooltip("Тривалість стану атаки (сек). Повинна збігатися з довжиною кліпу Attack.")]
     public float attackDuration = 0.5f;
-    [Tooltip("Множитель скорости движения во время атаки (0 = стоим на месте, 1 = полная скорость)")]
+    [Tooltip("Множник швидкості руху під час атаки (0 = стоїмо на місці, 1 = повна швидкість)")]
     [Range(0f, 1f)] public float attackMoveMultiplier = 0f;
-    [Tooltip("Можно ли прервать атаку прыжком")]
+    [Tooltip("Чи можна перервати атаку стрибком")]
     public bool attackCancelableByJump = false;
 
     [Header("Ground Check")]
@@ -90,15 +91,15 @@ public class Player : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private AudioSource footstepSource;
-    [SerializeField] private AudioSource lowHealthSource; // Источник для пищания при низком ХП
+    [SerializeField] private AudioSource lowHealthSource; // Джерело для пищання при низькому ХП
 
     [Header("SFX Clips")]
     public AudioClip attackSfx;
     public AudioClip doubleJumpSfx;
     public AudioClip jumpSfx;
     public AudioClip footstepSfx;
-    public AudioClip hurtSfx;       // Звук получения урона
-    public AudioClip lowHealthSfx;  // Звук низкого здоровья (будет зациклен)
+    public AudioClip hurtSfx;       // Звук отримання урону
+    public AudioClip lowHealthSfx;  // Звук низького здоров'я (буде зациклено)
 
     [Header("Footstep Timing")]
     public float walkStepInterval = 0.35f;
@@ -141,8 +142,6 @@ public class Player : MonoBehaviour
     public bool IsAttacking => attackTimer > 0f;
     public AttackHitbox attackHitbox;
 
-    // AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
-    // Змінено: на старті рівня повідомляємо статистику BeginRun.
     [SerializeField] private GameplayStatisticsTracker statistics;
     [SerializeField] private string currentLevelName = "TestZoneLocation";
 
@@ -182,7 +181,7 @@ public class Player : MonoBehaviour
         {
             lowHealthSource = gameObject.AddComponent<AudioSource>();
             lowHealthSource.playOnAwake = false;
-            lowHealthSource.loop = false; // Управляем вручную через Update
+            lowHealthSource.loop = false; // Керуємо вручну через Update
         }
         
         if (spriteTransform == null)
@@ -286,7 +285,7 @@ public class Player : MonoBehaviour
     {
         if (lowHealthSfx == null || lowHealthSource == null) return;
 
-        // Если мертвы, или здоровье восстановилось — выключаем звук
+        // Якщо мертві, або здоров'я відновилося — вимикаємо звук
         if (isDead || !IsLowHealth())
         {
             if (lowHealthSource.isPlaying)
@@ -294,7 +293,7 @@ public class Player : MonoBehaviour
             return;
         }
 
-        // Если здоровье низкое, а звук не играет — включаем
+        // Якщо здоров'я низьке, а звук не грає — вмикаємо
         if (!lowHealthSource.isPlaying)
         {
             lowHealthSource.clip = lowHealthSfx;
@@ -310,7 +309,7 @@ public class Player : MonoBehaviour
         UpdateHealthBar();
         UpdateGhostHealthBar();
         UpdateFootsteps();
-        UpdateLowHealthSound(); // Вызов проверки звука низкого ХП
+        UpdateLowHealthSound(); // Виклик перевірки звуку низького ХП
     }
 
     private void FixedUpdate()
@@ -610,7 +609,7 @@ public class Player : MonoBehaviour
         if (lowHealthSource != null)
             lowHealthSource.Stop();
 
-        Debug.Log("[Player] Умер. Движение заблокировано, физика остановлена.");
+        Debug.Log("[Player] Помер. Рух заблоковано, фізику зупинено.");
     }
 
     public void TakeDamage(int amount, Vector2? attackerPosition = null, bool useAttackerDirection = true, bool ignoreInvulnerability = false)
@@ -649,7 +648,7 @@ public class Player : MonoBehaviour
         attackTimer = 0f;
         attackInputPressed = false;
 
-        PlaySFX(hurtSfx); // Проигрываем звук урона
+        PlaySFX(hurtSfx); // Програємо звук урону
     }
 
     public void Heal(int amount)
@@ -659,7 +658,7 @@ public class Player : MonoBehaviour
     }
 
     // ==========================================
-    // ДОБАВЛЕНО ДЛЯ РЕСПАВНА
+    // ДОДАНО ДЛЯ РЕСПАВНУ
     // ==========================================
     public void ResetAfterDeath()
     {
@@ -681,7 +680,7 @@ public class Player : MonoBehaviour
         doubleJumpAnimTimer = 0f;
         
         painTimer = 0f;
-        invulnerabilityTimer = 1.5f; // Неуязвимость после респавна
+        invulnerabilityTimer = 1.5f; // Невразливість після респавну
         blinkTimer = 0f;
         attackTimer = 0f;
         attackInputPressed = false;
@@ -693,7 +692,7 @@ public class Player : MonoBehaviour
         if (rb != null)
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
-            rb.gravityScale = 3f; // Установи свой стандартный gravityScale, если он другой!
+            rb.gravityScale = 3f; // Встанови свій стандартний gravityScale, якщо він інший!
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
         }
@@ -704,7 +703,7 @@ public class Player : MonoBehaviour
             spriteRenderer.color = baseSpriteColor;
         }
         
-        Debug.Log("[Player] Возрожден.");
+        Debug.Log("[Player] Відроджено.");
     }
 
     private void OnDrawGizmosSelected()

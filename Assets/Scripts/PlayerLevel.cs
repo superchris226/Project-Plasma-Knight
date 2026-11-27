@@ -10,13 +10,13 @@ public class PlayerLevel : MonoBehaviour
     public int expToNext = 100;
 
     [Header("Damage Scaling")]
-    [Tooltip("Базовый урон (AttackHitbox)")]
+    [Tooltip("Базовий урон (AttackHitbox)")]
     public int baseDamage = 10;
-    [Tooltip("Прибавка урона за каждый уровень")]
+    [Tooltip("Прибавка урону за кожен рівень")]
     public int damagePerLevel = 5;
 
     [Header("XP Sources")]
-    [Tooltip("Сколько опыта за убийство обычного врага")]
+    [Tooltip("Скільки досвіду за вбивство звичайного ворога")]
     public int xpPerEnemy = 25;
 
     public int CurrentDamage => baseDamage + (level - 1) * damagePerLevel;
@@ -40,7 +40,7 @@ public class PlayerLevel : MonoBehaviour
         level++;
         expToNext = Mathf.RoundToInt(expToNext * 1.25f);
         OnLevelUp?.Invoke(level);
-        Debug.Log($"[PlayerLevel] Уровень {level}, урон {CurrentDamage}, опыт до след. {expToNext}");
+        Debug.Log($"[PlayerLevel] Рівень {level}, урон {CurrentDamage}, досвід до наст. {expToNext}");
     }
 
     public void ResetLevel()

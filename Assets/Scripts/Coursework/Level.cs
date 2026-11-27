@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив Level.
+// Змінено: фікс кода.
 using System;
 using System.Collections.Generic;
 

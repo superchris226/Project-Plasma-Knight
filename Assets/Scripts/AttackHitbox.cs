@@ -1,7 +1,4 @@
 // AttackHitbox.cs
-// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
-// Змінено: урон тепер може братися з PlayerCombatAdapter (доменний PlayerCharacter),
-// зі збереженням сумісності з PlayerLevel.
 using UnityEngine;
 using System.Collections.Generic;
 using Coursework2D;
@@ -12,13 +9,13 @@ public class AttackHitbox : MonoBehaviour
     [Header("Damage")]
     public int damage = 10;
 
-    [Tooltip("Слои, которые считаются врагами")]
+    [Tooltip("Шари, які вважаються ворогами")]
     public LayerMask enemyLayers = ~0;
 
-    [Tooltip("Бить каждую цель только один раз за активацию")]
+    [Tooltip("Бити кожну ціль лише один раз за активацію")]
     public bool hitEachTargetOnce = true;
 
-    [Tooltip("Брать урон из PlayerLevel (иначе — фиксированный damage)")]
+    [Tooltip("Брати урон з PlayerLevel (інакше — фіксований damage)")]
     public bool usePlayerLevelDamage = true;
 
     private readonly HashSet<EnemyHealth> _hitThisSwing = new HashSet<EnemyHealth>();

@@ -1,67 +1,79 @@
-// EnemyCombatAdapter.cs
-// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
-// Призначення: адаптер між доменним Combatant і Unity EnemyHealth/EnemyAI.
-// Синхронізує HP та надає Attack() з урахуванням дистанції.
+// ШІ: ChatGPT – Створив EnemyCombatAdapter.
+// Змінено: призначення - адаптер між доменним Combatant і Unity EnemyHealth/EnemyAI, синхронізує HP та надає Attack()
+// з урахуванням дистанції. Адаптер бере компоненти MeleeEnemy або RangedEnemy з об'єкта, а не створює їх.
 using UnityEngine;
+using Coursework2D;
 
 namespace Coursework2D
 {
     [RequireComponent(typeof(EnemyHealth))]
     public class EnemyCombatAdapter : MonoBehaviour
     {
-        public enum EnemyArchetype { Melee, Ranged }
-
-        [SerializeField] private EnemyArchetype archetype = EnemyArchetype.Melee;
-        [SerializeField] private int rangedAttackRange = 6;
-
-        public Combatant Combatant { get; private set; }
         private EnemyHealth health;
         private EnemyAI ai;
+        
+        // Посилання на компонент (один з двох)
+        private MeleeEnemy meleeEnemy;
+        private RangedEnemy rangedEnemy;
 
         private void Awake()
         {
             health = GetComponent<EnemyHealth>();
             ai = GetComponent<EnemyAI>();
-            RebuildCombatant();
+            
+            // Шукаємо, який саме компонент повішено на об'єкт
+            meleeEnemy = GetComponent<MeleeEnemy>();
+            rangedEnemy = GetComponent<RangedEnemy>();
+
+            if (meleeEnemy != null && rangedEnemy != null)
+            {
+                Debug.LogError($"[EnemyCombatAdapter] {name}: На об'єкті одночасно MeleeEnemy і RangedEnemy! Залиш тільки один.");
+            }
         }
 
-        public void SetArchetype(EnemyArchetype newArchetype)
+        private void Start()
         {
-            archetype = newArchetype;
-            RebuildCombatant();
-        }
-
-        private void RebuildCombatant()
-        {
-            if (health == null)
-                health = GetComponent<EnemyHealth>();
-
-            int max = health != null ? Mathf.Max(1, health.maxHealth) : 30;
-            int power = archetype == EnemyArchetype.Melee ? 12 : 9;
-            Combatant = archetype == EnemyArchetype.Melee
-                ? new MeleeEnemy(maxHealth: max, attackPower: power)
-                : new RangedEnemy(maxHealth: max, attackPower: power, attackRange: rangedAttackRange);
-
-            if (health != null && health.health < Combatant.Health)
-                Combatant.TakeDamage(Combatant.Health - health.health);
+            // Синхронізуємо здоров'я ворога з EnemyHealth
+            SyncFromHealth();
         }
 
         public int AttackPlayer(Player player)
         {
-            if (player == null || Combatant == null || !Combatant.IsAlive) return 0;
+            if (player == null) return 0;
+
             int distance = Mathf.RoundToInt(Vector2.Distance(transform.position, player.transform.position));
-            int dmg = Combatant.Attack(new AttackContext(distance, !player.IsDead));
-            if (dmg > 0) player.TakeDamage(dmg, transform.position, true);
+            var ctx = new AttackContext(distance, !player.IsDead);
+            int dmg = 0;
+
+            if (meleeEnemy != null && meleeEnemy.IsAlive)
+            {
+                dmg = meleeEnemy.Attack(ctx);
+            }
+            else if (rangedEnemy != null && rangedEnemy.IsAlive)
+            {
+                dmg = rangedEnemy.Attack(ctx);
+            }
+
+            if (dmg > 0)
+                player.TakeDamage(dmg, transform.position, true);
+
             return dmg;
         }
 
         public void SyncFromHealth()
         {
-            if (health == null || Combatant == null) return;
-            if (health.health < Combatant.Health)
-                Combatant.TakeDamage(Combatant.Health - health.health);
-            else if (health.health > Combatant.Health)
-                Combatant.Heal(health.health - Combatant.Health);
+            if (health == null) return;
+
+            if (meleeEnemy != null)
+            {
+                meleeEnemy.maxHealth = health.maxHealth;
+                meleeEnemy.currentHealth = health.health;
+            }
+            else if (rangedEnemy != null)
+            {
+                rangedEnemy.maxHealth = health.maxHealth;
+                rangedEnemy.currentHealth = health.health;
+            }
         }
     }
 }

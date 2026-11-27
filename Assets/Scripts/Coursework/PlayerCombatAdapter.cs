@@ -1,16 +1,14 @@
-// PlayerCombatAdapter.cs
-// AI-ASSISTED: ChatGPT (GPT-4), 2024-11-21.
-// Призначення: адаптер між доменним PlayerCharacter (Combatant) і
-// Unity-компонентом Player. Синхронізує здоров'я та надає урон атаки
-// для AttackHitbox, зберігаючи всю бізнес-логіку в Combatant.
+// ШІ: ChatGPT – Створив PlayerCombatAdapter.
+// Змінено: фікс кода, адаптер між доменним PlayerCharacter (Combatant) і Unity-компонентом Player. Синхронізує здоров'я та надає урон
+// атаки для AttackHitbox, зберігаючи всю бізнес-логіку в Combatant. тепер адаптер бере готовий компонент PlayerCharacter з об'єкта, а не створює його через new.
 using UnityEngine;
 using Coursework2D;
 
 [RequireComponent(typeof(Player))]
+[RequireComponent(typeof(PlayerCharacter))] // Вимагаємо, щоб цей компонент був на об'єкті
 public class PlayerCombatAdapter : MonoBehaviour
 {
     [Header("Domain model")]
-    [SerializeField] private int baseMaxHealth = 100;
     [SerializeField] private int baseAttackPower = 10;
     [SerializeField] private int damagePerLevel = 5;
 
@@ -23,12 +21,19 @@ public class PlayerCombatAdapter : MonoBehaviour
     {
         player = GetComponent<Player>();
         playerLevel = GetComponent<PlayerLevel>();
+        
+        // Беремо компонент з об'єкта (він додається в інспекторі)
+        Character = GetComponent<PlayerCharacter>(); 
     }
 
     private void Start()
     {
-        int max = player != null && player.maxHealth > 0 ? player.maxHealth : baseMaxHealth;
-        Character = new PlayerCharacter("Scarf", max, baseAttackPower);
+        if (player != null && Character != null)
+        {
+            // Синхронізуємо здоров'я на старті
+            Character.maxHealth = player.maxHealth;
+            Character.currentHealth = player.health;
+        }
 
         if (playerLevel != null)
         {
@@ -47,32 +52,30 @@ public class PlayerCombatAdapter : MonoBehaviour
     {
         lastLevel = newLevel;
         ApplyLevelScaling();
-        FileLogger.Write($"[Combat] Player level up -> {newLevel}, attack={Character.AttackPower}");
     }
 
     private void ApplyLevelScaling()
     {
-        int newAttack = baseAttackPower + (lastLevel - 1) * damagePerLevel;
-        var oldHealth = Character?.Health ?? player?.health ?? 0;
-        Character = new PlayerCharacter("Scarf",
-            Character?.MaxHealth ?? (player?.maxHealth ?? baseMaxHealth),
-            newAttack);
-        if (oldHealth > 0 && oldHealth < Character.MaxHealth)
-            Character.TakeDamage(Character.MaxHealth - oldHealth);
+        if (Character != null)
+        {
+            // Оновлюємо силу атаки в компоненті
+            Character.attackPower = baseAttackPower + (lastLevel - 1) * damagePerLevel;
+        }
     }
 
     public void SyncFromPlayer()
     {
         if (player == null || Character == null) return;
-        if (player.health < Character.Health)
-            Character.TakeDamage(Character.Health - player.health);
-        else if (player.health > Character.Health)
-            Character.Heal(player.health - Character.Health);
+        
+        // Синхронізуємо HP
+        Character.currentHealth = player.health;
+        Character.maxHealth = player.maxHealth;
     }
 
     public int ComputeAttackDamage(int distanceToTarget)
     {
         SyncFromPlayer();
-        return Character?.Attack(new AttackContext(distanceToTarget, true)) ?? 0;
+        if (Character == null) return 0;
+        return Character.Attack(new AttackContext(distanceToTarget, true));
     }
 }

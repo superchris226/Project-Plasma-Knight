@@ -1,9 +1,9 @@
+// ШІ: ChatGPT – Створив CombatAdapterBootstrap.
+// Змінено: фікс кода. Автоматично додає PlayerCharacter на гравця та Melee/RangedEnemy на ворогів. Видалено дублюючий enum EnemyType.
 using UnityEngine;
 
 namespace Coursework2D
 {
-    // Вішає PlayerCombatAdapter на Player і EnemyCombatAdapter на всі EnemyHealth.
-    // Ставити на будь-який об'єкт сцени (не на префаб).
     public class CombatAdapterBootstrap : MonoBehaviour
     {
         private void Awake()
@@ -11,6 +11,9 @@ namespace Coursework2D
             // Гравець
             foreach (var p in FindObjectsByType<Player>(FindObjectsSortMode.None))
             {
+                if (p.GetComponent<PlayerCharacter>() == null)
+                    p.gameObject.AddComponent<PlayerCharacter>();
+
                 if (p.GetComponent<PlayerCombatAdapter>() == null)
                     p.gameObject.AddComponent<PlayerCombatAdapter>();
             }
@@ -21,19 +24,24 @@ namespace Coursework2D
                 if (e.GetComponent<EnemyCombatAdapter>() == null)
                 {
                     var marker = e.GetComponent<EnemyTypeMarker>();
-                    var adapter = e.gameObject.AddComponent<EnemyCombatAdapter>();
-                    if (marker != null)
+                    
+                    if (marker != null && marker.type == EnemyType.Ranged)
                     {
-                        adapter.SetArchetype(marker.type == EnemyType.Ranged
-                            ? EnemyCombatAdapter.EnemyArchetype.Ranged
-                            : EnemyCombatAdapter.EnemyArchetype.Melee);
+                        if (e.GetComponent<RangedEnemy>() == null)
+                            e.gameObject.AddComponent<RangedEnemy>();
                     }
+                    else
+                    {
+                        if (e.GetComponent<MeleeEnemy>() == null)
+                            e.gameObject.AddComponent<MeleeEnemy>();
+                    }
+
+                    e.gameObject.AddComponent<EnemyCombatAdapter>();
                 }
             }
         }
     }
 
-    // Опційний маркер, щоб розрізняти Melee/Ranged на сцені
     public class EnemyTypeMarker : MonoBehaviour
     {
         public EnemyType type = EnemyType.Melee;

@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив SystemObjectToggle.
+// Змінено: фікс кода.
 using UnityEngine;
 using UnityEngine.InputSystem;
 

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerDeathHandler : MonoBehaviour
 {
     [Header("Timing")]
-    [Tooltip("Сколько секунд ничего не происходит после смерти")]
+    [Tooltip("Скільки секунд нічого не відбувається після смерті")]
     public float freezeBeforeFade = 5f;
     public float fadeOutDuration = 1.5f;
     public float blackHold = 1f;
@@ -25,8 +25,8 @@ public class PlayerDeathHandler : MonoBehaviour
         _spawnPosition = respawnPoint != null ? respawnPoint.position : transform.position;
 
         if (ScreenFader.Instance == null)
-            Debug.LogWarning("[PlayerDeathHandler] ScreenFader не найден. " +
-                "Добавь объект ScreenFader с Image в Canvas.", this);
+            Debug.LogWarning("[PlayerDeathHandler] ScreenFader не знайдено. " +
+                "Додай об'єкт ScreenFader з Image в Canvas.", this);
     }
 
     private void Update()
@@ -43,14 +43,14 @@ public class PlayerDeathHandler : MonoBehaviour
 
         var player = GetComponent<Player>();
         
-        // Ждем 5 секунд
+        // Чекаємо 5 секунд
         yield return new WaitForSeconds(freezeBeforeFade);
 
-        // Скрываем персонажа
+        // Ховаємо персонажа
         var renderers = GetComponentsInChildren<SpriteRenderer>(true);
         foreach (var r in renderers) r.enabled = false;
 
-        // Затемняем экран
+        // Затемнюємо екран
         if (ScreenFader.Instance != null)
             yield return ScreenFader.Instance.FadeOut(fadeOutDuration);
         else
@@ -58,17 +58,17 @@ public class PlayerDeathHandler : MonoBehaviour
 
         yield return new WaitForSeconds(blackHold);
 
-        // Возвращаем на респавн и сбрасываем состояние
+        // Повертаємо на респавн і скидаємо стан
         transform.position = _spawnPosition;
         SceneManager.LoadScene("TestZoneLocation");
         Time.timeScale = 1f;
         if (player != null) 
             player.ResetAfterDeath(); 
 
-        // Показываем персонажа
+        // Показуємо персонажа
         foreach (var r in renderers) r.enabled = true;
 
-        // Плавно проявляем экран
+        // Плавно проявляємо екран
         if (ScreenFader.Instance != null)
             yield return ScreenFader.Instance.FadeIn(fadeInDuration);
         else

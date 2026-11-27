@@ -1,22 +1,39 @@
+// ШІ: ChatGPT – Створив RangedEnemy.
+// Змінено: фікс кода
+using UnityEngine;
+
 namespace Coursework2D
 {
-    public sealed class RangedEnemy : Combatant
+    public sealed class RangedEnemy : MonoBehaviour
     {
-        public int AttackRange { get; }
+        [Header("Stats")]
+        public string combatantName = "Ranged Enemy";
+        public int maxHealth = 35;
+        public int currentHealth;
+        public int attackPower = 9;
+        public int attackRange = 6;
 
-        public RangedEnemy(string name = "Ranged Enemy", int maxHealth = 35, int attackPower = 9, int attackRange = 6)
-            : base(name, maxHealth, attackPower)
+        public bool IsAlive => currentHealth > 0;
+
+        private void Awake()
         {
-            if (attackRange <= 0) throw new System.ArgumentOutOfRangeException(nameof(attackRange));
-            AttackRange = attackRange;
+            currentHealth = maxHealth;
+            if (attackRange <= 0) attackRange = 1; // Захист від ділення на нуль
         }
 
-        public override int Attack(AttackContext context)
+        public int Attack(AttackContext context)
         {
             if (!IsAlive || !context.TargetIsAlive) return 0;
-            if (context.Distance > AttackRange) return 0;
-            double factor = 1.0 - 0.5 * ((double)context.Distance / AttackRange);
-            return (int)System.Math.Round(AttackPower * factor);
+            if (context.Distance > attackRange) return 0;
+            
+            double factor = 1.0 - 0.5 * ((double)context.Distance / attackRange);
+            return (int)System.Math.Round(attackPower * factor);
+        }
+
+        public void TakeDamage(int amount)
+        {
+            if (amount <= 0 || !IsAlive) return;
+            currentHealth = Mathf.Max(0, currentHealth - amount);
         }
     }
 }

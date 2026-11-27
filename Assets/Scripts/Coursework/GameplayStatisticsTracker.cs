@@ -1,3 +1,5 @@
+// ШІ: ChatGPT – Створив GameplayStatisticsTracker.
+// Змінено: фікс кода.
 using UnityEngine;
 using Coursework2D;
 
