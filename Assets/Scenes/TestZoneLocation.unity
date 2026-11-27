@@ -90915,6 +90915,9 @@ GameObject:
   - component: {fileID: 503358111}
   - component: {fileID: 503358110}
   - component: {fileID: 503358109}
+  - component: {fileID: 503358117}
+  - component: {fileID: 503358116}
+  - component: {fileID: 503358115}
   m_Layer: 8
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -91118,6 +91121,47 @@ Transform:
   - {fileID: 176542035}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &503358115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503358108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b4677992fbec14898b574f9e17b5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.CombatAdapterBootstrap
+--- !u!114 &503358116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503358108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952cf8e6e07aa364697166fbf70ce791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.RangedEnemy
+  combatantName: Ranged Enemy
+  maxHealth: 35
+  currentHealth: 0
+  attackPower: 9
+  attackRange: 6
+--- !u!114 &503358117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503358108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a28d18649f049499466458c7d7e0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.EnemyCombatAdapter
 --- !u!1 &509991656
 GameObject:
   m_ObjectHideFlags: 0
@@ -92686,6 +92730,9 @@ GameObject:
   - component: {fileID: 609050199}
   - component: {fileID: 609050198}
   - component: {fileID: 609050197}
+  - component: {fileID: 609050205}
+  - component: {fileID: 609050204}
+  - component: {fileID: 609050203}
   m_Layer: 8
   m_Name: Enemy (4)
   m_TagString: Untagged
@@ -92889,6 +92936,46 @@ Transform:
   - {fileID: 244474614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &609050203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609050196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b4677992fbec14898b574f9e17b5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.CombatAdapterBootstrap
+--- !u!114 &609050204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609050196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7353f06fd740c5a479fe98878fb385ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.MeleeEnemy
+  combatantName: Melee Enemy
+  maxHealth: 50
+  currentHealth: 0
+  attackPower: 12
+--- !u!114 &609050205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609050196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a28d18649f049499466458c7d7e0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.EnemyCombatAdapter
 --- !u!1 &610157078
 GameObject:
   m_ObjectHideFlags: 0
@@ -95895,6 +95982,9 @@ GameObject:
   - component: {fileID: 857887687}
   - component: {fileID: 857887686}
   - component: {fileID: 857887685}
+  - component: {fileID: 857887693}
+  - component: {fileID: 857887692}
+  - component: {fileID: 857887691}
   m_Layer: 8
   m_Name: Enemy (3)
   m_TagString: Untagged
@@ -96098,6 +96188,47 @@ Transform:
   - {fileID: 2102592523}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &857887691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857887684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952cf8e6e07aa364697166fbf70ce791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.RangedEnemy
+  combatantName: Ranged Enemy
+  maxHealth: 35
+  currentHealth: 0
+  attackPower: 9
+  attackRange: 6
+--- !u!114 &857887692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857887684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a28d18649f049499466458c7d7e0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.EnemyCombatAdapter
+--- !u!114 &857887693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857887684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b4677992fbec14898b574f9e17b5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.CombatAdapterBootstrap
 --- !u!1 &869330152
 GameObject:
   m_ObjectHideFlags: 0
@@ -97476,6 +97607,8 @@ GameObject:
   - component: {fileID: 1023402731}
   - component: {fileID: 1023402730}
   - component: {fileID: 1023402729}
+  - component: {fileID: 1023402733}
+  - component: {fileID: 1023402732}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -97797,6 +97930,36 @@ MonoBehaviour:
   debugAnimation: 1
   waitLoopStartFrame: 2
   waitClipFps: 24
+--- !u!114 &1023402732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023402718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a33e13b3ba3c449bfadc84cdfb18b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombatAdapter
+  baseAttackPower: 10
+  damagePerLevel: 5
+--- !u!114 &1023402733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023402718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7710e7c701769ba49b1357fe0c30c62c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.PlayerCharacter
+  combatantName: Scarf
+  maxHealth: 100
+  currentHealth: 0
+  attackPower: 20
 --- !u!1 &1028624176
 GameObject:
   m_ObjectHideFlags: 0
@@ -99861,8 +100024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aead15d2ad6c8348915aa52dceba09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.ConcurrencyBenchmark
-  ObjectCount: 12000
-  IterationsPerObject: 64
+  LevelCount: 300
+  MinTotalObjects: 12000
 --- !u!4 &1145339248
 Transform:
   m_ObjectHideFlags: 0
@@ -105235,6 +105398,9 @@ GameObject:
   - component: {fileID: 1574892920}
   - component: {fileID: 1574892919}
   - component: {fileID: 1574892918}
+  - component: {fileID: 1574892926}
+  - component: {fileID: 1574892925}
+  - component: {fileID: 1574892924}
   m_Layer: 8
   m_Name: Enemy (5)
   m_TagString: Untagged
@@ -105438,6 +105604,47 @@ Transform:
   - {fileID: 1834800829}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1574892924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574892917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b4677992fbec14898b574f9e17b5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.CombatAdapterBootstrap
+--- !u!114 &1574892925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574892917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a28d18649f049499466458c7d7e0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.EnemyCombatAdapter
+--- !u!114 &1574892926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574892917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952cf8e6e07aa364697166fbf70ce791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.RangedEnemy
+  combatantName: Ranged Enemy
+  maxHealth: 35
+  currentHealth: 0
+  attackPower: 9
+  attackRange: 6
 --- !u!1 &1578521480
 GameObject:
   m_ObjectHideFlags: 0
@@ -105744,10 +105951,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1596371482}
-  - component: {fileID: 1596371481}
-  - component: {fileID: 1596371480}
-  - component: {fileID: 1596371479}
-  - component: {fileID: 1596371478}
   - component: {fileID: 1596371477}
   m_Layer: 0
   m_Name: CourseworkSystems
@@ -105772,56 +105975,6 @@ MonoBehaviour:
   checker: {fileID: 660462479}
   benchmark: {fileID: 1145339247}
   stats: {fileID: 660479573}
---- !u!114 &1596371478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596371476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3193cdaee0a54ce4a9837ebb5febb113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.GameplayStatisticsTracker
---- !u!114 &1596371479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596371476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aead15d2ad6c8348915aa52dceba09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.ConcurrencyBenchmark
-  ObjectCount: 12000
-  IterationsPerObject: 64
---- !u!114 &1596371480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596371476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f45c57162bcbe48947a96c98ce5d65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.LevelPlayabilityChecker
---- !u!114 &1596371481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596371476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 632e202ae3ae71b47906dd4fdc3708e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coursework2D.LevelEditorController
 --- !u!4 &1596371482
 Transform:
   m_ObjectHideFlags: 0
